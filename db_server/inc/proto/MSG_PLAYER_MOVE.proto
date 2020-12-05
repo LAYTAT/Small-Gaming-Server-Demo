@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message MSG_PLAYER_MOVE
+{
+    int32 x = 1;
+    int32 z = 2;
+    int32 ry = 3;
+    int32 playerid = 4;
+    int32 state = 5;
+}
+

@@ -1,0 +1,98 @@
+syntax = "proto3";
+package GameSpec;
+message BagItem {
+	int32 itemID = 1; // itemid = 这个道具的id
+	int32 typeID = 2; // typeid = 装备、材料、货币任务道具等
+	int32 count = 3;  // 数量  
+	int32 overly = 4; // 最大叠加数量,暂时在util.h中配置
+	bool binded = 5;
+}
+
+message EquipItem {
+	int32 itemID = 1; // itemid = 这个道具的id
+	int32 typeID = 2; // typeid = 装备、材料、货币任务道具等
+	int32 count = 3;  // 数量  
+	int32 overly = 4; // 最大叠加数量,暂时在util.h中配置
+	bool binded = 5;
+	int32 attack = 6;
+	int32  durability = 7;
+}
+
+message CurrencyItem {
+	int32 itemID = 1; // itemid = 这个道具的id
+	int32 typeID = 2; // typeid = 装备、材料、货币任务道具等
+	int32 count = 3;  // 数量  
+	int32 overly = 4; // 最大叠加数量,暂时在util.h中配置
+}
+
+message BagInfo {
+	repeated BagItem bag =1;
+	repeated EquipItem equipment =2;
+	repeated CurrencyItem currency =3;
+}
+
+message Players {
+    int32 id = 1;
+	string name = 2;
+	int32 rank = 3;
+	int32 exp = 4;
+	BagInfo bags = 5;
+}
+
+message AddItemReq {
+	int32 itemID = 1; // itemid = 这个道具的id
+	int32 count = 2;  // 数量  
+}
+
+message AddItemRsp {
+	ErrorCode errCode = 1;
+}
+
+message CtlMsgLoginReq {
+	string Name = 1; 
+	string password = 2;    
+}
+
+message CtlMsgLoginRsp {
+	ErrorCode errCode = 1; 
+	Players player = 2;    
+}
+
+message CtlMsgSearchReq {
+	int32 id = 1;
+	string Name = 2;
+}
+
+message CtlMsgSearchRsp {
+	ErrorCode errCode = 1; 
+	Players player = 2;  
+}
+
+message RemoveItemReq{
+	int32 itemID = 1; // itemid = 这个道具的id
+	int32 count = 2;  // 数量  
+	int32 pos = 3; //物品在背包的位置
+}
+message RemoveItemRsp {
+	ErrorCode errCode = 1;
+}
+
+message RankReq{
+	int32 start = 1;
+	int32 end = 2;
+}
+message RankRsp {
+	ErrorCode errCode = 1;
+	repeated string name= 2;
+	repeated int32 exp=3;
+}
+
+enum ErrorCode
+{ 
+	ERROR_NO_ERROR = 0;
+	ERROR_AUH_ERROR = 1;
+	ERROR_SEARCH_FAIL = 2;
+	ERROR_REV_ITEM_FAIL = 3;
+	ERROR_ADD_ITEM_FAIL = 4;
+    ERROR_PARSE_FAILED = 5;
+}

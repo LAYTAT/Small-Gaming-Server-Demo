@@ -34,7 +34,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login/cmake_install.cmake")
+  include("/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server/cmake_install.cmake")
+  include("/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/db_server/cmake_install.cmake")
 
 endif()
 

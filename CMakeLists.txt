@@ -7,5 +7,9 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 set(PROJECT_SOURCE_DIR .)
 
-add_subdirectory(login)
+# È«¾ÖµÄinclude
+include_directories(./inc/proto)
 
+add_subdirectory(login_server)
+
+add_subdirectory(db_server)

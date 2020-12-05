@@ -1,1 +1,0 @@
-/usr/bin/g++  -g   CMakeFiles/loginserver.dir/main.cpp.o  -o bin/loginserver 

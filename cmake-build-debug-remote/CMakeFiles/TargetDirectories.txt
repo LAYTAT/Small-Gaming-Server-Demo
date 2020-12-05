@@ -1,1 +1,2 @@
-/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login/CMakeFiles/login_server.dir
+/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/db_server/CMakeFiles/db_server.dir
+/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server/CMakeFiles/login_server.dir

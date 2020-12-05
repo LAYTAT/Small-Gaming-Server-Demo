@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+message MSG_PLAYER_REGISTER
+{
+    int32 x = 1;
+    int32 z = 2;
+    int32 ry = 3;
+    int32 speed = 4;
+    int32 professsional = 5;
+    int32 playerid = 6;
+}
+

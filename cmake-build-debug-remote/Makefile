@@ -112,8 +112,21 @@ login_server: cmake_check_build_system
 
 # fast build rule for target.
 login_server/fast:
-	$(MAKE) -f login/CMakeFiles/login_server.dir/build.make login/CMakeFiles/login_server.dir/build
+	$(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/build
 .PHONY : login_server/fast
+
+#=============================================================================
+# Target rules for targets named db_server
+
+# Build rule for target.
+db_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 db_server
+.PHONY : db_server
+
+# fast build rule for target.
+db_server/fast:
+	$(MAKE) -f db_server/CMakeFiles/db_server.dir/build.make db_server/CMakeFiles/db_server.dir/build
+.PHONY : db_server/fast
 
 # Help Target
 help:
@@ -124,6 +137,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... login_server"
+	@echo "... db_server"
 .PHONY : help
 
 

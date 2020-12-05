@@ -6,7 +6,7 @@
 #define MY_SERVER_MSGHANDLER_H
 
 #include "Config.h"
-#include "MesgHead.h"
+#include "../db_server/inc/MesgHead.h"
 
 template<class T>
 class MsgHandler {

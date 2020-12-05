@@ -16,15 +16,9 @@ bool BagSystem::AddItem(Entity* enty, INT32 itemid, INT32 cnt)
 {
     ItemContainerComponent* itemCont = (ItemContainerComponent*)enty->GetComponent(COMPONENTS_BAG);
     INT32 type = ItemsMgr::Instance()->GetTypeByID(itemid); 
-    
-    //todo    
+
+    //todo: change add item type
     type = ITEMTYPE_BAG_ITEM;
-
-
-    //if(type == 0)
-    //{
-        //return false;
-    //}
 
     bool flag = true;
     switch(type){
@@ -47,12 +41,7 @@ bool BagSystem::RemoveItem(Entity* enty,INT32 itemid, INT32 pos, INT32 cnt)
 {
     ItemContainerComponent* itemCont = (ItemContainerComponent*)enty->GetComponent(COMPONENTS_BAG);
     INT32 type = ItemsMgr::Instance()->GetTypeByID(itemid); 
-    //todo
     type = ITEMTYPE_BAG_ITEM;
-    //if(type == 0)
-    //{
-    //    return false;
-    //}
     bool flag = true;
     switch(type){
         case ITEMTYPE_BAG_ITEM:
@@ -80,14 +69,12 @@ void BagSystem::GetBagInfo(Entity* enty,GameSpec::BagInfo *baginfo)
     {
         BagItem* t_c = (BagItem*)t_container_bag[i];
          
-        //GameSpec::BagItem* t_cons = (GameSpec::BagItem*)baginfo->add_bag();
         GameSpec::BagItem* t_cons = baginfo->add_bag();
         if(t_c == nullptr)
         {
             t_cons->set_itemid(-1);
             continue;
         }
-        //std::cout << "output!!!!!!!!!!!!! "<<t_c->itemID << std::endl;
         t_cons->set_itemid(t_c->itemID);
         t_cons->set_typeid_(t_c->typeID);
         t_cons->set_count(t_c->count);
