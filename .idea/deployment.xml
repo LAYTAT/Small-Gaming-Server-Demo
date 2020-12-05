@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="Remote Host  Orignal (981c5636-ec42-41d7-af39-a36dbd384bca)" remoteFilesAllowedToDisappearOnAutoupload="false" autoUploadExternalChanges="true">
+    <serverData>
+      <paths name="Centos-Remote-Host">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/jjlay/dev/My_Server_Architech" local="$PROJECT_DIR$" web="" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="GHS - Centos">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/jjlay/dev/My-Server-Architect" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="Remote Host  Orignal (981c5636-ec42-41d7-af39-a36dbd384bca)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/tmp.cAdQ96BiEw" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-remote" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-remote" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
+  </component>
+</project>
