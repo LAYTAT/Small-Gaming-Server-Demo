@@ -125,7 +125,6 @@ std::string CacheManager::getPlayerInfo(int playerId, std::string which_info) {
     } else {
         return std::string();
     }
-
 }
 
 void CacheManager::setPlayerInfo(int id, std::string name, int exp) {

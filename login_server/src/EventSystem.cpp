@@ -158,20 +158,19 @@ INT32 EventSystem::PlayerLogin(const MesgInfo &stHead, const char *body,const IN
     //std::cout << "msgid " << stHead.msgID << std::endl;
     //std::cout << "uid " << stHead.uID << std::endl;
     //std::cout << "lens " << stHead.packLen << std::endl;
-    GameSpec::CtlMsgLoginReq test;
+    GameSpec::CtlMsgLoginReq loginReq;
     GameSpec::CtlMsgLoginRsp rsp;
-    if(!test.ParseFromArray(body, len))
+    if(!loginReq.ParseFromArray(body, len))
     {
         std::cout << "ParseFromArray palyer login_server failed" <<std::endl;
         rsp.set_errcode(GameSpec::ERROR_PARSE_FAILED);
         SocketServer::Instance()->BroadCast(stHead,rsp);
         return 1;
     }
-
-
+    std::cout << "Redis login request name is : " << MySqlMgr::Instance()->GetPlayerId(loginReq.name()) << std::endl;
     std::cout << "login_server  uid = " << stHead.uID << std::endl;
-    std::cout << "name = " << test.name() << std::endl;
-    std::cout << "password = " << test.password() << std::endl;
+    std::cout << "name = " << loginReq.name() << std::endl;
+    std::cout << "password = " << loginReq.password() << std::endl;
 
     if(EntityMgr::Instance()->HasPlayer(stHead.uID) == false)
     {
@@ -182,7 +181,6 @@ INT32 EventSystem::PlayerLogin(const MesgInfo &stHead, const char *body,const IN
         EntityMgr::Instance()->SetPlayer(tptr);
 
         //CacheManager::Instance()->newPlayer(tptr.id(), tptr.name(),tptr.exp());
-
 
         m_bagSystem.GetPlayerInfo(EntityMgr::Instance()->GetEttyByPid(stHead.uID),rsp.mutable_player());
     }
