@@ -1,4 +1,4 @@
-#include "../../db_server/inc/baselink.h"
+#include "baselink.h"
 
 baselink::baselink()
 {
@@ -25,6 +25,19 @@ bool baselink::Init(INT32 sock)
     }
     return m_buffer->Init();
 }
+
+//bool baselink::InitDbConnection(INT32 sock)
+//{
+//    m_socketfd_to_db = sock;
+//    if (m_buffer_to_db == nullptr) {
+//        m_buffer_to_db = new buffer();
+//    }
+//    if( m_msghead_to_db == nullptr) {
+//        m_msghead_to_db = new MesgHead();
+//        m_msghead_to_db->Init(0,0,0);
+//    }
+//    return m_buffer_to_db->Init();
+//}
 
 void baselink::Uinit()
 {
@@ -168,22 +181,11 @@ INT32 baselink::OpenClient(INT32 port)
         CloseSocket();
         return -1;
     }
-    // if (0 != setsockopt(m_socketfd, SOL_SOCKET, SO_SNDBUF, (const void *)&buffLen, sizeof(buffLen))){
-    //     return -1;
-    // }
-    // if (0 != setsockopt(m_socketfd, SOL_SOCKET, SO_RCVBUF, (const void *)&buffLen, sizeof(buffLen))){
-    //     return -1;
-    // }
 
     struct sockaddr_in stSocketAddr;
     memset(&stSocketAddr, 0x0, sizeof(stSocketAddr));
     stSocketAddr.sin_family = AF_INET;
-    // if (NULL != ip){
-    //     stSocketAddr.sin_addr.s_addr = inet_addr(ip);
-    // }
-    // else{
-        stSocketAddr.sin_addr.s_addr = htonl(INADDR_ANY);
-    // }
+    stSocketAddr.sin_addr.s_addr = htonl(INADDR_ANY);
     stSocketAddr.sin_port = (u_short)htons(port);
 
     socklen_t addrSize = socklen_t(sizeof(stSocketAddr));
@@ -217,6 +219,73 @@ INT32 baselink::ConnectServer()
     return 0;
 }
 
+//INT32 baselink::ConnectDBServer()
+//{
+//    std::cout << "connectDBServer" << std::endl;
+//    if (m_socketfd < 0)
+//    {
+//        std::cout << "login server connecting with db server: \n"
+//                     "socket fd is wrong! \n" <<
+//                  "errno:" << errno << ".\n"
+//                  << std::endl;
+//        return -1;
+//    }
+//    std::cout << "m_socketfd_to_db:" << m_socketfd << std::endl;
+//    //connect
+//    sockaddr_in serveraddr;
+//    serveraddr.sin_family = AF_INET;
+//    serveraddr.sin_port = htons(DB_SERVER_PORT);
+//    serveraddr.sin_addr.s_addr = inet_addr(DB_SERVER_IP_ADDR);
+//    if (connect(m_socketfd, (sockaddr*)&serveraddr, sizeof(serveraddr)) < 0)
+//    {
+//        std::cout << "login server connecting with db server: "
+//                     "connect failed! errno: \n"
+//                  << errno << "\n m_socketfd_to_db: " << m_socketfd << "\n"
+//                  << std::endl;
+//        return -1;
+//    }
+//
+//    std::cout << "login server connecting with db server: connect success. \n" << std::endl;
+//    return 0;
+//}
+
+INT32 baselink::ConnectDBServer()
+{
+//    if (!Init(-2)) {
+//        std::cout << "login server connecting with db server: \n"
+//                     "InitDbConnection failed! \n" << std::endl;
+//        return -1;
+//    }
+    m_socketfd = socket(AF_INET, SOCK_STREAM , 0);
+
+    if (m_socketfd < 0)
+    {
+        std::cout << "login server connecting with db server: \n"
+                     "socket fd is wrong! \n" <<
+                     "errno:" << errno << ".\n"
+                     << std::endl;
+        return -1;
+    }
+    std::cout << "m_socketfd:" << m_socketfd << std::endl;
+    //connect
+    sockaddr_in serveraddr;
+    serveraddr.sin_family = AF_INET;
+    serveraddr.sin_port = htons(DB_SERVER_PORT);
+    serveraddr.sin_addr.s_addr = inet_addr(DB_SERVER_IP_ADDR);
+    if (connect(m_socketfd, (sockaddr*)&serveraddr, sizeof(serveraddr)) < 0)
+    {
+        std::cout << "login server connecting with db server: "
+                     "connect failed! errno: \n"
+                     <<  errno << "\n m_socketfd: " << m_socketfd << "\n"
+                     << std::endl;
+        perror("connect db server:" );
+        return -1;
+    }
+
+    std::cout << "login server connecting with db server: connect success. \n" << std::endl;
+    return m_socketfd;
+}
+
 INT32 baselink::AcceptSocket()
 {
     sockaddr_in clientaddr;
@@ -241,7 +310,7 @@ INT32 baselink::AcceptSocket()
 
 INT32 baselink::RecvData()
 {
-    if (m_socketfd < 0)
+    if ( m_socketfd < 0 )
     {
         return -1;
     }
@@ -314,4 +383,3 @@ char * baselink::GetPack(INT32 len)  //给的是包身，自己加包长
     return &t_str[t_msglen];
 }
 
-//INT32 baselink::Conn

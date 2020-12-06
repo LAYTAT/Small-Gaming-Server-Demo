@@ -103,7 +103,7 @@ INT32 baselink::OpenServer(INT32 port, char* IP)
     socklen_t addrSize = socklen_t(sizeof(addr));
 	if (bind(m_socketfd, (sockaddr*)&addr, addrSize) == -1)
 	{
-		std::cout << "server socket bind failed!" << std::endl;
+		std::cout << "server socket bind failed!  "<< "errno:"<< errno << std::endl;
         CloseSocket();
 		return -1;
 	}

@@ -11,10 +11,12 @@ public:
     ~baselink();
 
     bool Init(INT32 sock);
+    bool InitDbConnection(INT32 sock);
     void Uinit();
     void SetFD(INT32 sock){ m_socketfd = sock; }   //设置fd
 
-    inline INT32 GetFD(){ return m_socketfd; }  
+    inline INT32 GetFD(){ return m_socketfd; }
+    inline INT32 GetFD_DB(){ return m_socketfd_to_db; }
     INT32 OpenServer(INT32 port, char* IP = NULL);  
     INT32 OpenClient(INT32 port);
     INT32 ConnectServer();   //连接到服务器，一般给客户端使用
@@ -23,6 +25,7 @@ public:
     
     INT32 RecvData();  //收数据
     INT32 SendData(char *data, INT32 len); //发数据
+
     INT32 GetPackLens();    // -1代表没有完整的包，否则返回一个完整的包的长度
     const MesgInfo GetMsginfo(){return m_msghead->m_msginfo;} // 获得包头
     char * GetPack(INT32 len);  //Get one Package, and len is the length of pack'body
@@ -33,8 +36,13 @@ public:
 
 private:
     INT32 m_socketfd;
-    buffer* m_buffer; 
+    buffer* m_buffer;
     MesgHead* m_msghead;
+
+    INT32 m_socketfd_to_db;
+    buffer* m_buffer_to_db;
+    MesgHead* m_msghead_to_db;
+
 };
 
 #endif

@@ -29,8 +29,7 @@ EventSystem::~EventSystem()
 bool EventSystem::Init()
 {
     // 连接到db server
-//    SocketServer::Instance()->
-
+    SocketServer::Instance()->ConnectDBServer();
 
     // 绑定处理函数
     m_msgHandler->RegisterMsg(MSGID::MSG_TEST_ID, &EventSystem::PlayerRegister);

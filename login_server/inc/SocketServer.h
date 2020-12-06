@@ -7,9 +7,9 @@
 
 #include "Config.h"
 #include "Singleton.h"
-#include "../../db_server/inc/baselink.h"
-#include "../../db_server/inc/Epoll.h"
-#include "../../db_server/inc/MesgHead.h"
+#include "baselink.h"
+#include "Epoll.h"
+#include "MesgHead.h"
 
 class SocketServer
 {
@@ -23,6 +23,7 @@ public:
     void Dojob();
     inline void BroadCast(const MesgInfo& msghead, Message& msg){ m_epoll.BroadCast(msghead, msg); }
     inline void SendMsg(const MesgInfo& msghead, Message& msg, const INT32 connfd){ m_epoll.SendMsg(msghead, msg, connfd); }
+    inline void SendMsgToDB(const MesgInfo& msghead, Message& msg, const INT32 connfd){ m_epoll.SendMsg(msghead, msg , m_ListenSock_DB->GetFD()); }
     INT32 ConnectDBServer();
 
 private:
@@ -30,6 +31,7 @@ private:
     INT32  m_basefd;
     Epoll m_epoll;
     MesgHead* m_msg_head;
+    baselink* m_ListenSock_DB;
 };
 
 

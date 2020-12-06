@@ -26,6 +26,5 @@ private:
     struct epoll_event m_ev;
     struct epoll_event* m_events;
     std::unordered_map<INT32, baselink*> m_linkmap;
-    
 };
 #endif

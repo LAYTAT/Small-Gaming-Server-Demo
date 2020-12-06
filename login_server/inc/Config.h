@@ -49,12 +49,22 @@
 #include <sys/epoll.h>
 #endif
 
+//已此份config为准
 
 #define DB_SERVER_PORT 8001
 #define DB_SERVER_IP_ADDR "10.0.150.52"
 
 #define LOGIN_SERVER_PORT 8002
 #define LOGIN_SERVER_IP_ADDR "10.0.150.52"
+
+#define GAME_SERVER_PORT 8003
+#define GAME_SERVER_IP_ADDR "10.0.150.52"
+
+#define GATE_SERVER_PORT 8004
+#define GATE_SERVER_IP_ADDR "10.0.150.52"
+
+#define MASTER_SERVER_PORT 8005
+#define MASTER_SERVER_IP_ADDR "10.0.150.52"
 
 #define DEFAULT_SERVER_PORT 8000  // occupied by lay
 #define DEFAULT_SERVER_ADDR "10.0.150.52" // "192.168.11.25"

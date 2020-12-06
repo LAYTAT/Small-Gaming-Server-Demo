@@ -44,6 +44,7 @@ void EventSystem::Uinit()
 // 验证用户的账号数据数据，数据由login server 发送过来
 INT32 EventSystem::PlayerAuth(const MesgInfo &stHead, const char *body, const INT32 len,const INT32 connfd)
 {
+    std::cout << "Enter Player Authentication Process" << std::endl;
 //    DbReq_User_Auth dbReqUserAuth;
 //    DbRep_User_Auth rsp;
 //

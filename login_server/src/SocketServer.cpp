@@ -11,6 +11,7 @@ INSTANCE_SINGLETON(SocketServer);
 SocketServer::SocketServer()
 {
     this->m_ListenSock = new baselink();
+    this->m_ListenSock_DB = new baselink();
     this->m_msg_head = new MesgHead();
 }
 
@@ -18,12 +19,17 @@ SocketServer::~SocketServer()
 {
     delete m_msg_head;
     delete m_ListenSock;
+    delete m_ListenSock_DB;
 }
 
 bool SocketServer::Init()
 {
     // base socket init
-    if (m_ListenSock->Init(-1) == false)
+    if (!m_ListenSock->Init(-1))
+    {
+        return false;
+    }
+    if (!m_ListenSock_DB->Init(-1))
     {
         return false;
     }
@@ -40,6 +46,10 @@ bool SocketServer::Init()
         return false;
     }
     m_epoll.EpollAdd(m_basefd);
+//    // Ìí¼Ólisten dbµÄsocketfd µ½epoll£»
+    if (m_epoll.EpollAdd( m_ListenSock_DB->GetFD_DB())) {
+        std::cout << "Epoll add fd_to_db failed" << std::endl;
+    }
 
     m_msg_head->Init(1,1,1);
     return true;
@@ -140,7 +150,12 @@ void SocketServer::Dojob()
     }
 }
 
-//INT32 SocketServer::ConnectDBServer() {
-//    return m_ListenSock->ConnectDBServer();
-//}
+INT32 SocketServer::ConnectDBServer() {
+    INT32 fd_2_db_temp = m_ListenSock_DB->ConnectDBServer();
+    if (fd_2_db_temp < 0) {
+        std::cout << "connect to db server failed" << std::endl;
+        return 0;
+    }
+    return fd_2_db_temp;
+}
 

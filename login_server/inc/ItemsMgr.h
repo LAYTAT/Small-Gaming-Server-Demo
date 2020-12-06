@@ -26,8 +26,6 @@ public:
     EquipItem* GetEquipItem(INT32 itemid); // 获得一个EquipItem对象
     CurrencyItem* GetCurrencyItem(INT32 itemid,INT32 cnt);
 
-
-
 private:
     std::unordered_map<INT32, INT32> m_itemRegister;  
     
