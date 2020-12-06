@@ -119,6 +119,26 @@ void Epoll::BroadCast(const MesgInfo& msghead,Message& msg)
     return ;
 }
 
+//void Epoll::BroadCastToLoginServer(const MesgInfo& msghead,Message& msg)
+//{
+//    MesgHead t_mh ;
+//    static char s_head_buffer[1024];
+//    static char s_buffer[1024];
+//    t_mh.Init(msghead.msgID , msghead.uID, msghead.packLen);
+//    //std::cout << "msg id " << msghead.msgID <<" uid "<<msghead.uID << std::endl;
+//    INT32 t_hl = t_mh.encode(s_head_buffer, msg.ByteSizeLong());
+//
+//    msg.SerializeToArray(s_buffer, msg.ByteSizeLong());
+//
+//    for(auto it = m_linkmap.begin();it!=m_linkmap.end();it++)
+//    {
+//        it->second->SendData(s_head_buffer, t_hl);
+//        it->second->SendData(s_buffer,msg.ByteSizeLong());
+//    }
+//
+//    return ;
+//}
+
 void Epoll::SendMsg(const MesgInfo& msghead,Message& msg,const INT32 connfd)
 {
     if(m_linkmap.find(connfd) == m_linkmap.end())

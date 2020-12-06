@@ -115,130 +115,88 @@ login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.o
  /tmp/tmp.cAdQ96BiEw/inc/proto/MsgTest.pb.cc
  /tmp/tmp.cAdQ96BiEw/inc/proto/MsgTest.pb.h
 login_server/CMakeFiles/login_server.dir/src/Epoll.cpp.o
- .././inc/proto/MsgTest.pb.h
- ../login_server/../inc/Config.h
+ ../login_server/../inc/proto/MsgTest.pb.h
+ /tmp/tmp.cAdQ96BiEw/db_server/inc/Config.h
  /tmp/tmp.cAdQ96BiEw/db_server/inc/Epoll.h
  /tmp/tmp.cAdQ96BiEw/db_server/inc/MesgHead.h
  /tmp/tmp.cAdQ96BiEw/db_server/inc/baselink.h
  /tmp/tmp.cAdQ96BiEw/db_server/inc/buffer.h
  /tmp/tmp.cAdQ96BiEw/login_server/src/Epoll.cpp
 login_server/CMakeFiles/login_server.dir/src/EventSystem.cpp.o
- .././db_server/inc/Epoll.h
- .././db_server/inc/MesgHead.h
- .././db_server/inc/baselink.h
- .././db_server/inc/buffer.h
- .././inc/proto/GameSpec.pb.h
- .././inc/proto/MSG_PLAYER_MOVE.pb.h
- .././inc/proto/MSG_PLAYER_REGISTER.pb.h
- .././inc/proto/MsgID.pb.h
- .././inc/proto/MsgTest.pb.h
- ../login_server/../db_server/inc/MesgHead.h
- ../login_server/../inc/./proto/GameSpec.pb.h
- ../login_server/../inc/BagContainer.h
- ../login_server/../inc/BagSystem.h
- ../login_server/../inc/BaseComponent.h
- ../login_server/../inc/CacheEnum.h
- ../login_server/../inc/CacheManager.h
- ../login_server/../inc/Components/ItemComponent.h
- ../login_server/../inc/Components/TransformComponent.h
- ../login_server/../inc/ComponentsMgr.h
- ../login_server/../inc/Config.h
- ../login_server/../inc/CurrencyContainer.h
- ../login_server/../inc/Entity.h
- ../login_server/../inc/EntityMgr.h
- ../login_server/../inc/EquipContainer.h
- ../login_server/../inc/ItemBase.h
- ../login_server/../inc/ItemContainer.h
- ../login_server/../inc/ItemList.h
- ../login_server/../inc/ItemsMgr.h
- ../login_server/../inc/MsgHandler.h
- ../login_server/../inc/MySqlManager.h
- ../login_server/../inc/Singleton.h
- ../login_server/../inc/TransformSystem.h
- ../login_server/../inc/bloom_filter.hpp
+ ../login_server/./inc/./proto/GameSpec.pb.h
+ ../login_server/./inc/BagContainer.h
+ ../login_server/./inc/BagSystem.h
+ ../login_server/./inc/BaseComponent.h
+ ../login_server/./inc/CacheEnum.h
+ ../login_server/./inc/CacheManager.h
+ ../login_server/./inc/Components/ItemComponent.h
+ ../login_server/./inc/Components/TransformComponent.h
+ ../login_server/./inc/ComponentsMgr.h
+ ../login_server/./inc/Config.h
+ ../login_server/./inc/CurrencyContainer.h
+ ../login_server/./inc/Entity.h
+ ../login_server/./inc/EntityMgr.h
+ ../login_server/./inc/EquipContainer.h
  ../login_server/./inc/EventSystem.h
+ ../login_server/./inc/ItemBase.h
+ ../login_server/./inc/ItemContainer.h
+ ../login_server/./inc/ItemList.h
+ ../login_server/./inc/ItemsMgr.h
+ ../login_server/./inc/MesgHead.h
+ ../login_server/./inc/MsgHandler.h
+ ../login_server/./inc/MySqlManager.h
+ ../login_server/./inc/Singleton.h
  ../login_server/./inc/SocketServer.h
+ ../login_server/./inc/TransformSystem.h
+ ../login_server/./inc/bloom_filter.hpp
+ ../login_server/./inc/proto/GameSpec.pb.h
+ ../login_server/./inc/proto/MSG_PLAYER_MOVE.pb.h
+ ../login_server/./inc/proto/MSG_PLAYER_REGISTER.pb.h
+ ../login_server/./inc/proto/MsgID.pb.h
  /tmp/tmp.cAdQ96BiEw/login_server/src/EventSystem.cpp
 login_server/CMakeFiles/login_server.dir/src/MesgHead.cpp.o
- ../login_server/../inc/Config.h
+ /tmp/tmp.cAdQ96BiEw/db_server/inc/Config.h
  /tmp/tmp.cAdQ96BiEw/db_server/inc/MesgHead.h
  /tmp/tmp.cAdQ96BiEw/login_server/src/MesgHead.cpp
 login_server/CMakeFiles/login_server.dir/src/SocketServer.cpp.o
- .././db_server/inc/Epoll.h
- .././db_server/inc/MesgHead.h
- .././db_server/inc/baselink.h
- .././db_server/inc/buffer.h
- .././inc/proto/GameSpec.pb.h
- .././inc/proto/MSG_PLAYER_REGISTER.pb.h
- .././inc/proto/MsgID.pb.h
- .././inc/proto/MsgTest.pb.h
- ../login_server/../db_server/inc/MesgHead.h
- ../login_server/../inc/BagContainer.h
- ../login_server/../inc/BagSystem.h
- ../login_server/../inc/BaseComponent.h
- ../login_server/../inc/Components/ItemComponent.h
- ../login_server/../inc/Components/TransformComponent.h
- ../login_server/../inc/ComponentsMgr.h
- ../login_server/../inc/Config.h
- ../login_server/../inc/CurrencyContainer.h
- ../login_server/../inc/Entity.h
- ../login_server/../inc/EntityMgr.h
- ../login_server/../inc/EquipContainer.h
- ../login_server/../inc/ItemBase.h
- ../login_server/../inc/ItemContainer.h
- ../login_server/../inc/ItemsMgr.h
- ../login_server/../inc/MsgHandler.h
- ../login_server/../inc/Player.h
- ../login_server/../inc/PlayerManager.h
- ../login_server/../inc/Singleton.h
- ../login_server/../inc/TransformSystem.h
+ ../login_server/./inc/BagContainer.h
+ ../login_server/./inc/BagSystem.h
+ ../login_server/./inc/BaseComponent.h
+ ../login_server/./inc/Components/ItemComponent.h
+ ../login_server/./inc/Components/TransformComponent.h
+ ../login_server/./inc/ComponentsMgr.h
+ ../login_server/./inc/Config.h
+ ../login_server/./inc/CurrencyContainer.h
+ ../login_server/./inc/Entity.h
+ ../login_server/./inc/EntityMgr.h
+ ../login_server/./inc/EquipContainer.h
  ../login_server/./inc/EventSystem.h
+ ../login_server/./inc/ItemBase.h
+ ../login_server/./inc/ItemContainer.h
+ ../login_server/./inc/ItemsMgr.h
+ ../login_server/./inc/MesgHead.h
+ ../login_server/./inc/MsgHandler.h
+ ../login_server/./inc/Player.h
+ ../login_server/./inc/PlayerManager.h
+ ../login_server/./inc/Singleton.h
  ../login_server/./inc/SocketServer.h
+ ../login_server/./inc/TransformSystem.h
+ ../login_server/./inc/proto/GameSpec.pb.h
+ ../login_server/./inc/proto/MSG_PLAYER_REGISTER.pb.h
+ ../login_server/./inc/proto/MsgID.pb.h
  /tmp/tmp.cAdQ96BiEw/login_server/src/SocketServer.cpp
 login_server/CMakeFiles/login_server.dir/src/baselink.cpp.o
- ../login_server/../inc/Config.h
+ /tmp/tmp.cAdQ96BiEw/db_server/inc/Config.h
  /tmp/tmp.cAdQ96BiEw/db_server/inc/MesgHead.h
  /tmp/tmp.cAdQ96BiEw/db_server/inc/baselink.h
  /tmp/tmp.cAdQ96BiEw/db_server/inc/buffer.h
  /tmp/tmp.cAdQ96BiEw/login_server/src/baselink.cpp
 login_server/CMakeFiles/login_server.dir/src/buffer.cpp.o
- ../login_server/../inc/Config.h
+ /tmp/tmp.cAdQ96BiEw/db_server/inc/Config.h
  /tmp/tmp.cAdQ96BiEw/db_server/inc/buffer.h
  /tmp/tmp.cAdQ96BiEw/login_server/src/buffer.cpp
 login_server/CMakeFiles/login_server.dir/src/main.cpp.o
- .././db_server/inc/Epoll.h
- .././db_server/inc/MesgHead.h
- .././db_server/inc/baselink.h
- .././db_server/inc/buffer.h
- .././inc/proto/GameSpec.pb.h
- .././inc/proto/MSG_PLAYER_REGISTER.pb.h
- .././inc/proto/MsgTest.pb.h
- ../login_server/../db_server/inc/MesgHead.h
- ../login_server/../inc/./proto/GameSpec.pb.h
- ../login_server/../inc/BagContainer.h
- ../login_server/../inc/BagSystem.h
- ../login_server/../inc/BaseComponent.h
- ../login_server/../inc/CacheEnum.h
- ../login_server/../inc/CacheManager.h
- ../login_server/../inc/Components/ItemComponent.h
- ../login_server/../inc/Components/TransformComponent.h
- ../login_server/../inc/ComponentsMgr.h
- ../login_server/../inc/Config.h
- ../login_server/../inc/CurrencyContainer.h
- ../login_server/../inc/Entity.h
- ../login_server/../inc/EntityMgr.h
- ../login_server/../inc/EquipContainer.h
- ../login_server/../inc/ItemBase.h
- ../login_server/../inc/ItemContainer.h
- ../login_server/../inc/ItemList.h
- ../login_server/../inc/ItemsMgr.h
- ../login_server/../inc/MsgHandler.h
- ../login_server/../inc/MySqlManager.h
- ../login_server/../inc/Player.h
- ../login_server/../inc/PlayerManager.h
- ../login_server/../inc/Singleton.h
- ../login_server/../inc/TransformSystem.h
- ../login_server/../inc/bloom_filter.hpp
+ ../login_server/./inc/Config.h
  ../login_server/./inc/EventSystem.h
  ../login_server/./inc/SocketServer.h
  /tmp/tmp.cAdQ96BiEw/login_server/src/main.cpp

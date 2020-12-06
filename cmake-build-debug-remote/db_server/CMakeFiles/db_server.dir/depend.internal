@@ -16,29 +16,7 @@ db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgID.pb.cc.o
 db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgTest.pb.cc.o
  /tmp/tmp.cAdQ96BiEw/inc/proto/MsgTest.pb.cc
  /tmp/tmp.cAdQ96BiEw/inc/proto/MsgTest.pb.h
-db_server/CMakeFiles/db_server.dir/src/CacheManager.cpp.o
- ../db_server/./inc/./proto/GameSpec.pb.h
- ../db_server/./inc/CacheEnum.h
- ../db_server/./inc/CacheManager.h
- ../db_server/./inc/Config.h
- ../db_server/./inc/MySqlManager.h
- ../db_server/./inc/Singleton.h
- ../db_server/./inc/bloom_filter.hpp
- /tmp/tmp.cAdQ96BiEw/db_server/src/CacheManager.cpp
-db_server/CMakeFiles/db_server.dir/src/Epoll.cpp.o
- .././inc/proto/MsgTest.pb.h
- ../db_server/../inc/Config.h
- /tmp/tmp.cAdQ96BiEw/db_server/inc/Epoll.h
- /tmp/tmp.cAdQ96BiEw/db_server/inc/MesgHead.h
- /tmp/tmp.cAdQ96BiEw/db_server/inc/baselink.h
- /tmp/tmp.cAdQ96BiEw/db_server/inc/buffer.h
- /tmp/tmp.cAdQ96BiEw/db_server/src/Epoll.cpp
 db_server/CMakeFiles/db_server.dir/src/EventSystem.cpp.o
- .././inc/proto/GameSpec.pb.h
- .././inc/proto/MSG_PLAYER_MOVE.pb.h
- .././inc/proto/MSG_PLAYER_REGISTER.pb.h
- .././inc/proto/MsgID.pb.h
- .././inc/proto/MsgTest.pb.h
  ../db_server/./inc/./proto/GameSpec.pb.h
  ../db_server/./inc/CacheEnum.h
  ../db_server/./inc/CacheManager.h
@@ -53,42 +31,13 @@ db_server/CMakeFiles/db_server.dir/src/EventSystem.cpp.o
  ../db_server/./inc/baselink.h
  ../db_server/./inc/bloom_filter.hpp
  ../db_server/./inc/buffer.h
+ ../db_server/./inc/proto/GameSpec.pb.h
+ ../db_server/./inc/proto/MsgID.pb.h
+ ../db_server/./inc/proto/MsgServerID.pb.h
+ ../db_server/./inc/proto/MsgTest.pb.h
+ ../db_server/./inc/proto/Msg_To_And_From_DB.pb.h
  /tmp/tmp.cAdQ96BiEw/db_server/src/EventSystem.cpp
-db_server/CMakeFiles/db_server.dir/src/MesgHead.cpp.o
- ../db_server/../inc/Config.h
- /tmp/tmp.cAdQ96BiEw/db_server/inc/MesgHead.h
- /tmp/tmp.cAdQ96BiEw/db_server/src/MesgHead.cpp
-db_server/CMakeFiles/db_server.dir/src/MysqlManager.cpp.o
- ../db_server/../inc/./proto/GameSpec.pb.h
- ../db_server/../inc/Config.h
- ../db_server/../inc/Singleton.h
- ../db_server/./inc/MySqlManager.h
- /tmp/tmp.cAdQ96BiEw/db_server/src/MysqlManager.cpp
-db_server/CMakeFiles/db_server.dir/src/SocketServer.cpp.o
- .././inc/proto/MsgID.pb.h
- .././inc/proto/MsgTest.pb.h
- ../db_server/./inc/Config.h
- ../db_server/./inc/Epoll.h
- ../db_server/./inc/EventSystem.h
- ../db_server/./inc/MesgHead.h
- ../db_server/./inc/MsgHandler.h
- ../db_server/./inc/Singleton.h
- ../db_server/./inc/SocketServer.h
- ../db_server/./inc/baselink.h
- ../db_server/./inc/buffer.h
- /tmp/tmp.cAdQ96BiEw/db_server/src/SocketServer.cpp
-db_server/CMakeFiles/db_server.dir/src/baselink.cpp.o
- ../db_server/../inc/Config.h
- ../db_server/../inc/MesgHead.h
- ../db_server/../inc/baselink.h
- ../db_server/../inc/buffer.h
- /tmp/tmp.cAdQ96BiEw/db_server/src/baselink.cpp
-db_server/CMakeFiles/db_server.dir/src/buffer.cpp.o
- ../db_server/../inc/Config.h
- /tmp/tmp.cAdQ96BiEw/db_server/inc/buffer.h
- /tmp/tmp.cAdQ96BiEw/db_server/src/buffer.cpp
 db_server/CMakeFiles/db_server.dir/src/main.cpp.o
- .././inc/proto/MsgTest.pb.h
  ../db_server/./inc/./proto/GameSpec.pb.h
  ../db_server/./inc/CacheEnum.h
  ../db_server/./inc/CacheManager.h
@@ -104,3 +53,52 @@ db_server/CMakeFiles/db_server.dir/src/main.cpp.o
  ../db_server/./inc/bloom_filter.hpp
  ../db_server/./inc/buffer.h
  /tmp/tmp.cAdQ96BiEw/db_server/src/main.cpp
+db_server/CMakeFiles/db_server.dir/src/manager/CacheManager.cpp.o
+ ../db_server/./inc/./proto/GameSpec.pb.h
+ ../db_server/./inc/CacheEnum.h
+ ../db_server/./inc/CacheManager.h
+ ../db_server/./inc/Config.h
+ ../db_server/./inc/MySqlManager.h
+ ../db_server/./inc/Singleton.h
+ ../db_server/./inc/bloom_filter.hpp
+ /tmp/tmp.cAdQ96BiEw/db_server/src/manager/CacheManager.cpp
+db_server/CMakeFiles/db_server.dir/src/manager/MysqlManager.cpp.o
+ ../db_server/./inc/./proto/GameSpec.pb.h
+ ../db_server/./inc/Config.h
+ ../db_server/./inc/MySqlManager.h
+ ../db_server/./inc/Singleton.h
+ /tmp/tmp.cAdQ96BiEw/db_server/src/manager/MysqlManager.cpp
+db_server/CMakeFiles/db_server.dir/src/network/Epoll.cpp.o
+ .././inc/proto/MsgTest.pb.h
+ ../db_server/./inc/Config.h
+ ../db_server/./inc/Epoll.h
+ ../db_server/./inc/MesgHead.h
+ ../db_server/./inc/baselink.h
+ ../db_server/./inc/buffer.h
+ /tmp/tmp.cAdQ96BiEw/db_server/src/network/Epoll.cpp
+db_server/CMakeFiles/db_server.dir/src/network/MesgHead.cpp.o
+ ../db_server/./inc/Config.h
+ ../db_server/./inc/MesgHead.h
+ /tmp/tmp.cAdQ96BiEw/db_server/src/network/MesgHead.cpp
+db_server/CMakeFiles/db_server.dir/src/network/SocketServer.cpp.o
+ ../db_server/./inc/Config.h
+ ../db_server/./inc/Epoll.h
+ ../db_server/./inc/EventSystem.h
+ ../db_server/./inc/MesgHead.h
+ ../db_server/./inc/MsgHandler.h
+ ../db_server/./inc/Singleton.h
+ ../db_server/./inc/SocketServer.h
+ ../db_server/./inc/baselink.h
+ ../db_server/./inc/buffer.h
+ ../db_server/./inc/proto/MsgID.pb.h
+ /tmp/tmp.cAdQ96BiEw/db_server/src/network/SocketServer.cpp
+db_server/CMakeFiles/db_server.dir/src/network/baselink.cpp.o
+ ../db_server/./inc/Config.h
+ ../db_server/./inc/MesgHead.h
+ ../db_server/./inc/baselink.h
+ ../db_server/./inc/buffer.h
+ /tmp/tmp.cAdQ96BiEw/db_server/src/network/baselink.cpp
+db_server/CMakeFiles/db_server.dir/src/network/buffer.cpp.o
+ ../db_server/./inc/Config.h
+ ../db_server/./inc/buffer.h
+ /tmp/tmp.cAdQ96BiEw/db_server/src/network/buffer.cpp

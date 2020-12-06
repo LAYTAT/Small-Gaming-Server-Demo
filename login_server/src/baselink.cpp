@@ -314,3 +314,4 @@ char * baselink::GetPack(INT32 len)  //给的是包身，自己加包长
     return &t_str[t_msglen];
 }
 
+//INT32 baselink::Conn

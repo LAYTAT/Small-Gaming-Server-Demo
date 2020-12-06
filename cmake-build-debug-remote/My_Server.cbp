@@ -44,11 +44,9 @@
          <Option type="1" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/tmp/tmp.cAdQ96BiEw/./inc/proto" />
-            <Add directory="/tmp/tmp.cAdQ96BiEw/login_server/../inc" />
-            <Add directory="/tmp/tmp.cAdQ96BiEw/login_server/../inc/Components" />
-            <Add directory="/tmp/tmp.cAdQ96BiEw/login_server/../inc/proto" />
             <Add directory="/tmp/tmp.cAdQ96BiEw/login_server/./inc" />
+            <Add directory="/tmp/tmp.cAdQ96BiEw/login_server/./inc/Components" />
+            <Add directory="/tmp/tmp.cAdQ96BiEw/login_server/./inc/proto" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/mysql" />
             <Add directory="/usr/local/include" />
@@ -73,11 +71,9 @@
          <Option type="1" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/tmp/tmp.cAdQ96BiEw/./inc/proto" />
-            <Add directory="/tmp/tmp.cAdQ96BiEw/login_server/../inc" />
-            <Add directory="/tmp/tmp.cAdQ96BiEw/login_server/../inc/Components" />
-            <Add directory="/tmp/tmp.cAdQ96BiEw/login_server/../inc/proto" />
             <Add directory="/tmp/tmp.cAdQ96BiEw/login_server/./inc" />
+            <Add directory="/tmp/tmp.cAdQ96BiEw/login_server/./inc/Components" />
+            <Add directory="/tmp/tmp.cAdQ96BiEw/login_server/./inc/proto" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/mysql" />
             <Add directory="/usr/local/include" />
@@ -102,7 +98,6 @@
          <Option type="1" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/tmp/tmp.cAdQ96BiEw/./inc/proto" />
             <Add directory="/tmp/tmp.cAdQ96BiEw/db_server/./inc" />
             <Add directory="/tmp/tmp.cAdQ96BiEw/db_server/./inc/proto" />
             <Add directory="/usr/include" />
@@ -129,7 +124,6 @@
          <Option type="1" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/tmp/tmp.cAdQ96BiEw/./inc/proto" />
             <Add directory="/tmp/tmp.cAdQ96BiEw/db_server/./inc" />
             <Add directory="/tmp/tmp.cAdQ96BiEw/db_server/./inc/proto" />
             <Add directory="/usr/include" />
@@ -150,24 +144,6 @@
          </MakeCommands>
       </Target>
       </Build>
-      <Unit filename="/tmp/tmp.cAdQ96BiEw/Common/Cache/CacheManager.cpp">
-      </Unit>
-      <Unit filename="/tmp/tmp.cAdQ96BiEw/Common/Managers/ComponentsManager.cpp">
-      </Unit>
-      <Unit filename="/tmp/tmp.cAdQ96BiEw/Common/Managers/EntityManager.cpp">
-      </Unit>
-      <Unit filename="/tmp/tmp.cAdQ96BiEw/Common/Managers/ItemManager.cpp">
-      </Unit>
-      <Unit filename="/tmp/tmp.cAdQ96BiEw/Common/Managers/Player.cpp">
-      </Unit>
-      <Unit filename="/tmp/tmp.cAdQ96BiEw/Common/Managers/PlayerManager.cpp">
-      </Unit>
-      <Unit filename="/tmp/tmp.cAdQ96BiEw/Common/Systems/BagSystem.cpp">
-      </Unit>
-      <Unit filename="/tmp/tmp.cAdQ96BiEw/Common/Systems/TransformSystem.cpp">
-      </Unit>
-      <Unit filename="/tmp/tmp.cAdQ96BiEw/Common/db/MysqlManager.cpp">
-      </Unit>
       <Unit filename="/tmp/tmp.cAdQ96BiEw/db_server/src/EventSystem.cpp">
       </Unit>
       <Unit filename="/tmp/tmp.cAdQ96BiEw/db_server/src/main.cpp">
@@ -196,17 +172,45 @@
       </Unit>
       <Unit filename="/tmp/tmp.cAdQ96BiEw/inc/proto/MsgTest.pb.cc">
       </Unit>
+      <Unit filename="/tmp/tmp.cAdQ96BiEw/login_server/inc/proto/GameSpec.pb.cc">
+      </Unit>
+      <Unit filename="/tmp/tmp.cAdQ96BiEw/login_server/inc/proto/MSG_PLAYER_MOVE.pb.cc">
+      </Unit>
+      <Unit filename="/tmp/tmp.cAdQ96BiEw/login_server/inc/proto/MSG_PLAYER_REGISTER.pb.cc">
+      </Unit>
+      <Unit filename="/tmp/tmp.cAdQ96BiEw/login_server/inc/proto/MsgID.pb.cc">
+      </Unit>
+      <Unit filename="/tmp/tmp.cAdQ96BiEw/login_server/inc/proto/MsgTest.pb.cc">
+      </Unit>
+      <Unit filename="/tmp/tmp.cAdQ96BiEw/login_server/src/Cache/CacheManager.cpp">
+      </Unit>
       <Unit filename="/tmp/tmp.cAdQ96BiEw/login_server/src/Epoll.cpp">
       </Unit>
       <Unit filename="/tmp/tmp.cAdQ96BiEw/login_server/src/EventSystem.cpp">
+      </Unit>
+      <Unit filename="/tmp/tmp.cAdQ96BiEw/login_server/src/Managers/ComponentsManager.cpp">
+      </Unit>
+      <Unit filename="/tmp/tmp.cAdQ96BiEw/login_server/src/Managers/EntityManager.cpp">
+      </Unit>
+      <Unit filename="/tmp/tmp.cAdQ96BiEw/login_server/src/Managers/ItemManager.cpp">
+      </Unit>
+      <Unit filename="/tmp/tmp.cAdQ96BiEw/login_server/src/Managers/Player.cpp">
+      </Unit>
+      <Unit filename="/tmp/tmp.cAdQ96BiEw/login_server/src/Managers/PlayerManager.cpp">
       </Unit>
       <Unit filename="/tmp/tmp.cAdQ96BiEw/login_server/src/MesgHead.cpp">
       </Unit>
       <Unit filename="/tmp/tmp.cAdQ96BiEw/login_server/src/SocketServer.cpp">
       </Unit>
+      <Unit filename="/tmp/tmp.cAdQ96BiEw/login_server/src/Systems/BagSystem.cpp">
+      </Unit>
+      <Unit filename="/tmp/tmp.cAdQ96BiEw/login_server/src/Systems/TransformSystem.cpp">
+      </Unit>
       <Unit filename="/tmp/tmp.cAdQ96BiEw/login_server/src/baselink.cpp">
       </Unit>
       <Unit filename="/tmp/tmp.cAdQ96BiEw/login_server/src/buffer.cpp">
+      </Unit>
+      <Unit filename="/tmp/tmp.cAdQ96BiEw/login_server/src/db/MysqlManager.cpp">
       </Unit>
       <Unit filename="/tmp/tmp.cAdQ96BiEw/login_server/src/main.cpp">
       </Unit>

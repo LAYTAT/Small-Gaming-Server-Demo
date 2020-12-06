@@ -1,26 +1,11 @@
 syntax = "proto3";
-package DbMsg;
 
-enum MSGID
-{
-  MSG_BEGIN = 0;
-  MSG_TEST_ID = 1005 ;
-  MSG_PLAYER_MOVE_ID = 1006 ;
-  MSG_PLAYER_ATTACK_ID = 1007 ;
-  MSG_PLAYER_REGISTE_ID = 1008 ;
-  MSG_PLAYER_LOGIN = 9999;
-
-  MSG_ITEM_ADD = 10000;
-  MSG_ITEM_REMOVE = 10001;
-  MSG_PLAYER_FIND = 10002;
-  MSG_RANKLIST_SHOW = 10003;
-};
-
-
-message BagItem {
-  int32 itemID = 1; // itemid = 这个道具的id
-  int32 typeID = 2; // typeid = 装备、材料、货币任务道具等
-  int32 count = 3;  // 数量
-  int32 overly = 4; // 最大叠加数量,暂时在util.h中配置
-  bool binded = 5;
+// todo: 改为加盐
+message DbReq_User_Auth {
+  int32 hashedUsrId = 1; // 哈希后的玩家账号
+  int32 hashedUsrPwd = 2; // 哈希后的玩家密码
+}
+message DbRep_User_Auth {
+  bool isUserVerified = 1; // 用户数据是否正确
+  int32 errCode = 2; // GameSpec里的Errcode
 }

@@ -18,6 +18,7 @@ public:
     INT32 OpenServer(INT32 port, char* IP = NULL);  
     INT32 OpenClient(INT32 port);
     INT32 ConnectServer();   //连接到服务器，一般给客户端使用
+    INT32 ConnectDBServer(); //连接到DB服务器，给login server等使用
     INT32 AcceptSocket();   //接受连接，一般给服务器使用
     
     INT32 RecvData();  //收数据

@@ -28,6 +28,10 @@ EventSystem::~EventSystem()
 
 bool EventSystem::Init()
 {
+    // 连接到db server
+//    SocketServer::Instance()->
+
+
     // 绑定处理函数
     m_msgHandler->RegisterMsg(MSGID::MSG_TEST_ID, &EventSystem::PlayerRegister);
     m_msgHandler->RegisterMsg(MSGID::MSG_PLAYER_MOVE_ID, &EventSystem::PlayerMove);

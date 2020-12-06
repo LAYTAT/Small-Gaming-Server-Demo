@@ -23,6 +23,8 @@ public:
     void Dojob();
     inline void BroadCast(const MesgInfo& msghead, Message& msg){ m_epoll.BroadCast(msghead, msg); }
     inline void SendMsg(const MesgInfo& msghead, Message& msg, const INT32 connfd){ m_epoll.SendMsg(msghead, msg, connfd); }
+    INT32 ConnectDBServer();
+
 private:
     baselink* m_ListenSock;
     INT32  m_basefd;

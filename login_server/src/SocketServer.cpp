@@ -29,14 +29,14 @@ bool SocketServer::Init()
     }
     if (m_ListenSock->OpenServer(LOGIN_SERVER_PORT, LOGIN_SERVER_IP_ADDR) == -1)
     {
-        std::cout << "Open server failed!" << std::endl;
+        std::cout << "login server: Open server failed!" << std::endl;
         return false;
     }
     m_basefd = m_ListenSock->GetFD();
     //epoll
     if(m_epoll.Init() == false)
     {
-        std::cout << "Epoll add ev failed!" << std::endl;
+        std::cout << "login server error: Epoll add ev failed!" << std::endl;
         return false;
     }
     m_epoll.EpollAdd(m_basefd);
@@ -55,7 +55,7 @@ void SocketServer::Uinit()
 
 void SocketServer::Dojob()
 {
-    std::cout << "Server start!" << std::endl;
+    std::cout << "login server: Server start!" << std::endl;
     while (true)
     {
         INT32 ready_size = m_epoll.EpollWait();
@@ -140,4 +140,7 @@ void SocketServer::Dojob()
     }
 }
 
+//INT32 SocketServer::ConnectDBServer() {
+//    return m_ListenSock->ConnectDBServer();
+//}
 

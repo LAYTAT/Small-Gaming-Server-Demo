@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+enum SERVERTYPE
+{
+  DB_SERVER = 0;
+  GATE_SERVER = 1;
+  LOGIN_SERVER = 2;
+  MASTER_SERVER = 3;
+  GAME_SERVER = 4;
+}
