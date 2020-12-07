@@ -1,4 +1,4 @@
-#include "../../../db_server/inc/Epoll.h"
+#include "Epoll.h"
 
 Epoll::Epoll()
 {
@@ -112,8 +112,11 @@ void Epoll::BroadCast(const MesgInfo& msghead,Message& msg)
 
     for(auto it = m_linkmap.begin();it!=m_linkmap.end();it++)
     {
-       it->second->SendData(s_head_buffer, t_hl);
-       it->second->SendData(s_buffer,msg.ByteSizeLong());
+        if(it->second->GetFD() != this->connfd_db_server) {
+//            std::cout << "Login server broadcast once" << std::endl;
+            it->second->SendData(s_head_buffer, t_hl);
+            it->second->SendData(s_buffer,msg.ByteSizeLong());
+        }
     }
 
     return ;

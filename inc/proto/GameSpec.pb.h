@@ -37,7 +37,7 @@ namespace protobuf_GameSpec_2eproto {
 struct TableStruct {
   static const ::google::protobuf::internal::ParseTableField entries[];
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[15];
+  static const ::google::protobuf::internal::ParseTable schema[16];
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
   static const ::google::protobuf::uint32 offsets[];
@@ -73,6 +73,8 @@ void InitDefaultsRankReqImpl();
 void InitDefaultsRankReq();
 void InitDefaultsRankRspImpl();
 void InitDefaultsRankRsp();
+void InitDefaultsLoginRepImpl();
+void InitDefaultsLoginRep();
 inline void InitDefaults() {
   InitDefaultsBagItem();
   InitDefaultsEquipItem();
@@ -89,6 +91,7 @@ inline void InitDefaults() {
   InitDefaultsRemoveItemRsp();
   InitDefaultsRankReq();
   InitDefaultsRankRsp();
+  InitDefaultsLoginRep();
 }
 }  // namespace protobuf_GameSpec_2eproto
 namespace GameSpec {
@@ -122,6 +125,9 @@ extern CurrencyItemDefaultTypeInternal _CurrencyItem_default_instance_;
 class EquipItem;
 class EquipItemDefaultTypeInternal;
 extern EquipItemDefaultTypeInternal _EquipItem_default_instance_;
+class LoginRep;
+class LoginRepDefaultTypeInternal;
+extern LoginRepDefaultTypeInternal _LoginRep_default_instance_;
 class Players;
 class PlayersDefaultTypeInternal;
 extern PlayersDefaultTypeInternal _Players_default_instance_;
@@ -1935,6 +1941,127 @@ class RankRsp : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   friend struct ::protobuf_GameSpec_2eproto::TableStruct;
   friend void ::protobuf_GameSpec_2eproto::InitDefaultsRankRspImpl();
 };
+// -------------------------------------------------------------------
+
+class LoginRep : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:GameSpec.LoginRep) */ {
+ public:
+  LoginRep();
+  virtual ~LoginRep();
+
+  LoginRep(const LoginRep& from);
+
+  inline LoginRep& operator=(const LoginRep& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  LoginRep(LoginRep&& from) noexcept
+    : LoginRep() {
+    *this = ::std::move(from);
+  }
+
+  inline LoginRep& operator=(LoginRep&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const LoginRep& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const LoginRep* internal_default_instance() {
+    return reinterpret_cast<const LoginRep*>(
+               &_LoginRep_default_instance_);
+  }
+  static PROTOBUF_CONSTEXPR int const kIndexInFileMessages =
+    15;
+
+  void Swap(LoginRep* other);
+  friend void swap(LoginRep& a, LoginRep& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline LoginRep* New() const PROTOBUF_FINAL { return New(NULL); }
+
+  LoginRep* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  void CopyFrom(const LoginRep& from);
+  void MergeFrom(const LoginRep& from);
+  void Clear() PROTOBUF_FINAL;
+  bool IsInitialized() const PROTOBUF_FINAL;
+
+  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void InternalSwap(LoginRep* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // string gate_ip = 2;
+  void clear_gate_ip();
+  static const int kGateIpFieldNumber = 2;
+  const ::std::string& gate_ip() const;
+  void set_gate_ip(const ::std::string& value);
+  #if LANG_CXX11
+  void set_gate_ip(::std::string&& value);
+  #endif
+  void set_gate_ip(const char* value);
+  void set_gate_ip(const char* value, size_t size);
+  ::std::string* mutable_gate_ip();
+  ::std::string* release_gate_ip();
+  void set_allocated_gate_ip(::std::string* gate_ip);
+
+  // .GameSpec.ErrorCode errCode = 1;
+  void clear_errcode();
+  static const int kErrCodeFieldNumber = 1;
+  ::GameSpec::ErrorCode errcode() const;
+  void set_errcode(::GameSpec::ErrorCode value);
+
+  // int32 gate_port = 3;
+  void clear_gate_port();
+  static const int kGatePortFieldNumber = 3;
+  ::google::protobuf::int32 gate_port() const;
+  void set_gate_port(::google::protobuf::int32 value);
+
+  // @@protoc_insertion_point(class_scope:GameSpec.LoginRep)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::internal::ArenaStringPtr gate_ip_;
+  int errcode_;
+  ::google::protobuf::int32 gate_port_;
+  mutable int _cached_size_;
+  friend struct ::protobuf_GameSpec_2eproto::TableStruct;
+  friend void ::protobuf_GameSpec_2eproto::InitDefaultsLoginRepImpl();
+};
 // ===================================================================
 
 
@@ -3001,9 +3128,96 @@ RankRsp::mutable_exp() {
   return &exp_;
 }
 
+// -------------------------------------------------------------------
+
+// LoginRep
+
+// .GameSpec.ErrorCode errCode = 1;
+inline void LoginRep::clear_errcode() {
+  errcode_ = 0;
+}
+inline ::GameSpec::ErrorCode LoginRep::errcode() const {
+  // @@protoc_insertion_point(field_get:GameSpec.LoginRep.errCode)
+  return static_cast< ::GameSpec::ErrorCode >(errcode_);
+}
+inline void LoginRep::set_errcode(::GameSpec::ErrorCode value) {
+  
+  errcode_ = value;
+  // @@protoc_insertion_point(field_set:GameSpec.LoginRep.errCode)
+}
+
+// string gate_ip = 2;
+inline void LoginRep::clear_gate_ip() {
+  gate_ip_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& LoginRep::gate_ip() const {
+  // @@protoc_insertion_point(field_get:GameSpec.LoginRep.gate_ip)
+  return gate_ip_.GetNoArena();
+}
+inline void LoginRep::set_gate_ip(const ::std::string& value) {
+  
+  gate_ip_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:GameSpec.LoginRep.gate_ip)
+}
+#if LANG_CXX11
+inline void LoginRep::set_gate_ip(::std::string&& value) {
+  
+  gate_ip_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:GameSpec.LoginRep.gate_ip)
+}
+#endif
+inline void LoginRep::set_gate_ip(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  
+  gate_ip_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:GameSpec.LoginRep.gate_ip)
+}
+inline void LoginRep::set_gate_ip(const char* value, size_t size) {
+  
+  gate_ip_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:GameSpec.LoginRep.gate_ip)
+}
+inline ::std::string* LoginRep::mutable_gate_ip() {
+  
+  // @@protoc_insertion_point(field_mutable:GameSpec.LoginRep.gate_ip)
+  return gate_ip_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* LoginRep::release_gate_ip() {
+  // @@protoc_insertion_point(field_release:GameSpec.LoginRep.gate_ip)
+  
+  return gate_ip_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void LoginRep::set_allocated_gate_ip(::std::string* gate_ip) {
+  if (gate_ip != NULL) {
+    
+  } else {
+    
+  }
+  gate_ip_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), gate_ip);
+  // @@protoc_insertion_point(field_set_allocated:GameSpec.LoginRep.gate_ip)
+}
+
+// int32 gate_port = 3;
+inline void LoginRep::clear_gate_port() {
+  gate_port_ = 0;
+}
+inline ::google::protobuf::int32 LoginRep::gate_port() const {
+  // @@protoc_insertion_point(field_get:GameSpec.LoginRep.gate_port)
+  return gate_port_;
+}
+inline void LoginRep::set_gate_port(::google::protobuf::int32 value) {
+  
+  gate_port_ = value;
+  // @@protoc_insertion_point(field_set:GameSpec.LoginRep.gate_port)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

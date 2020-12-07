@@ -22,10 +22,15 @@ public static partial class MsgIDReflection {
   static MsgIDReflection() {
     byte[] descriptorData = global::System.Convert.FromBase64String(
         string.Concat(
-          "CgtNc2dJRC5wcm90byp4CgVNU0dJRBINCglNU0dfQkVHSU4QABIQCgtNU0df",
-          "VEVTVF9JRBDtBxIXChJNU0dfUExBWUVSX01PVkVfSUQQ7gcSGQoUTVNHX1BM",
-          "QVlFUl9BVFRBQ0tfSUQQ7wcSGgoVTVNHX1BMQVlFUl9SRUdJU1RFX0lEEPAH",
-          "YgZwcm90bzM="));
+          "CgtNc2dJRC5wcm90byrXAgoFTVNHSUQSDQoJTVNHX0JFR0lOEAASEAoLTVNH",
+          "X1RFU1RfSUQQ7QcSFwoSTVNHX1BMQVlFUl9NT1ZFX0lEEO4HEhkKFE1TR19Q",
+          "TEFZRVJfQVRUQUNLX0lEEO8HEhoKFU1TR19QTEFZRVJfUkVHSVNURV9JRBDw",
+          "BxIVChBNU0dfUExBWUVSX0xPR0lOEI9OEhEKDE1TR19JVEVNX0FERBCQThIU",
+          "Cg9NU0dfSVRFTV9SRU1PVkUQkU4SFAoPTVNHX1BMQVlFUl9GSU5EEJJOEhYK",
+          "EU1TR19SQU5LTElTVF9TSE9XEJNOEhoKFU1TR19MT0dJTl9BVVRIX1BBU1NF",
+          "RBCUThIaChVNU0dfTE9HSU5fQVVUSF9GQUlMRUQQlU4SGQoUTVNHX0xPR0lO",
+          "X1JFUVVFU1RfREIQlk4SHAoXTVNHX0xPR0lOX1JFUExJWV9DTElFTlQQl05i",
+          "BnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::MSGID), }, null));
@@ -40,6 +45,15 @@ public enum MSGID {
   [pbr::OriginalName("MSG_PLAYER_MOVE_ID")] MsgPlayerMoveId = 1006,
   [pbr::OriginalName("MSG_PLAYER_ATTACK_ID")] MsgPlayerAttackId = 1007,
   [pbr::OriginalName("MSG_PLAYER_REGISTE_ID")] MsgPlayerRegisteId = 1008,
+  [pbr::OriginalName("MSG_PLAYER_LOGIN")] MsgPlayerLogin = 9999,
+  [pbr::OriginalName("MSG_ITEM_ADD")] MsgItemAdd = 10000,
+  [pbr::OriginalName("MSG_ITEM_REMOVE")] MsgItemRemove = 10001,
+  [pbr::OriginalName("MSG_PLAYER_FIND")] MsgPlayerFind = 10002,
+  [pbr::OriginalName("MSG_RANKLIST_SHOW")] MsgRanklistShow = 10003,
+  [pbr::OriginalName("MSG_LOGIN_AUTH_PASSED")] MsgLoginAuthPassed = 10004,
+  [pbr::OriginalName("MSG_LOGIN_AUTH_FAILED")] MsgLoginAuthFailed = 10005,
+  [pbr::OriginalName("MSG_LOGIN_REQUEST_DB")] MsgLoginRequestDb = 10006,
+  [pbr::OriginalName("MSG_LOGIN_REPLIY_CLIENT")] MsgLoginRepliyClient = 10007,
 }
 
 #endregion

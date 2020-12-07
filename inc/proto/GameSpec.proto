@@ -96,3 +96,9 @@ enum ErrorCode
 	ERROR_ADD_ITEM_FAIL = 4;
     ERROR_PARSE_FAILED = 5;
 }
+
+message LoginRep{
+	ErrorCode errCode = 1;
+	string gate_ip = 2;
+	int32 gate_port = 3;
+}

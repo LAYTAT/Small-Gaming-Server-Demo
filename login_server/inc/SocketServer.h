@@ -23,7 +23,7 @@ public:
     void Dojob();
     inline void BroadCast(const MesgInfo& msghead, Message& msg){ m_epoll.BroadCast(msghead, msg); }
     inline void SendMsg(const MesgInfo& msghead, Message& msg, const INT32 connfd){ m_epoll.SendMsg(msghead, msg, connfd); }
-    inline void SendMsgToDB(const MesgInfo& msghead, Message& msg){ m_epoll.SendMsg(msghead, msg , m_ListenSock_DB->GetFD()); }
+    inline void SendMsgToDB(const MesgInfo& msghead, Message& msg){ std::cout << "Sending request to DB"  << std::endl; m_epoll.SendMsg(msghead, msg , m_ListenSock_DB->GetFD()); }
     INT32 ConnectDBServer();
 
 private:

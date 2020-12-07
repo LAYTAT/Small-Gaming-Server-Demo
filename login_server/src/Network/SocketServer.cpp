@@ -159,7 +159,8 @@ INT32 SocketServer::ConnectDBServer() {
         std::cout << "Epoll add fd_to_db failed \n" << std::endl;
         return 0;
     } else {
-        std::cout << "Epoll add fd_to_db success \n" << std::endl;
+        m_epoll.connfd_db_server = m_ListenSock_DB->GetFD();
+        std::cout << "Epoll add fd_to_db:" <<  m_ListenSock_DB->GetFD() <<" success \n" << std::endl;
     }
     return fd_2_db_temp;
 }

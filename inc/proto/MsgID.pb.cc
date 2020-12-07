@@ -46,16 +46,19 @@ void protobuf_RegisterTypes(const ::std::string&) {
 void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\013MsgID.proto*\346\001\n\005MSGID\022\r\n\tMSG_BEGIN\020\000\022\020"
+      "\n\013MsgID.proto*\327\002\n\005MSGID\022\r\n\tMSG_BEGIN\020\000\022\020"
       "\n\013MSG_TEST_ID\020\355\007\022\027\n\022MSG_PLAYER_MOVE_ID\020\356"
       "\007\022\031\n\024MSG_PLAYER_ATTACK_ID\020\357\007\022\032\n\025MSG_PLAY"
       "ER_REGISTE_ID\020\360\007\022\025\n\020MSG_PLAYER_LOGIN\020\217N\022"
       "\021\n\014MSG_ITEM_ADD\020\220N\022\024\n\017MSG_ITEM_REMOVE\020\221N"
       "\022\024\n\017MSG_PLAYER_FIND\020\222N\022\026\n\021MSG_RANKLIST_S"
-      "HOW\020\223Nb\006proto3"
+      "HOW\020\223N\022\032\n\025MSG_LOGIN_AUTH_PASSED\020\224N\022\032\n\025MS"
+      "G_LOGIN_AUTH_FAILED\020\225N\022\031\n\024MSG_LOGIN_REQU"
+      "EST_DB\020\226N\022\034\n\027MSG_LOGIN_REPLIY_CLIENT\020\227Nb"
+      "\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 254);
+      descriptor, 367);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "MsgID.proto", &protobuf_RegisterTypes);
 }
@@ -87,6 +90,10 @@ bool MSGID_IsValid(int value) {
     case 10001:
     case 10002:
     case 10003:
+    case 10004:
+    case 10005:
+    case 10006:
+    case 10007:
       return true;
     default:
       return false;

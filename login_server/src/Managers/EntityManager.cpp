@@ -126,7 +126,6 @@ bool EntityMgr::SetPlayer(GameSpec::Players ply)
         }
     }
 
-    //todo 优化成system根据id取出
     ((PlayerInfoComponent*)tmp->GetComponent(COMPONENTS_PLAYERINFO))->Init(ply.id(), ply.name(), ply.rank(), ply.exp());
     ItemContainerComponent* t_items = (ItemContainerComponent*)tmp->GetComponent(COMPONENTS_BAG);
 

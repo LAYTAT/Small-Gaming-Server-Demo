@@ -42,6 +42,10 @@ bool EventSystem::Init()
     m_msgHandler->RegisterMsg(MSGID::MSG_ITEM_REMOVE, &EventSystem::PlayerRemoveItem);
     m_msgHandler->RegisterMsg(MSGID::MSG_RANKLIST_SHOW, &EventSystem::GetRankList);
 
+    m_msgHandler->RegisterMsg( MSGID::MSG_LOGIN_AUTH_PASSED , &EventSystem::PlayerLoginPassed);
+    m_msgHandler->RegisterMsg( MSGID::MSG_LOGIN_AUTH_FAILED , &EventSystem::PlayerLoginFailed);
+
+
     return true;
 }
 
@@ -51,6 +55,35 @@ void EventSystem::Uinit()
     delete m_msgHandler;
     m_msgHandler = nullptr;
 }
+
+
+INT32 EventSystem::PlayerLoginPassed(const MesgInfo &stHead, const char *body,const INT32 len,const INT32 connfd)
+{
+    std::cout << "Player successfully logged in." << std::endl;
+    MesgInfo* loginRepMsgInfo = new MesgInfo();
+    loginRepMsgInfo->msgID = MSGID::MSG_LOGIN_REPLIY_CLIENT;
+    loginRepMsgInfo->uID = stHead.uID;
+    loginRepMsgInfo->packLen = sizeof(INT32) * 3;
+
+    GameSpec::LoginRep* loginRep = new GameSpec::LoginRep();
+    loginRep->set_gate_ip(GATE_SERVER_IP_ADDR);
+    loginRep->set_gate_port(GATE_SERVER_PORT);
+    loginRep->set_errcode(GameSpec::ErrorCode::ERROR_NO_ERROR);
+
+    SocketServer::Instance()->BroadCast(*loginRepMsgInfo, *loginRep);
+
+    delete loginRepMsgInfo;
+    delete loginRep;
+
+    return 1;
+}
+
+INT32 EventSystem::PlayerLoginFailed(const MesgInfo &stHead, const char *body,const INT32 len,const INT32 connfd)
+{
+    std::cout << "Player successfully logged in." << std::endl;
+}
+
+
 
 INT32 EventSystem::PlayerRegister(const MesgInfo &stHead, const char *body, const INT32 len,const INT32 connfd)
 {
@@ -172,7 +205,7 @@ INT32 EventSystem::PlayerLogin(const MesgInfo &stHead, const char *body,const IN
         SocketServer::Instance()->BroadCast(stHead,rsp);
         return 1;
     }
-    std::cout << "Redis login request name is : " << MySqlMgr::Instance()->GetPlayerId(loginReq.name()) << std::endl;
+   // std::cout << "Redis login request name is : " << MySqlMgr::Instance()->GetPlayerId(loginReq.name()) << std::endl;
     std::cout << "login_server  uid = " << stHead.uID << std::endl;
     std::cout << "name = " << loginReq.name() << std::endl;
     std::cout << "password = " << loginReq.password() << std::endl;
@@ -196,12 +229,17 @@ INT32 EventSystem::PlayerLogin(const MesgInfo &stHead, const char *body,const IN
     }
     rsp.set_errcode(GameSpec::ERROR_NO_ERROR);
 
+    // TODO：改为正式的账号密码验证
     SocketServer::Instance()->BroadCast(stHead, rsp);
     // 发送玩家信息到db server用于验证玩家身份
     DbReq_User_Auth dbReqUserAuth;
     dbReqUserAuth.set_hashedusrpwd(loginReq.password());
     dbReqUserAuth.set_hashedusrid(loginReq.name());
-    SocketServer::Instance()->SendMsgToDB(stHead, dbReqUserAuth);
+    MesgInfo* msgInfoToDB = new MesgInfo();
+    msgInfoToDB->msgID = MSGID::MSG_LOGIN_REQUEST_DB;
+    msgInfoToDB->packLen = sizeof(INT32) *3;
+    msgInfoToDB->uID = stHead.uID;
+    SocketServer::Instance()->SendMsgToDB(*msgInfoToDB, dbReqUserAuth);
 
     return 0;
 }
