@@ -86,7 +86,6 @@ INT32 EventSystem::PlayerLoginPassed(const MesgInfo &stHead, const char *body,co
         loginRep->set_errcode(GameSpec::ERROR_AUH_ERROR);
     }
 
-
     MesgInfo* loginRepMsgInfo = new MesgInfo();
     loginRepMsgInfo->msgID = MSGID::MSG_LOGIN_REPLIY_CLIENT;
     loginRepMsgInfo->uID = stHead.uID;

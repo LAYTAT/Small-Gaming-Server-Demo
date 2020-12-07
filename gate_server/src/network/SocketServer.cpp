@@ -10,12 +10,14 @@ INSTANCE_SINGLETON(SocketServer);
 SocketServer::SocketServer()
 {
     this->m_ListenSock = new baselink();
+    this->m_ListenSock_Game = new baselink();
     this->m_msg_head = new MesgHead();
 }
 
 SocketServer::~SocketServer()
 {
     delete m_msg_head;
+    delete m_ListenSock_Game;
     delete m_ListenSock;
 }
 
@@ -137,6 +139,25 @@ void SocketServer::Dojob()
             }
         }
     }
+}
+
+INT32 SocketServer::ConnectGameServer() {
+    // todo: add multiple game servers
+//    which_game_server = (which_game_server + 1) % total_game_server_nums;
+    INT32 fd_2_game_temp = m_ListenSock_Game -> ConnectGameServer(1);
+    if (fd_2_game_temp < 0) {
+        std::cout << "connect to game server failed" << std::endl;
+        return 0;
+    }
+    //    // Ìí¼Ólisten dbµÄsocketfd µ½epoll£»
+    if (m_epoll.EpollAdd( m_ListenSock_Game->GetFD()) < 0) {
+        std::cout << "Epoll add fd_to_db failed \n" << std::endl;
+        return 0;
+    } else {
+        m_epoll.connfd_game_server = m_ListenSock_Game->GetFD();
+        std::cout << "Epoll add fd_to_db:" <<  m_ListenSock_Game->GetFD() <<" success \n" << std::endl;
+    }
+    return fd_2_game_temp;
 }
 
 

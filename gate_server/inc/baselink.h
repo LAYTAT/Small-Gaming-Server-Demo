@@ -17,7 +17,8 @@ public:
     inline INT32 GetFD(){ return m_socketfd; }  
     INT32 OpenServer(INT32 port, char* IP = NULL);  
     INT32 OpenClient(INT32 port);
-    INT32 ConnectServer();   //连接到服务器，一般给客户端使用
+    INT32 ConnectGameServer(int which_game_server);   //连接到服务器，一般给客户端使用
+
     INT32 AcceptSocket();   //接受连接，一般给服务器使用
     
     INT32 RecvData();  //收数据

@@ -22,15 +22,16 @@ public static partial class MsgIDReflection {
   static MsgIDReflection() {
     byte[] descriptorData = global::System.Convert.FromBase64String(
         string.Concat(
-          "CgtNc2dJRC5wcm90byrXAgoFTVNHSUQSDQoJTVNHX0JFR0lOEAASEAoLTVNH",
+          "CgtNc2dJRC5wcm90byqhAwoFTVNHSUQSDQoJTVNHX0JFR0lOEAASEAoLTVNH",
           "X1RFU1RfSUQQ7QcSFwoSTVNHX1BMQVlFUl9NT1ZFX0lEEO4HEhkKFE1TR19Q",
           "TEFZRVJfQVRUQUNLX0lEEO8HEhoKFU1TR19QTEFZRVJfUkVHSVNURV9JRBDw",
           "BxIVChBNU0dfUExBWUVSX0xPR0lOEI9OEhEKDE1TR19JVEVNX0FERBCQThIU",
           "Cg9NU0dfSVRFTV9SRU1PVkUQkU4SFAoPTVNHX1BMQVlFUl9GSU5EEJJOEhYK",
           "EU1TR19SQU5LTElTVF9TSE9XEJNOEhoKFU1TR19MT0dJTl9BVVRIX1BBU1NF",
           "RBCUThIaChVNU0dfTE9HSU5fQVVUSF9GQUlMRUQQlU4SGQoUTVNHX0xPR0lO",
-          "X1JFUVVFU1RfREIQlk4SHAoXTVNHX0xPR0lOX1JFUExJWV9DTElFTlQQl05i",
-          "BnByb3RvMw=="));
+          "X1JFUVVFU1RfREIQlk4SHAoXTVNHX0xPR0lOX1JFUExJWV9DTElFTlQQl04S",
+          "JAofTVNHX1JFUVVFU1RfQkFHX0lURU1TX0ZST01fVVNFUhCYThIiCh1NU0df",
+          "UkVQTFlfQkFHX0lURU1TX0ZST01fR0FNRRCZTmIGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::MSGID), }, null));
@@ -54,6 +55,8 @@ public enum MSGID {
   [pbr::OriginalName("MSG_LOGIN_AUTH_FAILED")] MsgLoginAuthFailed = 10005,
   [pbr::OriginalName("MSG_LOGIN_REQUEST_DB")] MsgLoginRequestDb = 10006,
   [pbr::OriginalName("MSG_LOGIN_REPLIY_CLIENT")] MsgLoginRepliyClient = 10007,
+  [pbr::OriginalName("MSG_REQUEST_BAG_ITEMS_FROM_USER")] MsgRequestBagItemsFromUser = 10008,
+  [pbr::OriginalName("MSG_REPLY_BAG_ITEMS_FROM_GAME")] MsgReplyBagItemsFromGame = 10009,
 }
 
 #endregion

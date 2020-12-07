@@ -31,6 +31,7 @@ private:
     INT32  m_basefd;
     Epoll m_epoll;
     MesgHead* m_msg_head;
+
     baselink* m_ListenSock_DB;
 };
 

@@ -20,6 +20,7 @@ public :
     void EpollRemove(INT32 connfd);  //删除一个连接
     void BroadCast(const MesgInfo& msghead, Message& msg);  //广播消息
     void SendMsg(const MesgInfo& msghead, Message& msg, const INT32 connfd); //发送消息给某个用户
+    INT32 connfd_game_server;
 
 private:
     INT32 m_epfd;

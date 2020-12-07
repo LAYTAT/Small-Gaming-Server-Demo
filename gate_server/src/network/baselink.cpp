@@ -194,27 +194,34 @@ INT32 baselink::OpenClient(INT32 port)
     return 0;
 }
 
-INT32 baselink::ConnectServer()
+INT32 baselink::ConnectGameServer(int which_game_server)
 {
+    // todo： 添加game server的多开连接
+
+    m_socketfd = socket(AF_INET, SOCK_STREAM , 0);
+
     if (m_socketfd < 0)
     {
-        std::cout << "socket fd is wrong!" << std::endl;
+        std::cout << "gate server conect game server: socket fd is wrong!" << std::endl;
         return -1;
     }
+
     std::cout << "m_socketfd:" << m_socketfd << std::endl;
     //connect
 	sockaddr_in serveraddr;
+
 	serveraddr.sin_family = AF_INET;
-	serveraddr.sin_port = htons(DB_SERVER_PORT);
-	serveraddr.sin_addr.s_addr = inet_addr(DB_SERVER_IP_ADDR);
+    // todo： 添加game server的多开连接
+	serveraddr.sin_port = htons(GAME_SERVER_PORT);
+	serveraddr.sin_addr.s_addr = inet_addr(GAME_SERVER_IP_ADDR);
 	if (connect(m_socketfd, (sockaddr*)&serveraddr, sizeof(serveraddr)) < 0)
 	{
-		std::cout << "clien connect failed!" << std::endl;
+		std::cout << "gate server conect game server: connect failed !" << std::endl;
 		return -1;
 	}
 
-	std::cout << "connect success ~.~" << std::endl;
-    return 0;
+	std::cout << "gate server conect game server: connect success !" << std::endl;
+    return m_socketfd;
 }
 
 INT32 baselink::AcceptSocket()
