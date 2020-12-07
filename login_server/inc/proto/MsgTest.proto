@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-message MsgTest{
-	int32 id = 1;
-	int32 uid = 2;
-	string msg = 3;
-}

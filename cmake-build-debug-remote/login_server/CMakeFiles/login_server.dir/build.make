@@ -141,124 +141,147 @@ login_server/CMakeFiles/login_server.dir/src/Cache/CacheManager.cpp.o.provides: 
 
 login_server/CMakeFiles/login_server.dir/src/Cache/CacheManager.cpp.o.provides.build: login_server/CMakeFiles/login_server.dir/src/Cache/CacheManager.cpp.o
 
-login_server/CMakeFiles/login_server.dir/inc/proto/GameSpec.pb.cc.o: login_server/CMakeFiles/login_server.dir/flags.make
-login_server/CMakeFiles/login_server.dir/inc/proto/GameSpec.pb.cc.o: ../login_server/inc/proto/GameSpec.pb.cc
+login_server/CMakeFiles/login_server.dir/__/inc/proto/GameSpec.pb.cc.o: login_server/CMakeFiles/login_server.dir/flags.make
+login_server/CMakeFiles/login_server.dir/__/inc/proto/GameSpec.pb.cc.o: ../inc/proto/GameSpec.pb.cc
 	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object login_server/CMakeFiles/login_server.dir/inc/proto/GameSpec.pb.cc.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/inc/proto/GameSpec.pb.cc.o -c /tmp/tmp.cAdQ96BiEw/login_server/inc/proto/GameSpec.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object login_server/CMakeFiles/login_server.dir/__/inc/proto/GameSpec.pb.cc.o"
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/__/inc/proto/GameSpec.pb.cc.o -c /tmp/tmp.cAdQ96BiEw/inc/proto/GameSpec.pb.cc
 
-login_server/CMakeFiles/login_server.dir/inc/proto/GameSpec.pb.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/login_server.dir/inc/proto/GameSpec.pb.cc.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/login_server/inc/proto/GameSpec.pb.cc > CMakeFiles/login_server.dir/inc/proto/GameSpec.pb.cc.i
+login_server/CMakeFiles/login_server.dir/__/inc/proto/GameSpec.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/login_server.dir/__/inc/proto/GameSpec.pb.cc.i"
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/inc/proto/GameSpec.pb.cc > CMakeFiles/login_server.dir/__/inc/proto/GameSpec.pb.cc.i
 
-login_server/CMakeFiles/login_server.dir/inc/proto/GameSpec.pb.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/login_server.dir/inc/proto/GameSpec.pb.cc.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/login_server/inc/proto/GameSpec.pb.cc -o CMakeFiles/login_server.dir/inc/proto/GameSpec.pb.cc.s
+login_server/CMakeFiles/login_server.dir/__/inc/proto/GameSpec.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/login_server.dir/__/inc/proto/GameSpec.pb.cc.s"
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/inc/proto/GameSpec.pb.cc -o CMakeFiles/login_server.dir/__/inc/proto/GameSpec.pb.cc.s
 
-login_server/CMakeFiles/login_server.dir/inc/proto/GameSpec.pb.cc.o.requires:
-.PHONY : login_server/CMakeFiles/login_server.dir/inc/proto/GameSpec.pb.cc.o.requires
+login_server/CMakeFiles/login_server.dir/__/inc/proto/GameSpec.pb.cc.o.requires:
+.PHONY : login_server/CMakeFiles/login_server.dir/__/inc/proto/GameSpec.pb.cc.o.requires
 
-login_server/CMakeFiles/login_server.dir/inc/proto/GameSpec.pb.cc.o.provides: login_server/CMakeFiles/login_server.dir/inc/proto/GameSpec.pb.cc.o.requires
-	$(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/inc/proto/GameSpec.pb.cc.o.provides.build
-.PHONY : login_server/CMakeFiles/login_server.dir/inc/proto/GameSpec.pb.cc.o.provides
+login_server/CMakeFiles/login_server.dir/__/inc/proto/GameSpec.pb.cc.o.provides: login_server/CMakeFiles/login_server.dir/__/inc/proto/GameSpec.pb.cc.o.requires
+	$(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/__/inc/proto/GameSpec.pb.cc.o.provides.build
+.PHONY : login_server/CMakeFiles/login_server.dir/__/inc/proto/GameSpec.pb.cc.o.provides
 
-login_server/CMakeFiles/login_server.dir/inc/proto/GameSpec.pb.cc.o.provides.build: login_server/CMakeFiles/login_server.dir/inc/proto/GameSpec.pb.cc.o
+login_server/CMakeFiles/login_server.dir/__/inc/proto/GameSpec.pb.cc.o.provides.build: login_server/CMakeFiles/login_server.dir/__/inc/proto/GameSpec.pb.cc.o
 
-login_server/CMakeFiles/login_server.dir/inc/proto/MsgID.pb.cc.o: login_server/CMakeFiles/login_server.dir/flags.make
-login_server/CMakeFiles/login_server.dir/inc/proto/MsgID.pb.cc.o: ../login_server/inc/proto/MsgID.pb.cc
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgID.pb.cc.o: login_server/CMakeFiles/login_server.dir/flags.make
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgID.pb.cc.o: ../inc/proto/MsgID.pb.cc
 	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object login_server/CMakeFiles/login_server.dir/inc/proto/MsgID.pb.cc.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/inc/proto/MsgID.pb.cc.o -c /tmp/tmp.cAdQ96BiEw/login_server/inc/proto/MsgID.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgID.pb.cc.o"
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/__/inc/proto/MsgID.pb.cc.o -c /tmp/tmp.cAdQ96BiEw/inc/proto/MsgID.pb.cc
 
-login_server/CMakeFiles/login_server.dir/inc/proto/MsgID.pb.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/login_server.dir/inc/proto/MsgID.pb.cc.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/login_server/inc/proto/MsgID.pb.cc > CMakeFiles/login_server.dir/inc/proto/MsgID.pb.cc.i
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgID.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/login_server.dir/__/inc/proto/MsgID.pb.cc.i"
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/inc/proto/MsgID.pb.cc > CMakeFiles/login_server.dir/__/inc/proto/MsgID.pb.cc.i
 
-login_server/CMakeFiles/login_server.dir/inc/proto/MsgID.pb.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/login_server.dir/inc/proto/MsgID.pb.cc.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/login_server/inc/proto/MsgID.pb.cc -o CMakeFiles/login_server.dir/inc/proto/MsgID.pb.cc.s
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgID.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/login_server.dir/__/inc/proto/MsgID.pb.cc.s"
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/inc/proto/MsgID.pb.cc -o CMakeFiles/login_server.dir/__/inc/proto/MsgID.pb.cc.s
 
-login_server/CMakeFiles/login_server.dir/inc/proto/MsgID.pb.cc.o.requires:
-.PHONY : login_server/CMakeFiles/login_server.dir/inc/proto/MsgID.pb.cc.o.requires
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgID.pb.cc.o.requires:
+.PHONY : login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgID.pb.cc.o.requires
 
-login_server/CMakeFiles/login_server.dir/inc/proto/MsgID.pb.cc.o.provides: login_server/CMakeFiles/login_server.dir/inc/proto/MsgID.pb.cc.o.requires
-	$(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/inc/proto/MsgID.pb.cc.o.provides.build
-.PHONY : login_server/CMakeFiles/login_server.dir/inc/proto/MsgID.pb.cc.o.provides
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgID.pb.cc.o.provides: login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgID.pb.cc.o.requires
+	$(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgID.pb.cc.o.provides.build
+.PHONY : login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgID.pb.cc.o.provides
 
-login_server/CMakeFiles/login_server.dir/inc/proto/MsgID.pb.cc.o.provides.build: login_server/CMakeFiles/login_server.dir/inc/proto/MsgID.pb.cc.o
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgID.pb.cc.o.provides.build: login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgID.pb.cc.o
 
-login_server/CMakeFiles/login_server.dir/inc/proto/MsgTest.pb.cc.o: login_server/CMakeFiles/login_server.dir/flags.make
-login_server/CMakeFiles/login_server.dir/inc/proto/MsgTest.pb.cc.o: ../login_server/inc/proto/MsgTest.pb.cc
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgServerID.pb.cc.o: login_server/CMakeFiles/login_server.dir/flags.make
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgServerID.pb.cc.o: ../inc/proto/MsgServerID.pb.cc
 	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_7)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object login_server/CMakeFiles/login_server.dir/inc/proto/MsgTest.pb.cc.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/inc/proto/MsgTest.pb.cc.o -c /tmp/tmp.cAdQ96BiEw/login_server/inc/proto/MsgTest.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgServerID.pb.cc.o"
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/__/inc/proto/MsgServerID.pb.cc.o -c /tmp/tmp.cAdQ96BiEw/inc/proto/MsgServerID.pb.cc
 
-login_server/CMakeFiles/login_server.dir/inc/proto/MsgTest.pb.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/login_server.dir/inc/proto/MsgTest.pb.cc.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/login_server/inc/proto/MsgTest.pb.cc > CMakeFiles/login_server.dir/inc/proto/MsgTest.pb.cc.i
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgServerID.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/login_server.dir/__/inc/proto/MsgServerID.pb.cc.i"
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/inc/proto/MsgServerID.pb.cc > CMakeFiles/login_server.dir/__/inc/proto/MsgServerID.pb.cc.i
 
-login_server/CMakeFiles/login_server.dir/inc/proto/MsgTest.pb.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/login_server.dir/inc/proto/MsgTest.pb.cc.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/login_server/inc/proto/MsgTest.pb.cc -o CMakeFiles/login_server.dir/inc/proto/MsgTest.pb.cc.s
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgServerID.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/login_server.dir/__/inc/proto/MsgServerID.pb.cc.s"
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/inc/proto/MsgServerID.pb.cc -o CMakeFiles/login_server.dir/__/inc/proto/MsgServerID.pb.cc.s
 
-login_server/CMakeFiles/login_server.dir/inc/proto/MsgTest.pb.cc.o.requires:
-.PHONY : login_server/CMakeFiles/login_server.dir/inc/proto/MsgTest.pb.cc.o.requires
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgServerID.pb.cc.o.requires:
+.PHONY : login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgServerID.pb.cc.o.requires
 
-login_server/CMakeFiles/login_server.dir/inc/proto/MsgTest.pb.cc.o.provides: login_server/CMakeFiles/login_server.dir/inc/proto/MsgTest.pb.cc.o.requires
-	$(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/inc/proto/MsgTest.pb.cc.o.provides.build
-.PHONY : login_server/CMakeFiles/login_server.dir/inc/proto/MsgTest.pb.cc.o.provides
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgServerID.pb.cc.o.provides: login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgServerID.pb.cc.o.requires
+	$(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgServerID.pb.cc.o.provides.build
+.PHONY : login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgServerID.pb.cc.o.provides
 
-login_server/CMakeFiles/login_server.dir/inc/proto/MsgTest.pb.cc.o.provides.build: login_server/CMakeFiles/login_server.dir/inc/proto/MsgTest.pb.cc.o
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgServerID.pb.cc.o.provides.build: login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgServerID.pb.cc.o
 
-login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_MOVE.pb.cc.o: login_server/CMakeFiles/login_server.dir/flags.make
-login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_MOVE.pb.cc.o: ../login_server/inc/proto/MSG_PLAYER_MOVE.pb.cc
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.o: login_server/CMakeFiles/login_server.dir/flags.make
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.o: ../inc/proto/MsgTest.pb.cc
 	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_8)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_MOVE.pb.cc.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_MOVE.pb.cc.o -c /tmp/tmp.cAdQ96BiEw/login_server/inc/proto/MSG_PLAYER_MOVE.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.o"
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.o -c /tmp/tmp.cAdQ96BiEw/inc/proto/MsgTest.pb.cc
 
-login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_MOVE.pb.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_MOVE.pb.cc.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/login_server/inc/proto/MSG_PLAYER_MOVE.pb.cc > CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_MOVE.pb.cc.i
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.i"
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/inc/proto/MsgTest.pb.cc > CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.i
 
-login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_MOVE.pb.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_MOVE.pb.cc.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/login_server/inc/proto/MSG_PLAYER_MOVE.pb.cc -o CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_MOVE.pb.cc.s
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.s"
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/inc/proto/MsgTest.pb.cc -o CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.s
 
-login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_MOVE.pb.cc.o.requires:
-.PHONY : login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_MOVE.pb.cc.o.requires
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.o.requires:
+.PHONY : login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.o.requires
 
-login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_MOVE.pb.cc.o.provides: login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_MOVE.pb.cc.o.requires
-	$(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_MOVE.pb.cc.o.provides.build
-.PHONY : login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_MOVE.pb.cc.o.provides
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.o.provides: login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.o.requires
+	$(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.o.provides.build
+.PHONY : login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.o.provides
 
-login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_MOVE.pb.cc.o.provides.build: login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_MOVE.pb.cc.o
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.o.provides.build: login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.o
 
-login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o: login_server/CMakeFiles/login_server.dir/flags.make
-login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o: ../login_server/inc/proto/MSG_PLAYER_REGISTER.pb.cc
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o: login_server/CMakeFiles/login_server.dir/flags.make
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o: ../inc/proto/MSG_PLAYER_MOVE.pb.cc
 	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_9)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o -c /tmp/tmp.cAdQ96BiEw/login_server/inc/proto/MSG_PLAYER_REGISTER.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o"
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o -c /tmp/tmp.cAdQ96BiEw/inc/proto/MSG_PLAYER_MOVE.pb.cc
 
-login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_REGISTER.pb.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_REGISTER.pb.cc.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/login_server/inc/proto/MSG_PLAYER_REGISTER.pb.cc > CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_REGISTER.pb.cc.i
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.i"
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/inc/proto/MSG_PLAYER_MOVE.pb.cc > CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.i
 
-login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_REGISTER.pb.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_REGISTER.pb.cc.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/login_server/inc/proto/MSG_PLAYER_REGISTER.pb.cc -o CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_REGISTER.pb.cc.s
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.s"
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/inc/proto/MSG_PLAYER_MOVE.pb.cc -o CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.s
 
-login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o.requires:
-.PHONY : login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o.requires
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o.requires:
+.PHONY : login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o.requires
 
-login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o.provides: login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o.requires
-	$(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o.provides.build
-.PHONY : login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o.provides
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o.provides: login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o.requires
+	$(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o.provides.build
+.PHONY : login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o.provides
 
-login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o.provides.build: login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o.provides.build: login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o
+
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o: login_server/CMakeFiles/login_server.dir/flags.make
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o: ../inc/proto/MSG_PLAYER_REGISTER.pb.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o"
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o -c /tmp/tmp.cAdQ96BiEw/inc/proto/MSG_PLAYER_REGISTER.pb.cc
+
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.i"
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/inc/proto/MSG_PLAYER_REGISTER.pb.cc > CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.i
+
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.s"
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/inc/proto/MSG_PLAYER_REGISTER.pb.cc -o CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.s
+
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o.requires:
+.PHONY : login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o.requires
+
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o.provides: login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o.requires
+	$(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o.provides.build
+.PHONY : login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o.provides
+
+login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o.provides.build: login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o
 
 login_server/CMakeFiles/login_server.dir/src/Managers/ComponentsManager.cpp.o: login_server/CMakeFiles/login_server.dir/flags.make
 login_server/CMakeFiles/login_server.dir/src/Managers/ComponentsManager.cpp.o: ../login_server/src/Managers/ComponentsManager.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object login_server/CMakeFiles/login_server.dir/src/Managers/ComponentsManager.cpp.o"
 	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/src/Managers/ComponentsManager.cpp.o -c /tmp/tmp.cAdQ96BiEw/login_server/src/Managers/ComponentsManager.cpp
 
@@ -281,7 +304,7 @@ login_server/CMakeFiles/login_server.dir/src/Managers/ComponentsManager.cpp.o.pr
 
 login_server/CMakeFiles/login_server.dir/src/Managers/EntityManager.cpp.o: login_server/CMakeFiles/login_server.dir/flags.make
 login_server/CMakeFiles/login_server.dir/src/Managers/EntityManager.cpp.o: ../login_server/src/Managers/EntityManager.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object login_server/CMakeFiles/login_server.dir/src/Managers/EntityManager.cpp.o"
 	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/src/Managers/EntityManager.cpp.o -c /tmp/tmp.cAdQ96BiEw/login_server/src/Managers/EntityManager.cpp
 
@@ -304,7 +327,7 @@ login_server/CMakeFiles/login_server.dir/src/Managers/EntityManager.cpp.o.provid
 
 login_server/CMakeFiles/login_server.dir/src/Managers/ItemManager.cpp.o: login_server/CMakeFiles/login_server.dir/flags.make
 login_server/CMakeFiles/login_server.dir/src/Managers/ItemManager.cpp.o: ../login_server/src/Managers/ItemManager.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object login_server/CMakeFiles/login_server.dir/src/Managers/ItemManager.cpp.o"
 	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/src/Managers/ItemManager.cpp.o -c /tmp/tmp.cAdQ96BiEw/login_server/src/Managers/ItemManager.cpp
 
@@ -327,7 +350,7 @@ login_server/CMakeFiles/login_server.dir/src/Managers/ItemManager.cpp.o.provides
 
 login_server/CMakeFiles/login_server.dir/src/Managers/Player.cpp.o: login_server/CMakeFiles/login_server.dir/flags.make
 login_server/CMakeFiles/login_server.dir/src/Managers/Player.cpp.o: ../login_server/src/Managers/Player.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object login_server/CMakeFiles/login_server.dir/src/Managers/Player.cpp.o"
 	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/src/Managers/Player.cpp.o -c /tmp/tmp.cAdQ96BiEw/login_server/src/Managers/Player.cpp
 
@@ -350,7 +373,7 @@ login_server/CMakeFiles/login_server.dir/src/Managers/Player.cpp.o.provides.buil
 
 login_server/CMakeFiles/login_server.dir/src/Managers/PlayerManager.cpp.o: login_server/CMakeFiles/login_server.dir/flags.make
 login_server/CMakeFiles/login_server.dir/src/Managers/PlayerManager.cpp.o: ../login_server/src/Managers/PlayerManager.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object login_server/CMakeFiles/login_server.dir/src/Managers/PlayerManager.cpp.o"
 	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/src/Managers/PlayerManager.cpp.o -c /tmp/tmp.cAdQ96BiEw/login_server/src/Managers/PlayerManager.cpp
 
@@ -373,7 +396,7 @@ login_server/CMakeFiles/login_server.dir/src/Managers/PlayerManager.cpp.o.provid
 
 login_server/CMakeFiles/login_server.dir/src/Systems/BagSystem.cpp.o: login_server/CMakeFiles/login_server.dir/flags.make
 login_server/CMakeFiles/login_server.dir/src/Systems/BagSystem.cpp.o: ../login_server/src/Systems/BagSystem.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object login_server/CMakeFiles/login_server.dir/src/Systems/BagSystem.cpp.o"
 	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/src/Systems/BagSystem.cpp.o -c /tmp/tmp.cAdQ96BiEw/login_server/src/Systems/BagSystem.cpp
 
@@ -396,7 +419,7 @@ login_server/CMakeFiles/login_server.dir/src/Systems/BagSystem.cpp.o.provides.bu
 
 login_server/CMakeFiles/login_server.dir/src/Systems/TransformSystem.cpp.o: login_server/CMakeFiles/login_server.dir/flags.make
 login_server/CMakeFiles/login_server.dir/src/Systems/TransformSystem.cpp.o: ../login_server/src/Systems/TransformSystem.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object login_server/CMakeFiles/login_server.dir/src/Systems/TransformSystem.cpp.o"
 	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/src/Systems/TransformSystem.cpp.o -c /tmp/tmp.cAdQ96BiEw/login_server/src/Systems/TransformSystem.cpp
 
@@ -419,7 +442,7 @@ login_server/CMakeFiles/login_server.dir/src/Systems/TransformSystem.cpp.o.provi
 
 login_server/CMakeFiles/login_server.dir/src/Network/baselink.cpp.o: login_server/CMakeFiles/login_server.dir/flags.make
 login_server/CMakeFiles/login_server.dir/src/Network/baselink.cpp.o: ../login_server/src/Network/baselink.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object login_server/CMakeFiles/login_server.dir/src/Network/baselink.cpp.o"
 	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/src/Network/baselink.cpp.o -c /tmp/tmp.cAdQ96BiEw/login_server/src/Network/baselink.cpp
 
@@ -442,7 +465,7 @@ login_server/CMakeFiles/login_server.dir/src/Network/baselink.cpp.o.provides.bui
 
 login_server/CMakeFiles/login_server.dir/src/Network/buffer.cpp.o: login_server/CMakeFiles/login_server.dir/flags.make
 login_server/CMakeFiles/login_server.dir/src/Network/buffer.cpp.o: ../login_server/src/Network/buffer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object login_server/CMakeFiles/login_server.dir/src/Network/buffer.cpp.o"
 	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/src/Network/buffer.cpp.o -c /tmp/tmp.cAdQ96BiEw/login_server/src/Network/buffer.cpp
 
@@ -465,7 +488,7 @@ login_server/CMakeFiles/login_server.dir/src/Network/buffer.cpp.o.provides.build
 
 login_server/CMakeFiles/login_server.dir/src/Network/Epoll.cpp.o: login_server/CMakeFiles/login_server.dir/flags.make
 login_server/CMakeFiles/login_server.dir/src/Network/Epoll.cpp.o: ../login_server/src/Network/Epoll.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object login_server/CMakeFiles/login_server.dir/src/Network/Epoll.cpp.o"
 	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/src/Network/Epoll.cpp.o -c /tmp/tmp.cAdQ96BiEw/login_server/src/Network/Epoll.cpp
 
@@ -488,7 +511,7 @@ login_server/CMakeFiles/login_server.dir/src/Network/Epoll.cpp.o.provides.build:
 
 login_server/CMakeFiles/login_server.dir/src/Network/MesgHead.cpp.o: login_server/CMakeFiles/login_server.dir/flags.make
 login_server/CMakeFiles/login_server.dir/src/Network/MesgHead.cpp.o: ../login_server/src/Network/MesgHead.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object login_server/CMakeFiles/login_server.dir/src/Network/MesgHead.cpp.o"
 	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/src/Network/MesgHead.cpp.o -c /tmp/tmp.cAdQ96BiEw/login_server/src/Network/MesgHead.cpp
 
@@ -511,7 +534,7 @@ login_server/CMakeFiles/login_server.dir/src/Network/MesgHead.cpp.o.provides.bui
 
 login_server/CMakeFiles/login_server.dir/src/Network/SocketServer.cpp.o: login_server/CMakeFiles/login_server.dir/flags.make
 login_server/CMakeFiles/login_server.dir/src/Network/SocketServer.cpp.o: ../login_server/src/Network/SocketServer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object login_server/CMakeFiles/login_server.dir/src/Network/SocketServer.cpp.o"
 	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/src/Network/SocketServer.cpp.o -c /tmp/tmp.cAdQ96BiEw/login_server/src/Network/SocketServer.cpp
 
@@ -538,11 +561,12 @@ login_server_OBJECTS = \
 "CMakeFiles/login_server.dir/src/main.cpp.o" \
 "CMakeFiles/login_server.dir/src/db/MysqlManager.cpp.o" \
 "CMakeFiles/login_server.dir/src/Cache/CacheManager.cpp.o" \
-"CMakeFiles/login_server.dir/inc/proto/GameSpec.pb.cc.o" \
-"CMakeFiles/login_server.dir/inc/proto/MsgID.pb.cc.o" \
-"CMakeFiles/login_server.dir/inc/proto/MsgTest.pb.cc.o" \
-"CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_MOVE.pb.cc.o" \
-"CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o" \
+"CMakeFiles/login_server.dir/__/inc/proto/GameSpec.pb.cc.o" \
+"CMakeFiles/login_server.dir/__/inc/proto/MsgID.pb.cc.o" \
+"CMakeFiles/login_server.dir/__/inc/proto/MsgServerID.pb.cc.o" \
+"CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.o" \
+"CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o" \
+"CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o" \
 "CMakeFiles/login_server.dir/src/Managers/ComponentsManager.cpp.o" \
 "CMakeFiles/login_server.dir/src/Managers/EntityManager.cpp.o" \
 "CMakeFiles/login_server.dir/src/Managers/ItemManager.cpp.o" \
@@ -563,11 +587,12 @@ login_server/login_server: login_server/CMakeFiles/login_server.dir/src/EventSys
 login_server/login_server: login_server/CMakeFiles/login_server.dir/src/main.cpp.o
 login_server/login_server: login_server/CMakeFiles/login_server.dir/src/db/MysqlManager.cpp.o
 login_server/login_server: login_server/CMakeFiles/login_server.dir/src/Cache/CacheManager.cpp.o
-login_server/login_server: login_server/CMakeFiles/login_server.dir/inc/proto/GameSpec.pb.cc.o
-login_server/login_server: login_server/CMakeFiles/login_server.dir/inc/proto/MsgID.pb.cc.o
-login_server/login_server: login_server/CMakeFiles/login_server.dir/inc/proto/MsgTest.pb.cc.o
-login_server/login_server: login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_MOVE.pb.cc.o
-login_server/login_server: login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o
+login_server/login_server: login_server/CMakeFiles/login_server.dir/__/inc/proto/GameSpec.pb.cc.o
+login_server/login_server: login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgID.pb.cc.o
+login_server/login_server: login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgServerID.pb.cc.o
+login_server/login_server: login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.o
+login_server/login_server: login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o
+login_server/login_server: login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o
 login_server/login_server: login_server/CMakeFiles/login_server.dir/src/Managers/ComponentsManager.cpp.o
 login_server/login_server: login_server/CMakeFiles/login_server.dir/src/Managers/EntityManager.cpp.o
 login_server/login_server: login_server/CMakeFiles/login_server.dir/src/Managers/ItemManager.cpp.o
@@ -593,11 +618,12 @@ login_server/CMakeFiles/login_server.dir/requires: login_server/CMakeFiles/login
 login_server/CMakeFiles/login_server.dir/requires: login_server/CMakeFiles/login_server.dir/src/main.cpp.o.requires
 login_server/CMakeFiles/login_server.dir/requires: login_server/CMakeFiles/login_server.dir/src/db/MysqlManager.cpp.o.requires
 login_server/CMakeFiles/login_server.dir/requires: login_server/CMakeFiles/login_server.dir/src/Cache/CacheManager.cpp.o.requires
-login_server/CMakeFiles/login_server.dir/requires: login_server/CMakeFiles/login_server.dir/inc/proto/GameSpec.pb.cc.o.requires
-login_server/CMakeFiles/login_server.dir/requires: login_server/CMakeFiles/login_server.dir/inc/proto/MsgID.pb.cc.o.requires
-login_server/CMakeFiles/login_server.dir/requires: login_server/CMakeFiles/login_server.dir/inc/proto/MsgTest.pb.cc.o.requires
-login_server/CMakeFiles/login_server.dir/requires: login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_MOVE.pb.cc.o.requires
-login_server/CMakeFiles/login_server.dir/requires: login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o.requires
+login_server/CMakeFiles/login_server.dir/requires: login_server/CMakeFiles/login_server.dir/__/inc/proto/GameSpec.pb.cc.o.requires
+login_server/CMakeFiles/login_server.dir/requires: login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgID.pb.cc.o.requires
+login_server/CMakeFiles/login_server.dir/requires: login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgServerID.pb.cc.o.requires
+login_server/CMakeFiles/login_server.dir/requires: login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.o.requires
+login_server/CMakeFiles/login_server.dir/requires: login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o.requires
+login_server/CMakeFiles/login_server.dir/requires: login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o.requires
 login_server/CMakeFiles/login_server.dir/requires: login_server/CMakeFiles/login_server.dir/src/Managers/ComponentsManager.cpp.o.requires
 login_server/CMakeFiles/login_server.dir/requires: login_server/CMakeFiles/login_server.dir/src/Managers/EntityManager.cpp.o.requires
 login_server/CMakeFiles/login_server.dir/requires: login_server/CMakeFiles/login_server.dir/src/Managers/ItemManager.cpp.o.requires

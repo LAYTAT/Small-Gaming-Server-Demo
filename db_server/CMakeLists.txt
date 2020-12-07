@@ -1,5 +1,5 @@
 include_directories(./inc)
-include_directories(./inc/proto)
+include_directories(../inc/proto)
 
 include_directories(../inc/Configs)
 

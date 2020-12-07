@@ -116,125 +116,149 @@ login_server/fast:
 	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/build
 .PHONY : login_server/fast
 
-inc/proto/GameSpec.pb.o: inc/proto/GameSpec.pb.cc.o
-.PHONY : inc/proto/GameSpec.pb.o
+__/inc/proto/GameSpec.pb.o: __/inc/proto/GameSpec.pb.cc.o
+.PHONY : __/inc/proto/GameSpec.pb.o
 
 # target to build an object file
-inc/proto/GameSpec.pb.cc.o:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/inc/proto/GameSpec.pb.cc.o
-.PHONY : inc/proto/GameSpec.pb.cc.o
+__/inc/proto/GameSpec.pb.cc.o:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/__/inc/proto/GameSpec.pb.cc.o
+.PHONY : __/inc/proto/GameSpec.pb.cc.o
 
-inc/proto/GameSpec.pb.i: inc/proto/GameSpec.pb.cc.i
-.PHONY : inc/proto/GameSpec.pb.i
+__/inc/proto/GameSpec.pb.i: __/inc/proto/GameSpec.pb.cc.i
+.PHONY : __/inc/proto/GameSpec.pb.i
 
 # target to preprocess a source file
-inc/proto/GameSpec.pb.cc.i:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/inc/proto/GameSpec.pb.cc.i
-.PHONY : inc/proto/GameSpec.pb.cc.i
+__/inc/proto/GameSpec.pb.cc.i:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/__/inc/proto/GameSpec.pb.cc.i
+.PHONY : __/inc/proto/GameSpec.pb.cc.i
 
-inc/proto/GameSpec.pb.s: inc/proto/GameSpec.pb.cc.s
-.PHONY : inc/proto/GameSpec.pb.s
+__/inc/proto/GameSpec.pb.s: __/inc/proto/GameSpec.pb.cc.s
+.PHONY : __/inc/proto/GameSpec.pb.s
 
 # target to generate assembly for a file
-inc/proto/GameSpec.pb.cc.s:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/inc/proto/GameSpec.pb.cc.s
-.PHONY : inc/proto/GameSpec.pb.cc.s
+__/inc/proto/GameSpec.pb.cc.s:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/__/inc/proto/GameSpec.pb.cc.s
+.PHONY : __/inc/proto/GameSpec.pb.cc.s
 
-inc/proto/MSG_PLAYER_MOVE.pb.o: inc/proto/MSG_PLAYER_MOVE.pb.cc.o
-.PHONY : inc/proto/MSG_PLAYER_MOVE.pb.o
+__/inc/proto/MSG_PLAYER_MOVE.pb.o: __/inc/proto/MSG_PLAYER_MOVE.pb.cc.o
+.PHONY : __/inc/proto/MSG_PLAYER_MOVE.pb.o
 
 # target to build an object file
-inc/proto/MSG_PLAYER_MOVE.pb.cc.o:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_MOVE.pb.cc.o
-.PHONY : inc/proto/MSG_PLAYER_MOVE.pb.cc.o
+__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o
+.PHONY : __/inc/proto/MSG_PLAYER_MOVE.pb.cc.o
 
-inc/proto/MSG_PLAYER_MOVE.pb.i: inc/proto/MSG_PLAYER_MOVE.pb.cc.i
-.PHONY : inc/proto/MSG_PLAYER_MOVE.pb.i
+__/inc/proto/MSG_PLAYER_MOVE.pb.i: __/inc/proto/MSG_PLAYER_MOVE.pb.cc.i
+.PHONY : __/inc/proto/MSG_PLAYER_MOVE.pb.i
 
 # target to preprocess a source file
-inc/proto/MSG_PLAYER_MOVE.pb.cc.i:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_MOVE.pb.cc.i
-.PHONY : inc/proto/MSG_PLAYER_MOVE.pb.cc.i
+__/inc/proto/MSG_PLAYER_MOVE.pb.cc.i:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.i
+.PHONY : __/inc/proto/MSG_PLAYER_MOVE.pb.cc.i
 
-inc/proto/MSG_PLAYER_MOVE.pb.s: inc/proto/MSG_PLAYER_MOVE.pb.cc.s
-.PHONY : inc/proto/MSG_PLAYER_MOVE.pb.s
+__/inc/proto/MSG_PLAYER_MOVE.pb.s: __/inc/proto/MSG_PLAYER_MOVE.pb.cc.s
+.PHONY : __/inc/proto/MSG_PLAYER_MOVE.pb.s
 
 # target to generate assembly for a file
-inc/proto/MSG_PLAYER_MOVE.pb.cc.s:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_MOVE.pb.cc.s
-.PHONY : inc/proto/MSG_PLAYER_MOVE.pb.cc.s
+__/inc/proto/MSG_PLAYER_MOVE.pb.cc.s:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.s
+.PHONY : __/inc/proto/MSG_PLAYER_MOVE.pb.cc.s
 
-inc/proto/MSG_PLAYER_REGISTER.pb.o: inc/proto/MSG_PLAYER_REGISTER.pb.cc.o
-.PHONY : inc/proto/MSG_PLAYER_REGISTER.pb.o
+__/inc/proto/MSG_PLAYER_REGISTER.pb.o: __/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o
+.PHONY : __/inc/proto/MSG_PLAYER_REGISTER.pb.o
 
 # target to build an object file
-inc/proto/MSG_PLAYER_REGISTER.pb.cc.o:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o
-.PHONY : inc/proto/MSG_PLAYER_REGISTER.pb.cc.o
+__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o
+.PHONY : __/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o
 
-inc/proto/MSG_PLAYER_REGISTER.pb.i: inc/proto/MSG_PLAYER_REGISTER.pb.cc.i
-.PHONY : inc/proto/MSG_PLAYER_REGISTER.pb.i
+__/inc/proto/MSG_PLAYER_REGISTER.pb.i: __/inc/proto/MSG_PLAYER_REGISTER.pb.cc.i
+.PHONY : __/inc/proto/MSG_PLAYER_REGISTER.pb.i
 
 # target to preprocess a source file
-inc/proto/MSG_PLAYER_REGISTER.pb.cc.i:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_REGISTER.pb.cc.i
-.PHONY : inc/proto/MSG_PLAYER_REGISTER.pb.cc.i
+__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.i:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.i
+.PHONY : __/inc/proto/MSG_PLAYER_REGISTER.pb.cc.i
 
-inc/proto/MSG_PLAYER_REGISTER.pb.s: inc/proto/MSG_PLAYER_REGISTER.pb.cc.s
-.PHONY : inc/proto/MSG_PLAYER_REGISTER.pb.s
+__/inc/proto/MSG_PLAYER_REGISTER.pb.s: __/inc/proto/MSG_PLAYER_REGISTER.pb.cc.s
+.PHONY : __/inc/proto/MSG_PLAYER_REGISTER.pb.s
 
 # target to generate assembly for a file
-inc/proto/MSG_PLAYER_REGISTER.pb.cc.s:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/inc/proto/MSG_PLAYER_REGISTER.pb.cc.s
-.PHONY : inc/proto/MSG_PLAYER_REGISTER.pb.cc.s
+__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.s:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.s
+.PHONY : __/inc/proto/MSG_PLAYER_REGISTER.pb.cc.s
 
-inc/proto/MsgID.pb.o: inc/proto/MsgID.pb.cc.o
-.PHONY : inc/proto/MsgID.pb.o
+__/inc/proto/MsgID.pb.o: __/inc/proto/MsgID.pb.cc.o
+.PHONY : __/inc/proto/MsgID.pb.o
 
 # target to build an object file
-inc/proto/MsgID.pb.cc.o:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/inc/proto/MsgID.pb.cc.o
-.PHONY : inc/proto/MsgID.pb.cc.o
+__/inc/proto/MsgID.pb.cc.o:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgID.pb.cc.o
+.PHONY : __/inc/proto/MsgID.pb.cc.o
 
-inc/proto/MsgID.pb.i: inc/proto/MsgID.pb.cc.i
-.PHONY : inc/proto/MsgID.pb.i
+__/inc/proto/MsgID.pb.i: __/inc/proto/MsgID.pb.cc.i
+.PHONY : __/inc/proto/MsgID.pb.i
 
 # target to preprocess a source file
-inc/proto/MsgID.pb.cc.i:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/inc/proto/MsgID.pb.cc.i
-.PHONY : inc/proto/MsgID.pb.cc.i
+__/inc/proto/MsgID.pb.cc.i:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgID.pb.cc.i
+.PHONY : __/inc/proto/MsgID.pb.cc.i
 
-inc/proto/MsgID.pb.s: inc/proto/MsgID.pb.cc.s
-.PHONY : inc/proto/MsgID.pb.s
+__/inc/proto/MsgID.pb.s: __/inc/proto/MsgID.pb.cc.s
+.PHONY : __/inc/proto/MsgID.pb.s
 
 # target to generate assembly for a file
-inc/proto/MsgID.pb.cc.s:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/inc/proto/MsgID.pb.cc.s
-.PHONY : inc/proto/MsgID.pb.cc.s
+__/inc/proto/MsgID.pb.cc.s:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgID.pb.cc.s
+.PHONY : __/inc/proto/MsgID.pb.cc.s
 
-inc/proto/MsgTest.pb.o: inc/proto/MsgTest.pb.cc.o
-.PHONY : inc/proto/MsgTest.pb.o
+__/inc/proto/MsgServerID.pb.o: __/inc/proto/MsgServerID.pb.cc.o
+.PHONY : __/inc/proto/MsgServerID.pb.o
 
 # target to build an object file
-inc/proto/MsgTest.pb.cc.o:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/inc/proto/MsgTest.pb.cc.o
-.PHONY : inc/proto/MsgTest.pb.cc.o
+__/inc/proto/MsgServerID.pb.cc.o:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgServerID.pb.cc.o
+.PHONY : __/inc/proto/MsgServerID.pb.cc.o
 
-inc/proto/MsgTest.pb.i: inc/proto/MsgTest.pb.cc.i
-.PHONY : inc/proto/MsgTest.pb.i
+__/inc/proto/MsgServerID.pb.i: __/inc/proto/MsgServerID.pb.cc.i
+.PHONY : __/inc/proto/MsgServerID.pb.i
 
 # target to preprocess a source file
-inc/proto/MsgTest.pb.cc.i:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/inc/proto/MsgTest.pb.cc.i
-.PHONY : inc/proto/MsgTest.pb.cc.i
+__/inc/proto/MsgServerID.pb.cc.i:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgServerID.pb.cc.i
+.PHONY : __/inc/proto/MsgServerID.pb.cc.i
 
-inc/proto/MsgTest.pb.s: inc/proto/MsgTest.pb.cc.s
-.PHONY : inc/proto/MsgTest.pb.s
+__/inc/proto/MsgServerID.pb.s: __/inc/proto/MsgServerID.pb.cc.s
+.PHONY : __/inc/proto/MsgServerID.pb.s
 
 # target to generate assembly for a file
-inc/proto/MsgTest.pb.cc.s:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/inc/proto/MsgTest.pb.cc.s
-.PHONY : inc/proto/MsgTest.pb.cc.s
+__/inc/proto/MsgServerID.pb.cc.s:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgServerID.pb.cc.s
+.PHONY : __/inc/proto/MsgServerID.pb.cc.s
+
+__/inc/proto/MsgTest.pb.o: __/inc/proto/MsgTest.pb.cc.o
+.PHONY : __/inc/proto/MsgTest.pb.o
+
+# target to build an object file
+__/inc/proto/MsgTest.pb.cc.o:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.o
+.PHONY : __/inc/proto/MsgTest.pb.cc.o
+
+__/inc/proto/MsgTest.pb.i: __/inc/proto/MsgTest.pb.cc.i
+.PHONY : __/inc/proto/MsgTest.pb.i
+
+# target to preprocess a source file
+__/inc/proto/MsgTest.pb.cc.i:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.i
+.PHONY : __/inc/proto/MsgTest.pb.cc.i
+
+__/inc/proto/MsgTest.pb.s: __/inc/proto/MsgTest.pb.cc.s
+.PHONY : __/inc/proto/MsgTest.pb.s
+
+# target to generate assembly for a file
+__/inc/proto/MsgTest.pb.cc.s:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.s
+.PHONY : __/inc/proto/MsgTest.pb.cc.s
 
 src/Cache/CacheManager.o: src/Cache/CacheManager.cpp.o
 .PHONY : src/Cache/CacheManager.o
@@ -629,21 +653,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... login_server"
 	@echo "... rebuild_cache"
-	@echo "... inc/proto/GameSpec.pb.o"
-	@echo "... inc/proto/GameSpec.pb.i"
-	@echo "... inc/proto/GameSpec.pb.s"
-	@echo "... inc/proto/MSG_PLAYER_MOVE.pb.o"
-	@echo "... inc/proto/MSG_PLAYER_MOVE.pb.i"
-	@echo "... inc/proto/MSG_PLAYER_MOVE.pb.s"
-	@echo "... inc/proto/MSG_PLAYER_REGISTER.pb.o"
-	@echo "... inc/proto/MSG_PLAYER_REGISTER.pb.i"
-	@echo "... inc/proto/MSG_PLAYER_REGISTER.pb.s"
-	@echo "... inc/proto/MsgID.pb.o"
-	@echo "... inc/proto/MsgID.pb.i"
-	@echo "... inc/proto/MsgID.pb.s"
-	@echo "... inc/proto/MsgTest.pb.o"
-	@echo "... inc/proto/MsgTest.pb.i"
-	@echo "... inc/proto/MsgTest.pb.s"
+	@echo "... __/inc/proto/GameSpec.pb.o"
+	@echo "... __/inc/proto/GameSpec.pb.i"
+	@echo "... __/inc/proto/GameSpec.pb.s"
+	@echo "... __/inc/proto/MSG_PLAYER_MOVE.pb.o"
+	@echo "... __/inc/proto/MSG_PLAYER_MOVE.pb.i"
+	@echo "... __/inc/proto/MSG_PLAYER_MOVE.pb.s"
+	@echo "... __/inc/proto/MSG_PLAYER_REGISTER.pb.o"
+	@echo "... __/inc/proto/MSG_PLAYER_REGISTER.pb.i"
+	@echo "... __/inc/proto/MSG_PLAYER_REGISTER.pb.s"
+	@echo "... __/inc/proto/MsgID.pb.o"
+	@echo "... __/inc/proto/MsgID.pb.i"
+	@echo "... __/inc/proto/MsgID.pb.s"
+	@echo "... __/inc/proto/MsgServerID.pb.o"
+	@echo "... __/inc/proto/MsgServerID.pb.i"
+	@echo "... __/inc/proto/MsgServerID.pb.s"
+	@echo "... __/inc/proto/MsgTest.pb.o"
+	@echo "... __/inc/proto/MsgTest.pb.i"
+	@echo "... __/inc/proto/MsgTest.pb.s"
 	@echo "... src/Cache/CacheManager.o"
 	@echo "... src/Cache/CacheManager.i"
 	@echo "... src/Cache/CacheManager.s"
