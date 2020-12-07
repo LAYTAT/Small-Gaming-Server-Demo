@@ -101,4 +101,5 @@ message LoginRep{
 	ErrorCode errCode = 1;
 	string gate_ip = 2;
 	int32 gate_port = 3;
+	int32 session_code = 4;
 }

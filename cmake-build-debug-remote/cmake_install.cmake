@@ -37,6 +37,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server/cmake_install.cmake")
   include("/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/db_server/cmake_install.cmake")
   include("/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/gate_server/cmake_install.cmake")
+  include("/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server/cmake_install.cmake")
 
 endif()
 

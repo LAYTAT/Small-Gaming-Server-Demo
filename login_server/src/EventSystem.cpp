@@ -59,17 +59,39 @@ void EventSystem::Uinit()
 
 INT32 EventSystem::PlayerLoginPassed(const MesgInfo &stHead, const char *body,const INT32 len,const INT32 connfd)
 {
-    std::cout << "Player successfully logged in." << std::endl;
-    MesgInfo* loginRepMsgInfo = new MesgInfo();
-    loginRepMsgInfo->msgID = MSGID::MSG_LOGIN_REPLIY_CLIENT;
-    loginRepMsgInfo->uID = stHead.uID;
-    loginRepMsgInfo->packLen = sizeof(INT32) * 3;
 
+    DbRep_User_Auth rsp;
+
+
+    if(!rsp.ParseFromArray(body, len))
+    {
+        std::cout << "ParseFromArray palyer login_server failed !!!" <<std::endl;
+        rsp.set_errcode(GameSpec::ERROR_PARSE_FAILED);
+        SocketServer::Instance()->BroadCast(stHead,rsp);
+        return 1;
+    }
+
+    bool isuserverified = rsp.isuserverified();
+    std::cout << "Is user verified : " << isuserverified << " Err code : "<<  rsp.errcode() << std::endl;
+    std::cout << "Player successfully logged in." << std::endl;
+
+    // 返回给客户端的数据
     GameSpec::LoginRep* loginRep = new GameSpec::LoginRep();
     loginRep->set_gate_ip(GATE_SERVER_IP_ADDR);
     loginRep->set_gate_port(GATE_SERVER_PORT);
-    loginRep->set_errcode(GameSpec::ErrorCode::ERROR_NO_ERROR);
+    loginRep->set_session_code(AUTH_SESSION_CODE);
+    if(rsp.errcode() == GameSpec::ERROR_NO_ERROR) {
+        loginRep->set_errcode(GameSpec::ERROR_NO_ERROR);
+    } else {
+        loginRep->set_errcode(GameSpec::ERROR_AUH_ERROR);
+    }
 
+
+    MesgInfo* loginRepMsgInfo = new MesgInfo();
+    loginRepMsgInfo->msgID = MSGID::MSG_LOGIN_REPLIY_CLIENT;
+    loginRepMsgInfo->uID = stHead.uID;
+    loginRepMsgInfo->packLen = loginRep->ByteSizeLong();
+    std::cout << "loginRepMsgInfo->packLen " << loginRepMsgInfo->packLen <<std::endl;
     SocketServer::Instance()->BroadCast(*loginRepMsgInfo, *loginRep);
 
     delete loginRepMsgInfo;
@@ -210,34 +232,39 @@ INT32 EventSystem::PlayerLogin(const MesgInfo &stHead, const char *body,const IN
     std::cout << "name = " << loginReq.name() << std::endl;
     std::cout << "password = " << loginReq.password() << std::endl;
 
-    if(EntityMgr::Instance()->HasPlayer(stHead.uID) == false)
-    {
-        //取数据库
-        //MySqlMgr::Instance()->GetPlayerInfo(stHead.uID,rsp.mutable_player());
-        GameSpec::Players tptr ;
-        MySqlMgr::Instance()->GetPlayerInfo(stHead.uID, &tptr);
-        EntityMgr::Instance()->SetPlayer(tptr);
 
-        //CacheManager::Instance()->newPlayer(tptr.id(), tptr.name(),tptr.exp());
+    // 获取玩家背包
+//    if(EntityMgr::Instance()->HasPlayer(stHead.uID) == false)
+//    {
+//        //取数据库
+//        //MySqlMgr::Instance()->GetPlayerInfo(stHead.uID,rsp.mutable_player());
+//        GameSpec::Players tptr ;
+//        MySqlMgr::Instance()->GetPlayerInfo(stHead.uID, &tptr);
+//        EntityMgr::Instance()->SetPlayer(tptr);
+//
+//        //CacheManager::Instance()->newPlayer(tptr.id(), tptr.name(),tptr.exp());
+//
+//        m_bagSystem.GetPlayerInfo(EntityMgr::Instance()->GetEttyByPid(stHead.uID),rsp.mutable_player());
+//    }
+//    else
+//    {
+//        std::cout << "start" << std::endl;
+//        m_bagSystem.GetPlayerInfo(EntityMgr::Instance()->GetEttyByPid(stHead.uID), rsp.mutable_player());
+//    }
+//    rsp.set_errcode(GameSpec::ERROR_NO_ERROR);
 
-        m_bagSystem.GetPlayerInfo(EntityMgr::Instance()->GetEttyByPid(stHead.uID),rsp.mutable_player());
-    }
-    else
-    {
-        std::cout << "start" << std::endl;
-        m_bagSystem.GetPlayerInfo(EntityMgr::Instance()->GetEttyByPid(stHead.uID), rsp.mutable_player());
-    }
-    rsp.set_errcode(GameSpec::ERROR_NO_ERROR);
 
     // TODO：改为正式的账号密码验证
-    SocketServer::Instance()->BroadCast(stHead, rsp);
+
+    //  SocketServer::Instance()->BroadCast(stHead, rsp);
+
     // 发送玩家信息到db server用于验证玩家身份
     DbReq_User_Auth dbReqUserAuth;
     dbReqUserAuth.set_hashedusrpwd(loginReq.password());
     dbReqUserAuth.set_hashedusrid(loginReq.name());
     MesgInfo* msgInfoToDB = new MesgInfo();
     msgInfoToDB->msgID = MSGID::MSG_LOGIN_REQUEST_DB;
-    msgInfoToDB->packLen = sizeof(INT32) *3;
+    msgInfoToDB->packLen = dbReqUserAuth.ByteSizeLong();
     msgInfoToDB->uID = stHead.uID;
     SocketServer::Instance()->SendMsgToDB(*msgInfoToDB, dbReqUserAuth);
 

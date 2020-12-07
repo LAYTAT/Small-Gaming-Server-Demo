@@ -49,13 +49,13 @@ namespace GameSpec {
             "ZUl0ZW1Sc3ASJAoHZXJyQ29kZRgBIAEoDjITLkdhbWVTcGVjLkVycm9yQ29k",
             "ZSIlCgdSYW5rUmVxEg0KBXN0YXJ0GAEgASgFEgsKA2VuZBgCIAEoBSJKCgdS",
             "YW5rUnNwEiQKB2VyckNvZGUYASABKA4yEy5HYW1lU3BlYy5FcnJvckNvZGUS",
-            "DAoEbmFtZRgCIAMoCRILCgNleHAYAyADKAUiVAoITG9naW5SZXASJAoHZXJy",
+            "DAoEbmFtZRgCIAMoCRILCgNleHAYAyADKAUiagoITG9naW5SZXASJAoHZXJy",
             "Q29kZRgBIAEoDjITLkdhbWVTcGVjLkVycm9yQ29kZRIPCgdnYXRlX2lwGAIg",
-            "ASgJEhEKCWdhdGVfcG9ydBgDIAEoBSqVAQoJRXJyb3JDb2RlEhIKDkVSUk9S",
-            "X05PX0VSUk9SEAASEwoPRVJST1JfQVVIX0VSUk9SEAESFQoRRVJST1JfU0VB",
-            "UkNIX0ZBSUwQAhIXChNFUlJPUl9SRVZfSVRFTV9GQUlMEAMSFwoTRVJST1Jf",
-            "QUREX0lURU1fRkFJTBAEEhYKEkVSUk9SX1BBUlNFX0ZBSUxFRBAFYgZwcm90",
-            "bzM="));
+            "ASgJEhEKCWdhdGVfcG9ydBgDIAEoBRIUCgxzZXNzaW9uX2NvZGUYBCABKAUq",
+            "lQEKCUVycm9yQ29kZRISCg5FUlJPUl9OT19FUlJPUhAAEhMKD0VSUk9SX0FV",
+            "SF9FUlJPUhABEhUKEUVSUk9SX1NFQVJDSF9GQUlMEAISFwoTRVJST1JfUkVW",
+            "X0lURU1fRkFJTBADEhcKE0VSUk9SX0FERF9JVEVNX0ZBSUwQBBIWChJFUlJP",
+            "Ul9QQVJTRV9GQUlMRUQQBWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameSpec.ErrorCode), }, new pbr::GeneratedClrTypeInfo[] {
@@ -74,7 +74,7 @@ namespace GameSpec {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameSpec.RemoveItemRsp), global::GameSpec.RemoveItemRsp.Parser, new[]{ "ErrCode" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameSpec.RankReq), global::GameSpec.RankReq.Parser, new[]{ "Start", "End" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameSpec.RankRsp), global::GameSpec.RankRsp.Parser, new[]{ "ErrCode", "Name", "Exp" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameSpec.LoginRep), global::GameSpec.LoginRep.Parser, new[]{ "ErrCode", "GateIp", "GatePort" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameSpec.LoginRep), global::GameSpec.LoginRep.Parser, new[]{ "ErrCode", "GateIp", "GatePort", "SessionCode" }, null, null, null)
           }));
     }
     #endregion
@@ -2898,6 +2898,7 @@ namespace GameSpec {
       errCode_ = other.errCode_;
       gateIp_ = other.gateIp_;
       gatePort_ = other.gatePort_;
+      sessionCode_ = other.sessionCode_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2939,6 +2940,17 @@ namespace GameSpec {
       }
     }
 
+    /// <summary>Field number for the "session_code" field.</summary>
+    public const int SessionCodeFieldNumber = 4;
+    private int sessionCode_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int SessionCode {
+      get { return sessionCode_; }
+      set {
+        sessionCode_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as LoginRep);
@@ -2955,6 +2967,7 @@ namespace GameSpec {
       if (ErrCode != other.ErrCode) return false;
       if (GateIp != other.GateIp) return false;
       if (GatePort != other.GatePort) return false;
+      if (SessionCode != other.SessionCode) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2964,6 +2977,7 @@ namespace GameSpec {
       if (ErrCode != 0) hash ^= ErrCode.GetHashCode();
       if (GateIp.Length != 0) hash ^= GateIp.GetHashCode();
       if (GatePort != 0) hash ^= GatePort.GetHashCode();
+      if (SessionCode != 0) hash ^= SessionCode.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2989,6 +3003,10 @@ namespace GameSpec {
         output.WriteRawTag(24);
         output.WriteInt32(GatePort);
       }
+      if (SessionCode != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(SessionCode);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3005,6 +3023,9 @@ namespace GameSpec {
       }
       if (GatePort != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(GatePort);
+      }
+      if (SessionCode != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SessionCode);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3025,6 +3046,9 @@ namespace GameSpec {
       }
       if (other.GatePort != 0) {
         GatePort = other.GatePort;
+      }
+      if (other.SessionCode != 0) {
+        SessionCode = other.SessionCode;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3047,6 +3071,10 @@ namespace GameSpec {
           }
           case 24: {
             GatePort = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            SessionCode = input.ReadInt32();
             break;
           }
         }

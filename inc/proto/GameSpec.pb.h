@@ -2051,6 +2051,12 @@ class LoginRep : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::google::protobuf::int32 gate_port() const;
   void set_gate_port(::google::protobuf::int32 value);
 
+  // int32 session_code = 4;
+  void clear_session_code();
+  static const int kSessionCodeFieldNumber = 4;
+  ::google::protobuf::int32 session_code() const;
+  void set_session_code(::google::protobuf::int32 value);
+
   // @@protoc_insertion_point(class_scope:GameSpec.LoginRep)
  private:
 
@@ -2058,6 +2064,7 @@ class LoginRep : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::google::protobuf::internal::ArenaStringPtr gate_ip_;
   int errcode_;
   ::google::protobuf::int32 gate_port_;
+  ::google::protobuf::int32 session_code_;
   mutable int _cached_size_;
   friend struct ::protobuf_GameSpec_2eproto::TableStruct;
   friend void ::protobuf_GameSpec_2eproto::InitDefaultsLoginRepImpl();
@@ -3211,6 +3218,20 @@ inline void LoginRep::set_gate_port(::google::protobuf::int32 value) {
   
   gate_port_ = value;
   // @@protoc_insertion_point(field_set:GameSpec.LoginRep.gate_port)
+}
+
+// int32 session_code = 4;
+inline void LoginRep::clear_session_code() {
+  session_code_ = 0;
+}
+inline ::google::protobuf::int32 LoginRep::session_code() const {
+  // @@protoc_insertion_point(field_get:GameSpec.LoginRep.session_code)
+  return session_code_;
+}
+inline void LoginRep::set_session_code(::google::protobuf::int32 value) {
+  
+  session_code_ = value;
+  // @@protoc_insertion_point(field_set:GameSpec.LoginRep.session_code)
 }
 
 #ifdef __GNUC__

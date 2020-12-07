@@ -49,6 +49,8 @@
 #include <sys/epoll.h>
 #endif
 
+/* ToDo: 改成真正的seesion code */
+#define AUTH_SESSION_CODE 74893217
 
 #define DB_SERVER_PORT 8001
 #define DB_SERVER_IP_ADDR "10.0.150.52"
@@ -58,6 +60,9 @@
 
 #define GATE_SERVER_PORT 8003
 #define GATE_SERVER_IP_ADDR "10.0.150.52"
+
+#define GAME_SERVER_PORT 8004
+#define GAME_SERVER_IP_ADDR  "10.0.150.52"
 
 #define DEFAULT_SERVER_PORT 8000  // occupied by lay
 #define DEFAULT_SERVER_ADDR "10.0.150.52" // "192.168.11.25"

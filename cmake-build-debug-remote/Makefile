@@ -141,6 +141,19 @@ gate_server/fast:
 	$(MAKE) -f gate_server/CMakeFiles/gate_server.dir/build.make gate_server/CMakeFiles/gate_server.dir/build
 .PHONY : gate_server/fast
 
+#=============================================================================
+# Target rules for targets named game_server
+
+# Build rule for target.
+game_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 game_server
+.PHONY : game_server
+
+# fast build rule for target.
+game_server/fast:
+	$(MAKE) -f game_server/CMakeFiles/game_server.dir/build.make game_server/CMakeFiles/game_server.dir/build
+.PHONY : game_server/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -152,6 +165,7 @@ help:
 	@echo "... login_server"
 	@echo "... db_server"
 	@echo "... gate_server"
+	@echo "... game_server"
 .PHONY : help
 
 

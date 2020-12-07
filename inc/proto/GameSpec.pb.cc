@@ -575,6 +575,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GameSpec::LoginRep, errcode_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GameSpec::LoginRep, gate_ip_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GameSpec::LoginRep, gate_port_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GameSpec::LoginRep, session_code_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::GameSpec::BagItem)},
@@ -664,16 +665,17 @@ void AddDescriptorsImpl() {
       "\n\007errCode\030\001 \001(\0162\023.GameSpec.ErrorCode\"%\n\007"
       "RankReq\022\r\n\005start\030\001 \001(\005\022\013\n\003end\030\002 \001(\005\"J\n\007R"
       "ankRsp\022$\n\007errCode\030\001 \001(\0162\023.GameSpec.Error"
-      "Code\022\014\n\004name\030\002 \003(\t\022\013\n\003exp\030\003 \003(\005\"T\n\010Login"
+      "Code\022\014\n\004name\030\002 \003(\t\022\013\n\003exp\030\003 \003(\005\"j\n\010Login"
       "Rep\022$\n\007errCode\030\001 \001(\0162\023.GameSpec.ErrorCod"
-      "e\022\017\n\007gate_ip\030\002 \001(\t\022\021\n\tgate_port\030\003 \001(\005*\225\001"
-      "\n\tErrorCode\022\022\n\016ERROR_NO_ERROR\020\000\022\023\n\017ERROR"
-      "_AUH_ERROR\020\001\022\025\n\021ERROR_SEARCH_FAIL\020\002\022\027\n\023E"
-      "RROR_REV_ITEM_FAIL\020\003\022\027\n\023ERROR_ADD_ITEM_F"
-      "AIL\020\004\022\026\n\022ERROR_PARSE_FAILED\020\005b\006proto3"
+      "e\022\017\n\007gate_ip\030\002 \001(\t\022\021\n\tgate_port\030\003 \001(\005\022\024\n"
+      "\014session_code\030\004 \001(\005*\225\001\n\tErrorCode\022\022\n\016ERR"
+      "OR_NO_ERROR\020\000\022\023\n\017ERROR_AUH_ERROR\020\001\022\025\n\021ER"
+      "ROR_SEARCH_FAIL\020\002\022\027\n\023ERROR_REV_ITEM_FAIL"
+      "\020\003\022\027\n\023ERROR_ADD_ITEM_FAIL\020\004\022\026\n\022ERROR_PAR"
+      "SE_FAILED\020\005b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1397);
+      descriptor, 1419);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "GameSpec.proto", &protobuf_RegisterTypes);
 }
@@ -5560,6 +5562,7 @@ void LoginRep::InitAsDefaultInstance() {
 const int LoginRep::kErrCodeFieldNumber;
 const int LoginRep::kGateIpFieldNumber;
 const int LoginRep::kGatePortFieldNumber;
+const int LoginRep::kSessionCodeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 LoginRep::LoginRep()
@@ -5580,16 +5583,16 @@ LoginRep::LoginRep(const LoginRep& from)
     gate_ip_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.gate_ip_);
   }
   ::memcpy(&errcode_, &from.errcode_,
-    static_cast<size_t>(reinterpret_cast<char*>(&gate_port_) -
-    reinterpret_cast<char*>(&errcode_)) + sizeof(gate_port_));
+    static_cast<size_t>(reinterpret_cast<char*>(&session_code_) -
+    reinterpret_cast<char*>(&errcode_)) + sizeof(session_code_));
   // @@protoc_insertion_point(copy_constructor:GameSpec.LoginRep)
 }
 
 void LoginRep::SharedCtor() {
   gate_ip_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&errcode_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&gate_port_) -
-      reinterpret_cast<char*>(&errcode_)) + sizeof(gate_port_));
+      reinterpret_cast<char*>(&session_code_) -
+      reinterpret_cast<char*>(&errcode_)) + sizeof(session_code_));
   _cached_size_ = 0;
 }
 
@@ -5633,8 +5636,8 @@ void LoginRep::Clear() {
 
   gate_ip_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&errcode_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&gate_port_) -
-      reinterpret_cast<char*>(&errcode_)) + sizeof(gate_port_));
+      reinterpret_cast<char*>(&session_code_) -
+      reinterpret_cast<char*>(&errcode_)) + sizeof(session_code_));
   _internal_metadata_.Clear();
 }
 
@@ -5693,6 +5696,20 @@ bool LoginRep::MergePartialFromCodedStream(
         break;
       }
 
+      // int32 session_code = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &session_code_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -5740,6 +5757,11 @@ void LoginRep::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt32(3, this->gate_port(), output);
   }
 
+  // int32 session_code = 4;
+  if (this->session_code() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(4, this->session_code(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -5774,6 +5796,11 @@ void LoginRep::SerializeWithCachedSizes(
   // int32 gate_port = 3;
   if (this->gate_port() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(3, this->gate_port(), target);
+  }
+
+  // int32 session_code = 4;
+  if (this->session_code() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(4, this->session_code(), target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -5811,6 +5838,13 @@ size_t LoginRep::ByteSizeLong() const {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->gate_port());
+  }
+
+  // int32 session_code = 4;
+  if (this->session_code() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->session_code());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -5852,6 +5886,9 @@ void LoginRep::MergeFrom(const LoginRep& from) {
   if (from.gate_port() != 0) {
     set_gate_port(from.gate_port());
   }
+  if (from.session_code() != 0) {
+    set_session_code(from.session_code());
+  }
 }
 
 void LoginRep::CopyFrom(const ::google::protobuf::Message& from) {
@@ -5881,6 +5918,7 @@ void LoginRep::InternalSwap(LoginRep* other) {
   gate_ip_.Swap(&other->gate_ip_);
   swap(errcode_, other->errcode_);
   swap(gate_port_, other->gate_port_);
+  swap(session_code_, other->session_code_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_cached_size_, other->_cached_size_);
 }

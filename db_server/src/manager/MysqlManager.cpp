@@ -281,7 +281,7 @@ int MySqlMgr::GetPlayerId(const string& input) //9.¹«ÓĞ  ¸ù¾İÍæ¼ÒµÄĞÕÃû  ²éÑ¯Íæ¼
     string a="select id from players where playerName= '" + input +"'";
     mysqlpp::StoreQueryResult res;
     bool ret =searchFun(a,res);
-    if(ret)
+    if(ret && res.num_rows() > 0)
     {
         return res[0]["id"];
     }
