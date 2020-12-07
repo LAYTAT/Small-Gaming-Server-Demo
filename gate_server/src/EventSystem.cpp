@@ -63,9 +63,20 @@ INT32 EventSystem::PlayerReqItems(const MesgInfo &stHead, const char *body, cons
     if(clientReq.session_code() == AUTH_SESSION_CODE){
         std::cout << "Client Requested with right session code, continue to pass on request ==================" << std::endl;
 
+        // 通过验证的请求，发送到game server
+        // 发送玩家信息到db server用于验证玩家身份
+
+        MesgInfo* msgInfoToDB = new MesgInfo();
+        msgInfoToDB->msgID = MSGID::MSG_REQUEST_BAG_ITEMS_FROM_USER;
+        msgInfoToDB->packLen = clientReq.ByteSizeLong();
+        msgInfoToDB->uID = stHead.uID;
+        SocketServer::Instance()->SendMsgToGameServer(*msgInfoToDB, clientReq);
+
     } else {
         std::cout << "Client Requested with wrong session code, refuse to pass on request ===================" << std::endl;
     }
+
+    return 0;
 
 //    if(EntityMgr::Instance()->HasPlayer(stHead.uID) == false)
 //    {

@@ -27,7 +27,7 @@ EventSystem::~EventSystem()
 bool EventSystem::Init()
 {
     // 绑定处理函数
-    m_msgHandler->RegisterMsg(  SERVERTYPE::LOGIN_SERVER,  &EventSystem::PlayerAuth);
+    m_msgHandler->RegisterMsg(  MSGID::MSG_REQUEST_BAG_ITEMS_FROM_USER,  &EventSystem::PlayerReqItems);
 
     return true;
 }
@@ -40,9 +40,9 @@ void EventSystem::Uinit()
 }
 
 // 验证用户的账号数据数据，数据由login server 发送过来
-INT32 EventSystem::PlayerAuth(const MesgInfo &stHead, const char *body, const INT32 len,const INT32 connfd)
+INT32 EventSystem::PlayerReqItems(const MesgInfo &stHead, const char *body, const INT32 len,const INT32 connfd)
 {
-//    std::cout << "Enter Player Authentication Process" << std::endl;
+     std::cout << "Enter Player request Processing" << std::endl;
 //    DbReq_User_Auth dbReqUserAuth;
 //    DbRep_User_Auth rsp;
 //
