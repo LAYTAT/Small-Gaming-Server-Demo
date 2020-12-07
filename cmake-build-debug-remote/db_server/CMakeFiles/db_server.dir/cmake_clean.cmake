@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/db_server.dir/src/manager/MysqlManager.cpp.o"
   "CMakeFiles/db_server.dir/__/inc/proto/GameSpec.pb.cc.o"
   "CMakeFiles/db_server.dir/__/inc/proto/MsgID.pb.cc.o"
+  "CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.o"
   "CMakeFiles/db_server.dir/__/inc/proto/MsgTest.pb.cc.o"
   "CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o"
   "CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o"

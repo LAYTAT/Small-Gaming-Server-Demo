@@ -1,0 +1,4 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/g++ -G "CodeBlocks - Unix Makefiles" /home/jjlay/dev/EventServer/MasterServer
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jjlay/dev/EventServer/MasterServer/cmake-build-debug

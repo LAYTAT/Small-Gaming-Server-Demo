@@ -302,9 +302,32 @@ db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgID.pb.cc.o.provides: db_serve
 
 db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgID.pb.cc.o.provides.build: db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgID.pb.cc.o
 
+db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.o: db_server/CMakeFiles/db_server.dir/flags.make
+db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.o: ../inc/proto/MsgServerID.pb.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_12)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.o"
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/db_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.o -c /tmp/tmp.cAdQ96BiEw/inc/proto/MsgServerID.pb.cc
+
+db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.i"
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/db_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/inc/proto/MsgServerID.pb.cc > CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.i
+
+db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.s"
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/db_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/inc/proto/MsgServerID.pb.cc -o CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.s
+
+db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.o.requires:
+.PHONY : db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.o.requires
+
+db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.o.provides: db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.o.requires
+	$(MAKE) -f db_server/CMakeFiles/db_server.dir/build.make db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.o.provides.build
+.PHONY : db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.o.provides
+
+db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.o.provides.build: db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.o
+
 db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgTest.pb.cc.o: db_server/CMakeFiles/db_server.dir/flags.make
 db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgTest.pb.cc.o: ../inc/proto/MsgTest.pb.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgTest.pb.cc.o"
 	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/db_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_server.dir/__/inc/proto/MsgTest.pb.cc.o -c /tmp/tmp.cAdQ96BiEw/inc/proto/MsgTest.pb.cc
 
@@ -327,7 +350,7 @@ db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgTest.pb.cc.o.provides.build: 
 
 db_server/CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o: db_server/CMakeFiles/db_server.dir/flags.make
 db_server/CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o: ../inc/proto/MSG_PLAYER_MOVE.pb.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object db_server/CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o"
 	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/db_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o -c /tmp/tmp.cAdQ96BiEw/inc/proto/MSG_PLAYER_MOVE.pb.cc
 
@@ -350,7 +373,7 @@ db_server/CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o.provides
 
 db_server/CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o: db_server/CMakeFiles/db_server.dir/flags.make
 db_server/CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o: ../inc/proto/MSG_PLAYER_REGISTER.pb.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object db_server/CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o"
 	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/db_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o -c /tmp/tmp.cAdQ96BiEw/inc/proto/MSG_PLAYER_REGISTER.pb.cc
 
@@ -384,6 +407,7 @@ db_server_OBJECTS = \
 "CMakeFiles/db_server.dir/src/manager/MysqlManager.cpp.o" \
 "CMakeFiles/db_server.dir/__/inc/proto/GameSpec.pb.cc.o" \
 "CMakeFiles/db_server.dir/__/inc/proto/MsgID.pb.cc.o" \
+"CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.o" \
 "CMakeFiles/db_server.dir/__/inc/proto/MsgTest.pb.cc.o" \
 "CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o" \
 "CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o"
@@ -402,6 +426,7 @@ db_server/bin/db_server: db_server/CMakeFiles/db_server.dir/src/manager/CacheMan
 db_server/bin/db_server: db_server/CMakeFiles/db_server.dir/src/manager/MysqlManager.cpp.o
 db_server/bin/db_server: db_server/CMakeFiles/db_server.dir/__/inc/proto/GameSpec.pb.cc.o
 db_server/bin/db_server: db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgID.pb.cc.o
+db_server/bin/db_server: db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.o
 db_server/bin/db_server: db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgTest.pb.cc.o
 db_server/bin/db_server: db_server/CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o
 db_server/bin/db_server: db_server/CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o
@@ -425,6 +450,7 @@ db_server/CMakeFiles/db_server.dir/requires: db_server/CMakeFiles/db_server.dir/
 db_server/CMakeFiles/db_server.dir/requires: db_server/CMakeFiles/db_server.dir/src/manager/MysqlManager.cpp.o.requires
 db_server/CMakeFiles/db_server.dir/requires: db_server/CMakeFiles/db_server.dir/__/inc/proto/GameSpec.pb.cc.o.requires
 db_server/CMakeFiles/db_server.dir/requires: db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgID.pb.cc.o.requires
+db_server/CMakeFiles/db_server.dir/requires: db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.o.requires
 db_server/CMakeFiles/db_server.dir/requires: db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgTest.pb.cc.o.requires
 db_server/CMakeFiles/db_server.dir/requires: db_server/CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o.requires
 db_server/CMakeFiles/db_server.dir/requires: db_server/CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o.requires

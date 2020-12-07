@@ -13,6 +13,9 @@ db_server/CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o: ../
 db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgID.pb.cc.o: ../inc/proto/MsgID.pb.cc
 db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgID.pb.cc.o: ../inc/proto/MsgID.pb.h
 
+db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.o: ../inc/proto/MsgServerID.pb.cc
+db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.o: ../inc/proto/MsgServerID.pb.h
+
 db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgTest.pb.cc.o: ../inc/proto/MsgTest.pb.cc
 db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgTest.pb.cc.o: ../inc/proto/MsgTest.pb.h
 
@@ -51,6 +54,7 @@ db_server/CMakeFiles/db_server.dir/src/main.cpp.o: ../db_server/./inc/SocketServ
 db_server/CMakeFiles/db_server.dir/src/main.cpp.o: ../db_server/./inc/baselink.h
 db_server/CMakeFiles/db_server.dir/src/main.cpp.o: ../db_server/./inc/bloom_filter.hpp
 db_server/CMakeFiles/db_server.dir/src/main.cpp.o: ../db_server/./inc/buffer.h
+db_server/CMakeFiles/db_server.dir/src/main.cpp.o: ../db_server/./inc/proto/MsgTest.pb.h
 db_server/CMakeFiles/db_server.dir/src/main.cpp.o: ../db_server/src/main.cpp
 
 db_server/CMakeFiles/db_server.dir/src/manager/CacheManager.cpp.o: ../db_server/./inc/./proto/GameSpec.pb.h
@@ -68,12 +72,12 @@ db_server/CMakeFiles/db_server.dir/src/manager/MysqlManager.cpp.o: ../db_server/
 db_server/CMakeFiles/db_server.dir/src/manager/MysqlManager.cpp.o: ../db_server/./inc/Singleton.h
 db_server/CMakeFiles/db_server.dir/src/manager/MysqlManager.cpp.o: ../db_server/src/manager/MysqlManager.cpp
 
-db_server/CMakeFiles/db_server.dir/src/network/Epoll.cpp.o: .././inc/proto/MsgTest.pb.h
 db_server/CMakeFiles/db_server.dir/src/network/Epoll.cpp.o: ../db_server/./inc/Config.h
 db_server/CMakeFiles/db_server.dir/src/network/Epoll.cpp.o: ../db_server/./inc/Epoll.h
 db_server/CMakeFiles/db_server.dir/src/network/Epoll.cpp.o: ../db_server/./inc/MesgHead.h
 db_server/CMakeFiles/db_server.dir/src/network/Epoll.cpp.o: ../db_server/./inc/baselink.h
 db_server/CMakeFiles/db_server.dir/src/network/Epoll.cpp.o: ../db_server/./inc/buffer.h
+db_server/CMakeFiles/db_server.dir/src/network/Epoll.cpp.o: ../db_server/./inc/proto/MsgTest.pb.h
 db_server/CMakeFiles/db_server.dir/src/network/Epoll.cpp.o: ../db_server/src/network/Epoll.cpp
 
 db_server/CMakeFiles/db_server.dir/src/network/MesgHead.cpp.o: ../db_server/./inc/Config.h
@@ -90,6 +94,7 @@ db_server/CMakeFiles/db_server.dir/src/network/SocketServer.cpp.o: ../db_server/
 db_server/CMakeFiles/db_server.dir/src/network/SocketServer.cpp.o: ../db_server/./inc/baselink.h
 db_server/CMakeFiles/db_server.dir/src/network/SocketServer.cpp.o: ../db_server/./inc/buffer.h
 db_server/CMakeFiles/db_server.dir/src/network/SocketServer.cpp.o: ../db_server/./inc/proto/MsgID.pb.h
+db_server/CMakeFiles/db_server.dir/src/network/SocketServer.cpp.o: ../db_server/./inc/proto/MsgTest.pb.h
 db_server/CMakeFiles/db_server.dir/src/network/SocketServer.cpp.o: ../db_server/src/network/SocketServer.cpp
 
 db_server/CMakeFiles/db_server.dir/src/network/baselink.cpp.o: ../db_server/./inc/Config.h

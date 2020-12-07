@@ -260,30 +260,6 @@ src/Cache/CacheManager.cpp.s:
 	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/Cache/CacheManager.cpp.s
 .PHONY : src/Cache/CacheManager.cpp.s
 
-src/Epoll.o: src/Epoll.cpp.o
-.PHONY : src/Epoll.o
-
-# target to build an object file
-src/Epoll.cpp.o:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/Epoll.cpp.o
-.PHONY : src/Epoll.cpp.o
-
-src/Epoll.i: src/Epoll.cpp.i
-.PHONY : src/Epoll.i
-
-# target to preprocess a source file
-src/Epoll.cpp.i:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/Epoll.cpp.i
-.PHONY : src/Epoll.cpp.i
-
-src/Epoll.s: src/Epoll.cpp.s
-.PHONY : src/Epoll.s
-
-# target to generate assembly for a file
-src/Epoll.cpp.s:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/Epoll.cpp.s
-.PHONY : src/Epoll.cpp.s
-
 src/EventSystem.o: src/EventSystem.cpp.o
 .PHONY : src/EventSystem.o
 
@@ -428,53 +404,125 @@ src/Managers/PlayerManager.cpp.s:
 	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/Managers/PlayerManager.cpp.s
 .PHONY : src/Managers/PlayerManager.cpp.s
 
-src/MesgHead.o: src/MesgHead.cpp.o
-.PHONY : src/MesgHead.o
+src/Network/Epoll.o: src/Network/Epoll.cpp.o
+.PHONY : src/Network/Epoll.o
 
 # target to build an object file
-src/MesgHead.cpp.o:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/MesgHead.cpp.o
-.PHONY : src/MesgHead.cpp.o
+src/Network/Epoll.cpp.o:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/Network/Epoll.cpp.o
+.PHONY : src/Network/Epoll.cpp.o
 
-src/MesgHead.i: src/MesgHead.cpp.i
-.PHONY : src/MesgHead.i
+src/Network/Epoll.i: src/Network/Epoll.cpp.i
+.PHONY : src/Network/Epoll.i
 
 # target to preprocess a source file
-src/MesgHead.cpp.i:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/MesgHead.cpp.i
-.PHONY : src/MesgHead.cpp.i
+src/Network/Epoll.cpp.i:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/Network/Epoll.cpp.i
+.PHONY : src/Network/Epoll.cpp.i
 
-src/MesgHead.s: src/MesgHead.cpp.s
-.PHONY : src/MesgHead.s
+src/Network/Epoll.s: src/Network/Epoll.cpp.s
+.PHONY : src/Network/Epoll.s
 
 # target to generate assembly for a file
-src/MesgHead.cpp.s:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/MesgHead.cpp.s
-.PHONY : src/MesgHead.cpp.s
+src/Network/Epoll.cpp.s:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/Network/Epoll.cpp.s
+.PHONY : src/Network/Epoll.cpp.s
 
-src/SocketServer.o: src/SocketServer.cpp.o
-.PHONY : src/SocketServer.o
+src/Network/MesgHead.o: src/Network/MesgHead.cpp.o
+.PHONY : src/Network/MesgHead.o
 
 # target to build an object file
-src/SocketServer.cpp.o:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/SocketServer.cpp.o
-.PHONY : src/SocketServer.cpp.o
+src/Network/MesgHead.cpp.o:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/Network/MesgHead.cpp.o
+.PHONY : src/Network/MesgHead.cpp.o
 
-src/SocketServer.i: src/SocketServer.cpp.i
-.PHONY : src/SocketServer.i
+src/Network/MesgHead.i: src/Network/MesgHead.cpp.i
+.PHONY : src/Network/MesgHead.i
 
 # target to preprocess a source file
-src/SocketServer.cpp.i:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/SocketServer.cpp.i
-.PHONY : src/SocketServer.cpp.i
+src/Network/MesgHead.cpp.i:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/Network/MesgHead.cpp.i
+.PHONY : src/Network/MesgHead.cpp.i
 
-src/SocketServer.s: src/SocketServer.cpp.s
-.PHONY : src/SocketServer.s
+src/Network/MesgHead.s: src/Network/MesgHead.cpp.s
+.PHONY : src/Network/MesgHead.s
 
 # target to generate assembly for a file
-src/SocketServer.cpp.s:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/SocketServer.cpp.s
-.PHONY : src/SocketServer.cpp.s
+src/Network/MesgHead.cpp.s:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/Network/MesgHead.cpp.s
+.PHONY : src/Network/MesgHead.cpp.s
+
+src/Network/SocketServer.o: src/Network/SocketServer.cpp.o
+.PHONY : src/Network/SocketServer.o
+
+# target to build an object file
+src/Network/SocketServer.cpp.o:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/Network/SocketServer.cpp.o
+.PHONY : src/Network/SocketServer.cpp.o
+
+src/Network/SocketServer.i: src/Network/SocketServer.cpp.i
+.PHONY : src/Network/SocketServer.i
+
+# target to preprocess a source file
+src/Network/SocketServer.cpp.i:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/Network/SocketServer.cpp.i
+.PHONY : src/Network/SocketServer.cpp.i
+
+src/Network/SocketServer.s: src/Network/SocketServer.cpp.s
+.PHONY : src/Network/SocketServer.s
+
+# target to generate assembly for a file
+src/Network/SocketServer.cpp.s:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/Network/SocketServer.cpp.s
+.PHONY : src/Network/SocketServer.cpp.s
+
+src/Network/baselink.o: src/Network/baselink.cpp.o
+.PHONY : src/Network/baselink.o
+
+# target to build an object file
+src/Network/baselink.cpp.o:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/Network/baselink.cpp.o
+.PHONY : src/Network/baselink.cpp.o
+
+src/Network/baselink.i: src/Network/baselink.cpp.i
+.PHONY : src/Network/baselink.i
+
+# target to preprocess a source file
+src/Network/baselink.cpp.i:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/Network/baselink.cpp.i
+.PHONY : src/Network/baselink.cpp.i
+
+src/Network/baselink.s: src/Network/baselink.cpp.s
+.PHONY : src/Network/baselink.s
+
+# target to generate assembly for a file
+src/Network/baselink.cpp.s:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/Network/baselink.cpp.s
+.PHONY : src/Network/baselink.cpp.s
+
+src/Network/buffer.o: src/Network/buffer.cpp.o
+.PHONY : src/Network/buffer.o
+
+# target to build an object file
+src/Network/buffer.cpp.o:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/Network/buffer.cpp.o
+.PHONY : src/Network/buffer.cpp.o
+
+src/Network/buffer.i: src/Network/buffer.cpp.i
+.PHONY : src/Network/buffer.i
+
+# target to preprocess a source file
+src/Network/buffer.cpp.i:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/Network/buffer.cpp.i
+.PHONY : src/Network/buffer.cpp.i
+
+src/Network/buffer.s: src/Network/buffer.cpp.s
+.PHONY : src/Network/buffer.s
+
+# target to generate assembly for a file
+src/Network/buffer.cpp.s:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/Network/buffer.cpp.s
+.PHONY : src/Network/buffer.cpp.s
 
 src/Systems/BagSystem.o: src/Systems/BagSystem.cpp.o
 .PHONY : src/Systems/BagSystem.o
@@ -523,54 +571,6 @@ src/Systems/TransformSystem.s: src/Systems/TransformSystem.cpp.s
 src/Systems/TransformSystem.cpp.s:
 	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/Systems/TransformSystem.cpp.s
 .PHONY : src/Systems/TransformSystem.cpp.s
-
-src/baselink.o: src/baselink.cpp.o
-.PHONY : src/baselink.o
-
-# target to build an object file
-src/baselink.cpp.o:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/baselink.cpp.o
-.PHONY : src/baselink.cpp.o
-
-src/baselink.i: src/baselink.cpp.i
-.PHONY : src/baselink.i
-
-# target to preprocess a source file
-src/baselink.cpp.i:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/baselink.cpp.i
-.PHONY : src/baselink.cpp.i
-
-src/baselink.s: src/baselink.cpp.s
-.PHONY : src/baselink.s
-
-# target to generate assembly for a file
-src/baselink.cpp.s:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/baselink.cpp.s
-.PHONY : src/baselink.cpp.s
-
-src/buffer.o: src/buffer.cpp.o
-.PHONY : src/buffer.o
-
-# target to build an object file
-src/buffer.cpp.o:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/buffer.cpp.o
-.PHONY : src/buffer.cpp.o
-
-src/buffer.i: src/buffer.cpp.i
-.PHONY : src/buffer.i
-
-# target to preprocess a source file
-src/buffer.cpp.i:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/buffer.cpp.i
-.PHONY : src/buffer.cpp.i
-
-src/buffer.s: src/buffer.cpp.s
-.PHONY : src/buffer.s
-
-# target to generate assembly for a file
-src/buffer.cpp.s:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/buffer.cpp.s
-.PHONY : src/buffer.cpp.s
 
 src/db/MysqlManager.o: src/db/MysqlManager.cpp.o
 .PHONY : src/db/MysqlManager.o
@@ -647,9 +647,6 @@ help:
 	@echo "... src/Cache/CacheManager.o"
 	@echo "... src/Cache/CacheManager.i"
 	@echo "... src/Cache/CacheManager.s"
-	@echo "... src/Epoll.o"
-	@echo "... src/Epoll.i"
-	@echo "... src/Epoll.s"
 	@echo "... src/EventSystem.o"
 	@echo "... src/EventSystem.i"
 	@echo "... src/EventSystem.s"
@@ -668,24 +665,27 @@ help:
 	@echo "... src/Managers/PlayerManager.o"
 	@echo "... src/Managers/PlayerManager.i"
 	@echo "... src/Managers/PlayerManager.s"
-	@echo "... src/MesgHead.o"
-	@echo "... src/MesgHead.i"
-	@echo "... src/MesgHead.s"
-	@echo "... src/SocketServer.o"
-	@echo "... src/SocketServer.i"
-	@echo "... src/SocketServer.s"
+	@echo "... src/Network/Epoll.o"
+	@echo "... src/Network/Epoll.i"
+	@echo "... src/Network/Epoll.s"
+	@echo "... src/Network/MesgHead.o"
+	@echo "... src/Network/MesgHead.i"
+	@echo "... src/Network/MesgHead.s"
+	@echo "... src/Network/SocketServer.o"
+	@echo "... src/Network/SocketServer.i"
+	@echo "... src/Network/SocketServer.s"
+	@echo "... src/Network/baselink.o"
+	@echo "... src/Network/baselink.i"
+	@echo "... src/Network/baselink.s"
+	@echo "... src/Network/buffer.o"
+	@echo "... src/Network/buffer.i"
+	@echo "... src/Network/buffer.s"
 	@echo "... src/Systems/BagSystem.o"
 	@echo "... src/Systems/BagSystem.i"
 	@echo "... src/Systems/BagSystem.s"
 	@echo "... src/Systems/TransformSystem.o"
 	@echo "... src/Systems/TransformSystem.i"
 	@echo "... src/Systems/TransformSystem.s"
-	@echo "... src/baselink.o"
-	@echo "... src/baselink.i"
-	@echo "... src/baselink.s"
-	@echo "... src/buffer.o"
-	@echo "... src/buffer.i"
-	@echo "... src/buffer.s"
 	@echo "... src/db/MysqlManager.o"
 	@echo "... src/db/MysqlManager.i"
 	@echo "... src/db/MysqlManager.s"

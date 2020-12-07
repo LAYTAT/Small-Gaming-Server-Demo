@@ -1,6 +1,8 @@
 include_directories(./inc)
 include_directories(./inc/proto)
 
+include_directories(../inc/Configs)
+
 include_directories(/usr/include/mysql)
 include_directories(/usr/local/include/mysql++)
 link_directories(

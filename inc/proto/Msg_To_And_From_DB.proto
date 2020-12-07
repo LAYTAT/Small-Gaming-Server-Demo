@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+// todo: 改为加盐
+message DbReq_User_Auth {
+  string hashedUsrId = 1; // 哈希后的玩家账号
+  string hashedUsrPwd = 2; // 哈希后的玩家密码
+}
+message DbRep_User_Auth {
+  bool isUserVerified = 1; // 用户数据是否正确
+  int32 errCode = 2; // GameSpec里的Errcode
+}

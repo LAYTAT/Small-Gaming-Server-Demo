@@ -212,6 +212,30 @@ __/inc/proto/MsgID.pb.cc.s:
 	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f db_server/CMakeFiles/db_server.dir/build.make db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgID.pb.cc.s
 .PHONY : __/inc/proto/MsgID.pb.cc.s
 
+__/inc/proto/MsgServerID.pb.o: __/inc/proto/MsgServerID.pb.cc.o
+.PHONY : __/inc/proto/MsgServerID.pb.o
+
+# target to build an object file
+__/inc/proto/MsgServerID.pb.cc.o:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f db_server/CMakeFiles/db_server.dir/build.make db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.o
+.PHONY : __/inc/proto/MsgServerID.pb.cc.o
+
+__/inc/proto/MsgServerID.pb.i: __/inc/proto/MsgServerID.pb.cc.i
+.PHONY : __/inc/proto/MsgServerID.pb.i
+
+# target to preprocess a source file
+__/inc/proto/MsgServerID.pb.cc.i:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f db_server/CMakeFiles/db_server.dir/build.make db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.i
+.PHONY : __/inc/proto/MsgServerID.pb.cc.i
+
+__/inc/proto/MsgServerID.pb.s: __/inc/proto/MsgServerID.pb.cc.s
+.PHONY : __/inc/proto/MsgServerID.pb.s
+
+# target to generate assembly for a file
+__/inc/proto/MsgServerID.pb.cc.s:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f db_server/CMakeFiles/db_server.dir/build.make db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.s
+.PHONY : __/inc/proto/MsgServerID.pb.cc.s
+
 __/inc/proto/MsgTest.pb.o: __/inc/proto/MsgTest.pb.cc.o
 .PHONY : __/inc/proto/MsgTest.pb.o
 
@@ -473,6 +497,9 @@ help:
 	@echo "... __/inc/proto/MsgID.pb.o"
 	@echo "... __/inc/proto/MsgID.pb.i"
 	@echo "... __/inc/proto/MsgID.pb.s"
+	@echo "... __/inc/proto/MsgServerID.pb.o"
+	@echo "... __/inc/proto/MsgServerID.pb.i"
+	@echo "... __/inc/proto/MsgServerID.pb.s"
 	@echo "... __/inc/proto/MsgTest.pb.o"
 	@echo "... __/inc/proto/MsgTest.pb.i"
 	@echo "... __/inc/proto/MsgTest.pb.s"
