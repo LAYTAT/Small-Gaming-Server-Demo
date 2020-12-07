@@ -7,9 +7,9 @@
 
 #include "Config.h"
 #include "Singleton.h"
-#include "../../db_server/inc/baselink.h"
-#include "../../db_server/inc/Epoll.h"
-#include "../../db_server/inc/MesgHead.h"
+#include "baselink.h"
+#include "Epoll.h"
+#include "MesgHead.h"
 
 class SocketServer
 {

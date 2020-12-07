@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/tmp/tmp.cAdQ96BiEw/inc/proto/MsgID.pb.cc" "/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgID.pb.cc.o"
   "/tmp/tmp.cAdQ96BiEw/inc/proto/MsgServerID.pb.cc" "/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgServerID.pb.cc.o"
   "/tmp/tmp.cAdQ96BiEw/inc/proto/MsgTest.pb.cc" "/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server/CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.o"
+  "/tmp/tmp.cAdQ96BiEw/inc/proto/Msg_To_And_From_DB.pb.cc" "/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server/CMakeFiles/login_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o"
   "/tmp/tmp.cAdQ96BiEw/login_server/src/Cache/CacheManager.cpp" "/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server/CMakeFiles/login_server.dir/src/Cache/CacheManager.cpp.o"
   "/tmp/tmp.cAdQ96BiEw/login_server/src/EventSystem.cpp" "/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server/CMakeFiles/login_server.dir/src/EventSystem.cpp.o"
   "/tmp/tmp.cAdQ96BiEw/login_server/src/Managers/ComponentsManager.cpp" "/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server/CMakeFiles/login_server.dir/src/Managers/ComponentsManager.cpp.o"

@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/tmp/tmp.cAdQ96BiEw/inc/proto/MsgID.pb.cc" "/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgID.pb.cc.o"
   "/tmp/tmp.cAdQ96BiEw/inc/proto/MsgServerID.pb.cc" "/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.o"
   "/tmp/tmp.cAdQ96BiEw/inc/proto/MsgTest.pb.cc" "/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgTest.pb.cc.o"
+  "/tmp/tmp.cAdQ96BiEw/inc/proto/Msg_To_And_From_DB.pb.cc" "/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/db_server/CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o"
   "/tmp/tmp.cAdQ96BiEw/db_server/src/EventSystem.cpp" "/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/db_server/CMakeFiles/db_server.dir/src/EventSystem.cpp.o"
   "/tmp/tmp.cAdQ96BiEw/db_server/src/main.cpp" "/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/db_server/CMakeFiles/db_server.dir/src/main.cpp.o"
   "/tmp/tmp.cAdQ96BiEw/db_server/src/manager/CacheManager.cpp" "/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/db_server/CMakeFiles/db_server.dir/src/manager/CacheManager.cpp.o"
@@ -28,7 +29,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  "../db_server/../inc"
+  "../db_server/./inc"
   "../db_server/../inc/proto"
   "../db_server/../inc/Configs"
   "/usr/include/mysql"

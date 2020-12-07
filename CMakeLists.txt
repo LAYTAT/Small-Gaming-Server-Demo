@@ -11,3 +11,4 @@ add_subdirectory(login_server)
 
 add_subdirectory(db_server)
 
+add_subdirectory(gate_server)

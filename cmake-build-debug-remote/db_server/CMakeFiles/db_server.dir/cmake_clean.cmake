@@ -14,6 +14,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/db_server.dir/__/inc/proto/MsgTest.pb.cc.o"
   "CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o"
   "CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o"
+  "CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o"
   "bin/db_server.pdb"
   "bin/db_server"
 )

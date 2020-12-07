@@ -3,7 +3,6 @@
 //
 #include "SocketServer.h"
 #include "MsgID.pb.h"
-#include "PlayerManager.h"
 #include "EventSystem.h"
 
 INSTANCE_SINGLETON(SocketServer);
@@ -27,7 +26,7 @@ bool SocketServer::Init()
     {
         return false;
     }
-    if (m_ListenSock->OpenServer(DEFAULT_SERVER_PORT, DEFAULT_SERVER_ADDR) == -1)
+    if (m_ListenSock->OpenServer(GATE_SERVER_PORT, GATE_SERVER_IP_ADDR) == -1)
     {
         std::cout << "Open server failed!" << std::endl;
         return false;

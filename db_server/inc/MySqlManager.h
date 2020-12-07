@@ -3,7 +3,7 @@
 
 #include "Singleton.h"
 #include "Config.h"
-#include "./proto/GameSpec.pb.h"
+#include "GameSpec.pb.h"
 #include <map>
 #include <utility>
 #include "mysql++/mysql++.h"

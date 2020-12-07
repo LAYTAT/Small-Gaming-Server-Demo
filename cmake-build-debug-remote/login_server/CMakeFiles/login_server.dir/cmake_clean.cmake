@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/login_server.dir/__/inc/proto/MsgTest.pb.cc.o"
   "CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o"
   "CMakeFiles/login_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o"
+  "CMakeFiles/login_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o"
   "CMakeFiles/login_server.dir/src/Managers/ComponentsManager.cpp.o"
   "CMakeFiles/login_server.dir/src/Managers/EntityManager.cpp.o"
   "CMakeFiles/login_server.dir/src/Managers/ItemManager.cpp.o"

@@ -8,7 +8,7 @@
 #include "Singleton.h"
 #include <sw/redis++/redis++.h>
 #include "CacheEnum.h"
-#include "./proto/GameSpec.pb.h"
+#include "GameSpec.pb.h"
 #include "bloom_filter.hpp"
 #include "Config.h"
 #include "MySqlManager.h"

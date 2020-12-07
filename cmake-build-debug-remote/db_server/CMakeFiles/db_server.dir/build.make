@@ -394,6 +394,29 @@ db_server/CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o.prov
 
 db_server/CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o.provides.build: db_server/CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o
 
+db_server/CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o: db_server/CMakeFiles/db_server.dir/flags.make
+db_server/CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o: ../inc/proto/Msg_To_And_From_DB.pb.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles $(CMAKE_PROGRESS_16)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object db_server/CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o"
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/db_server && /usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o -c /tmp/tmp.cAdQ96BiEw/inc/proto/Msg_To_And_From_DB.pb.cc
+
+db_server/CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.i"
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/db_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/inc/proto/Msg_To_And_From_DB.pb.cc > CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.i
+
+db_server/CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.s"
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/db_server && /usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/inc/proto/Msg_To_And_From_DB.pb.cc -o CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.s
+
+db_server/CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o.requires:
+.PHONY : db_server/CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o.requires
+
+db_server/CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o.provides: db_server/CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o.requires
+	$(MAKE) -f db_server/CMakeFiles/db_server.dir/build.make db_server/CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o.provides.build
+.PHONY : db_server/CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o.provides
+
+db_server/CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o.provides.build: db_server/CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o
+
 # Object files for target db_server
 db_server_OBJECTS = \
 "CMakeFiles/db_server.dir/src/EventSystem.cpp.o" \
@@ -410,7 +433,8 @@ db_server_OBJECTS = \
 "CMakeFiles/db_server.dir/__/inc/proto/MsgServerID.pb.cc.o" \
 "CMakeFiles/db_server.dir/__/inc/proto/MsgTest.pb.cc.o" \
 "CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o" \
-"CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o"
+"CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o" \
+"CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o"
 
 # External object files for target db_server
 db_server_EXTERNAL_OBJECTS =
@@ -430,6 +454,7 @@ db_server/bin/db_server: db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgServ
 db_server/bin/db_server: db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgTest.pb.cc.o
 db_server/bin/db_server: db_server/CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o
 db_server/bin/db_server: db_server/CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o
+db_server/bin/db_server: db_server/CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o
 db_server/bin/db_server: db_server/CMakeFiles/db_server.dir/build.make
 db_server/bin/db_server: db_server/CMakeFiles/db_server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable bin/db_server"
@@ -454,6 +479,7 @@ db_server/CMakeFiles/db_server.dir/requires: db_server/CMakeFiles/db_server.dir/
 db_server/CMakeFiles/db_server.dir/requires: db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgTest.pb.cc.o.requires
 db_server/CMakeFiles/db_server.dir/requires: db_server/CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o.requires
 db_server/CMakeFiles/db_server.dir/requires: db_server/CMakeFiles/db_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o.requires
+db_server/CMakeFiles/db_server.dir/requires: db_server/CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o.requires
 .PHONY : db_server/CMakeFiles/db_server.dir/requires
 
 db_server/CMakeFiles/db_server.dir/clean:

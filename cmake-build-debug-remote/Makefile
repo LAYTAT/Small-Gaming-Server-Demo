@@ -128,6 +128,19 @@ db_server/fast:
 	$(MAKE) -f db_server/CMakeFiles/db_server.dir/build.make db_server/CMakeFiles/db_server.dir/build
 .PHONY : db_server/fast
 
+#=============================================================================
+# Target rules for targets named gate_server
+
+# Build rule for target.
+gate_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gate_server
+.PHONY : gate_server
+
+# fast build rule for target.
+gate_server/fast:
+	$(MAKE) -f gate_server/CMakeFiles/gate_server.dir/build.make gate_server/CMakeFiles/gate_server.dir/build
+.PHONY : gate_server/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -138,6 +151,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... login_server"
 	@echo "... db_server"
+	@echo "... gate_server"
 .PHONY : help
 
 

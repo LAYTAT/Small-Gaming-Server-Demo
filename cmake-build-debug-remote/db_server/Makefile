@@ -260,6 +260,30 @@ __/inc/proto/MsgTest.pb.cc.s:
 	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f db_server/CMakeFiles/db_server.dir/build.make db_server/CMakeFiles/db_server.dir/__/inc/proto/MsgTest.pb.cc.s
 .PHONY : __/inc/proto/MsgTest.pb.cc.s
 
+__/inc/proto/Msg_To_And_From_DB.pb.o: __/inc/proto/Msg_To_And_From_DB.pb.cc.o
+.PHONY : __/inc/proto/Msg_To_And_From_DB.pb.o
+
+# target to build an object file
+__/inc/proto/Msg_To_And_From_DB.pb.cc.o:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f db_server/CMakeFiles/db_server.dir/build.make db_server/CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o
+.PHONY : __/inc/proto/Msg_To_And_From_DB.pb.cc.o
+
+__/inc/proto/Msg_To_And_From_DB.pb.i: __/inc/proto/Msg_To_And_From_DB.pb.cc.i
+.PHONY : __/inc/proto/Msg_To_And_From_DB.pb.i
+
+# target to preprocess a source file
+__/inc/proto/Msg_To_And_From_DB.pb.cc.i:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f db_server/CMakeFiles/db_server.dir/build.make db_server/CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.i
+.PHONY : __/inc/proto/Msg_To_And_From_DB.pb.cc.i
+
+__/inc/proto/Msg_To_And_From_DB.pb.s: __/inc/proto/Msg_To_And_From_DB.pb.cc.s
+.PHONY : __/inc/proto/Msg_To_And_From_DB.pb.s
+
+# target to generate assembly for a file
+__/inc/proto/Msg_To_And_From_DB.pb.cc.s:
+	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(MAKE) -f db_server/CMakeFiles/db_server.dir/build.make db_server/CMakeFiles/db_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.s
+.PHONY : __/inc/proto/Msg_To_And_From_DB.pb.cc.s
+
 src/EventSystem.o: src/EventSystem.cpp.o
 .PHONY : src/EventSystem.o
 
@@ -503,6 +527,9 @@ help:
 	@echo "... __/inc/proto/MsgTest.pb.o"
 	@echo "... __/inc/proto/MsgTest.pb.i"
 	@echo "... __/inc/proto/MsgTest.pb.s"
+	@echo "... __/inc/proto/Msg_To_And_From_DB.pb.o"
+	@echo "... __/inc/proto/Msg_To_And_From_DB.pb.i"
+	@echo "... __/inc/proto/Msg_To_And_From_DB.pb.s"
 	@echo "... src/EventSystem.o"
 	@echo "... src/EventSystem.i"
 	@echo "... src/EventSystem.s"
