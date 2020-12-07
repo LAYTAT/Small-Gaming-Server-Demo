@@ -2031,6 +2031,20 @@ class ClientReq : public ::google::protobuf::Message /* @@protoc_insertion_point
 
   // accessors -------------------------------------------------------
 
+  // string username = 2;
+  void clear_username();
+  static const int kUsernameFieldNumber = 2;
+  const ::std::string& username() const;
+  void set_username(const ::std::string& value);
+  #if LANG_CXX11
+  void set_username(::std::string&& value);
+  #endif
+  void set_username(const char* value);
+  void set_username(const char* value, size_t size);
+  ::std::string* mutable_username();
+  ::std::string* release_username();
+  void set_allocated_username(::std::string* username);
+
   // int32 session_code = 1;
   void clear_session_code();
   static const int kSessionCodeFieldNumber = 1;
@@ -2041,6 +2055,7 @@ class ClientReq : public ::google::protobuf::Message /* @@protoc_insertion_point
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::internal::ArenaStringPtr username_;
   ::google::protobuf::int32 session_code_;
   mutable int _cached_size_;
   friend struct ::protobuf_GameSpec_2eproto::TableStruct;
@@ -3256,6 +3271,59 @@ inline void ClientReq::set_session_code(::google::protobuf::int32 value) {
   
   session_code_ = value;
   // @@protoc_insertion_point(field_set:GameSpec.ClientReq.session_code)
+}
+
+// string username = 2;
+inline void ClientReq::clear_username() {
+  username_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& ClientReq::username() const {
+  // @@protoc_insertion_point(field_get:GameSpec.ClientReq.username)
+  return username_.GetNoArena();
+}
+inline void ClientReq::set_username(const ::std::string& value) {
+  
+  username_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:GameSpec.ClientReq.username)
+}
+#if LANG_CXX11
+inline void ClientReq::set_username(::std::string&& value) {
+  
+  username_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:GameSpec.ClientReq.username)
+}
+#endif
+inline void ClientReq::set_username(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  
+  username_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:GameSpec.ClientReq.username)
+}
+inline void ClientReq::set_username(const char* value, size_t size) {
+  
+  username_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:GameSpec.ClientReq.username)
+}
+inline ::std::string* ClientReq::mutable_username() {
+  
+  // @@protoc_insertion_point(field_mutable:GameSpec.ClientReq.username)
+  return username_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* ClientReq::release_username() {
+  // @@protoc_insertion_point(field_release:GameSpec.ClientReq.username)
+  
+  return username_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void ClientReq::set_allocated_username(::std::string* username) {
+  if (username != NULL) {
+    
+  } else {
+    
+  }
+  username_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), username);
+  // @@protoc_insertion_point(field_set_allocated:GameSpec.ClientReq.username)
 }
 
 // -------------------------------------------------------------------

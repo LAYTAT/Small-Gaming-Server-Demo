@@ -48,21 +48,25 @@ INT32 EventSystem::PlayerReqItems(const MesgInfo &stHead, const char *body, cons
     std::cout << "Enter Player Reqesting Items Process in Gate Server." << std::endl;
 
     GameSpec::ClientReq clientReq;
-    GameSpec:: rsp;
-//
-//    if(!dbReqUserAuth.ParseFromArray(body, len))
-//    {
-//        std::cout << "db_server parsing login req failed" <<std::endl;
-//        rsp.set_errcode(GameSpec::ERROR_PARSE_FAILED);
-//        rsp.set_isuserverified(false);
-//        SocketServer::Instance()->BroadCast(stHead,rsp);
-//        return 1;
-//    }
-//    std::cout << "Redis login request name is : " << MySqlMgr::Instance()->GetPlayerId(loginReq.name()) << std::endl;
-//    std::cout << "login_server  uid = " << stHead.uID << std::endl;
-//    std::cout << "name = " << loginReq.name() << std::endl;
-//    std::cout << "password = " << loginReq.password() << std::endl;
-//
+
+    if(!clientReq.ParseFromArray(body, len))
+    {
+        std::cout << "gate_server parsing client req failed" <<std::endl;
+        return 1;
+    }
+
+    std::cout << "username = " << clientReq.username() << std::endl;
+    std::cout << "session code = " << clientReq.session_code() << std::endl;
+
+    // todo：真实 session code 的判断
+
+    if(clientReq.session_code() == AUTH_SESSION_CODE){
+        std::cout << "Client Requested with right session code, continue to pass on request ==================" << std::endl;
+
+    } else {
+        std::cout << "Client Requested with wrong session code, refuse to pass on request ===================" << std::endl;
+    }
+
 //    if(EntityMgr::Instance()->HasPlayer(stHead.uID) == false)
 //    {
 //        //取数据库

@@ -36,7 +36,4 @@ private:
     int which_game_server;
     int total_game_server_nums = 2;
 };
-
-
-
 #endif //MY_SERVER_SOCKETSERVER_H

@@ -599,6 +599,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GameSpec::ClientReq, session_code_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GameSpec::ClientReq, username_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GameSpec::LoginRep, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -626,7 +627,7 @@ static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROT
   { 104, -1, sizeof(::GameSpec::RankReq)},
   { 111, -1, sizeof(::GameSpec::RankRsp)},
   { 119, -1, sizeof(::GameSpec::ClientReq)},
-  { 125, -1, sizeof(::GameSpec::LoginRep)},
+  { 126, -1, sizeof(::GameSpec::LoginRep)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -699,18 +700,18 @@ void AddDescriptorsImpl() {
       "\n\007errCode\030\001 \001(\0162\023.GameSpec.ErrorCode\"%\n\007"
       "RankReq\022\r\n\005start\030\001 \001(\005\022\013\n\003end\030\002 \001(\005\"J\n\007R"
       "ankRsp\022$\n\007errCode\030\001 \001(\0162\023.GameSpec.Error"
-      "Code\022\014\n\004name\030\002 \003(\t\022\013\n\003exp\030\003 \003(\005\"!\n\tClien"
-      "tReq\022\024\n\014session_code\030\001 \001(\005\"j\n\010LoginRep\022$"
-      "\n\007errCode\030\001 \001(\0162\023.GameSpec.ErrorCode\022\017\n\007"
-      "gate_ip\030\002 \001(\t\022\021\n\tgate_port\030\003 \001(\005\022\024\n\014sess"
-      "ion_code\030\004 \001(\005*\225\001\n\tErrorCode\022\022\n\016ERROR_NO"
-      "_ERROR\020\000\022\023\n\017ERROR_AUH_ERROR\020\001\022\025\n\021ERROR_S"
-      "EARCH_FAIL\020\002\022\027\n\023ERROR_REV_ITEM_FAIL\020\003\022\027\n"
-      "\023ERROR_ADD_ITEM_FAIL\020\004\022\026\n\022ERROR_PARSE_FA"
-      "ILED\020\005b\006proto3"
+      "Code\022\014\n\004name\030\002 \003(\t\022\013\n\003exp\030\003 \003(\005\"3\n\tClien"
+      "tReq\022\024\n\014session_code\030\001 \001(\005\022\020\n\010username\030\002"
+      " \001(\t\"j\n\010LoginRep\022$\n\007errCode\030\001 \001(\0162\023.Game"
+      "Spec.ErrorCode\022\017\n\007gate_ip\030\002 \001(\t\022\021\n\tgate_"
+      "port\030\003 \001(\005\022\024\n\014session_code\030\004 \001(\005*\225\001\n\tErr"
+      "orCode\022\022\n\016ERROR_NO_ERROR\020\000\022\023\n\017ERROR_AUH_"
+      "ERROR\020\001\022\025\n\021ERROR_SEARCH_FAIL\020\002\022\027\n\023ERROR_"
+      "REV_ITEM_FAIL\020\003\022\027\n\023ERROR_ADD_ITEM_FAIL\020\004"
+      "\022\026\n\022ERROR_PARSE_FAILED\020\005b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1454);
+      descriptor, 1472);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "GameSpec.proto", &protobuf_RegisterTypes);
 }
@@ -5595,6 +5596,7 @@ void ClientReq::InitAsDefaultInstance() {
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ClientReq::kSessionCodeFieldNumber;
+const int ClientReq::kUsernameFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ClientReq::ClientReq()
@@ -5610,11 +5612,16 @@ ClientReq::ClientReq(const ClientReq& from)
       _internal_metadata_(NULL),
       _cached_size_(0) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
+  username_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.username().size() > 0) {
+    username_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.username_);
+  }
   session_code_ = from.session_code_;
   // @@protoc_insertion_point(copy_constructor:GameSpec.ClientReq)
 }
 
 void ClientReq::SharedCtor() {
+  username_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   session_code_ = 0;
   _cached_size_ = 0;
 }
@@ -5625,6 +5632,7 @@ ClientReq::~ClientReq() {
 }
 
 void ClientReq::SharedDtor() {
+  username_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
 void ClientReq::SetCachedSize(int size) const {
@@ -5656,6 +5664,7 @@ void ClientReq::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  username_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   session_code_ = 0;
   _internal_metadata_.Clear();
 }
@@ -5678,6 +5687,22 @@ bool ClientReq::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &session_code_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string username = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_username()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->username().data(), static_cast<int>(this->username().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "GameSpec.ClientReq.username"));
         } else {
           goto handle_unusual;
         }
@@ -5715,6 +5740,16 @@ void ClientReq::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->session_code(), output);
   }
 
+  // string username = 2;
+  if (this->username().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->username().data(), static_cast<int>(this->username().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "GameSpec.ClientReq.username");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->username(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -5734,6 +5769,17 @@ void ClientReq::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->session_code(), target);
   }
 
+  // string username = 2;
+  if (this->username().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->username().data(), static_cast<int>(this->username().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "GameSpec.ClientReq.username");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        2, this->username(), target);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
@@ -5751,6 +5797,13 @@ size_t ClientReq::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
+  // string username = 2;
+  if (this->username().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->username());
+  }
+
   // int32 session_code = 1;
   if (this->session_code() != 0) {
     total_size += 1 +
@@ -5787,6 +5840,10 @@ void ClientReq::MergeFrom(const ClientReq& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  if (from.username().size() > 0) {
+
+    username_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.username_);
+  }
   if (from.session_code() != 0) {
     set_session_code(from.session_code());
   }
@@ -5816,6 +5873,7 @@ void ClientReq::Swap(ClientReq* other) {
 }
 void ClientReq::InternalSwap(ClientReq* other) {
   using std::swap;
+  username_.Swap(&other->username_);
   swap(session_code_, other->session_code_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_cached_size_, other->_cached_size_);
