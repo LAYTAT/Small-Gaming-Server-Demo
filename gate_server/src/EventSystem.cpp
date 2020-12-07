@@ -30,7 +30,7 @@ bool EventSystem::Init()
     SocketServer::Instance()->ConnectGameServer();
 
     // 绑定处理函数
-    m_msgHandler->RegisterMsg(  MSGID::MSG_REQUEST_BAG_ITEMS_FROM_USER,  &EventSystem::PlayerReqItems);
+    m_msgHandler->RegisterMsg(MSGID::MSG_REQUEST_BAG_ITEMS_FROM_USER,  &EventSystem::PlayerReqItems);
 
     return true;
 }
@@ -46,8 +46,9 @@ void EventSystem::Uinit()
 INT32 EventSystem::PlayerReqItems(const MesgInfo &stHead, const char *body, const INT32 len,const INT32 connfd)
 {
     std::cout << "Enter Player Reqesting Items Process in Gate Server." << std::endl;
-//    DbReq_User_Auth dbReqUserAuth;
-//    DbRep_User_Auth rsp;
+
+    GameSpec::ClientReq clientReq;
+    GameSpec:: rsp;
 //
 //    if(!dbReqUserAuth.ParseFromArray(body, len))
 //    {

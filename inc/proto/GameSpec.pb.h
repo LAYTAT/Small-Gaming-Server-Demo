@@ -37,7 +37,7 @@ namespace protobuf_GameSpec_2eproto {
 struct TableStruct {
   static const ::google::protobuf::internal::ParseTableField entries[];
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[16];
+  static const ::google::protobuf::internal::ParseTable schema[17];
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
   static const ::google::protobuf::uint32 offsets[];
@@ -73,6 +73,8 @@ void InitDefaultsRankReqImpl();
 void InitDefaultsRankReq();
 void InitDefaultsRankRspImpl();
 void InitDefaultsRankRsp();
+void InitDefaultsClientReqImpl();
+void InitDefaultsClientReq();
 void InitDefaultsLoginRepImpl();
 void InitDefaultsLoginRep();
 inline void InitDefaults() {
@@ -91,6 +93,7 @@ inline void InitDefaults() {
   InitDefaultsRemoveItemRsp();
   InitDefaultsRankReq();
   InitDefaultsRankRsp();
+  InitDefaultsClientReq();
   InitDefaultsLoginRep();
 }
 }  // namespace protobuf_GameSpec_2eproto
@@ -107,6 +110,9 @@ extern BagInfoDefaultTypeInternal _BagInfo_default_instance_;
 class BagItem;
 class BagItemDefaultTypeInternal;
 extern BagItemDefaultTypeInternal _BagItem_default_instance_;
+class ClientReq;
+class ClientReqDefaultTypeInternal;
+extern ClientReqDefaultTypeInternal _ClientReq_default_instance_;
 class CtlMsgLoginReq;
 class CtlMsgLoginReqDefaultTypeInternal;
 extern CtlMsgLoginReqDefaultTypeInternal _CtlMsgLoginReq_default_instance_;
@@ -1943,6 +1949,105 @@ class RankRsp : public ::google::protobuf::Message /* @@protoc_insertion_point(c
 };
 // -------------------------------------------------------------------
 
+class ClientReq : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:GameSpec.ClientReq) */ {
+ public:
+  ClientReq();
+  virtual ~ClientReq();
+
+  ClientReq(const ClientReq& from);
+
+  inline ClientReq& operator=(const ClientReq& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  ClientReq(ClientReq&& from) noexcept
+    : ClientReq() {
+    *this = ::std::move(from);
+  }
+
+  inline ClientReq& operator=(ClientReq&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const ClientReq& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const ClientReq* internal_default_instance() {
+    return reinterpret_cast<const ClientReq*>(
+               &_ClientReq_default_instance_);
+  }
+  static PROTOBUF_CONSTEXPR int const kIndexInFileMessages =
+    15;
+
+  void Swap(ClientReq* other);
+  friend void swap(ClientReq& a, ClientReq& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ClientReq* New() const PROTOBUF_FINAL { return New(NULL); }
+
+  ClientReq* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  void CopyFrom(const ClientReq& from);
+  void MergeFrom(const ClientReq& from);
+  void Clear() PROTOBUF_FINAL;
+  bool IsInitialized() const PROTOBUF_FINAL;
+
+  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void InternalSwap(ClientReq* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // int32 session_code = 1;
+  void clear_session_code();
+  static const int kSessionCodeFieldNumber = 1;
+  ::google::protobuf::int32 session_code() const;
+  void set_session_code(::google::protobuf::int32 value);
+
+  // @@protoc_insertion_point(class_scope:GameSpec.ClientReq)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::int32 session_code_;
+  mutable int _cached_size_;
+  friend struct ::protobuf_GameSpec_2eproto::TableStruct;
+  friend void ::protobuf_GameSpec_2eproto::InitDefaultsClientReqImpl();
+};
+// -------------------------------------------------------------------
+
 class LoginRep : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:GameSpec.LoginRep) */ {
  public:
   LoginRep();
@@ -1978,7 +2083,7 @@ class LoginRep : public ::google::protobuf::Message /* @@protoc_insertion_point(
                &_LoginRep_default_instance_);
   }
   static PROTOBUF_CONSTEXPR int const kIndexInFileMessages =
-    15;
+    16;
 
   void Swap(LoginRep* other);
   friend void swap(LoginRep& a, LoginRep& b) {
@@ -3137,6 +3242,24 @@ RankRsp::mutable_exp() {
 
 // -------------------------------------------------------------------
 
+// ClientReq
+
+// int32 session_code = 1;
+inline void ClientReq::clear_session_code() {
+  session_code_ = 0;
+}
+inline ::google::protobuf::int32 ClientReq::session_code() const {
+  // @@protoc_insertion_point(field_get:GameSpec.ClientReq.session_code)
+  return session_code_;
+}
+inline void ClientReq::set_session_code(::google::protobuf::int32 value) {
+  
+  session_code_ = value;
+  // @@protoc_insertion_point(field_set:GameSpec.ClientReq.session_code)
+}
+
+// -------------------------------------------------------------------
+
 // LoginRep
 
 // .GameSpec.ErrorCode errCode = 1;
@@ -3237,6 +3360,8 @@ inline void LoginRep::set_session_code(::google::protobuf::int32 value) {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

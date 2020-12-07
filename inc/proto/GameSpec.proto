@@ -94,8 +94,19 @@ enum ErrorCode
 	ERROR_SEARCH_FAIL = 2;
 	ERROR_REV_ITEM_FAIL = 3;
 	ERROR_ADD_ITEM_FAIL = 4;
-    ERROR_PARSE_FAILED = 5;
+	ERROR_PARSE_FAILED = 5;
 }
+
+message ClientReq
+{
+	int32 session_code = 1;
+	string username = 2;
+}
+
+// 用 message Players
+//message DBRepItem {
+//
+//}
 
 message LoginRep{
 	ErrorCode errCode = 1;

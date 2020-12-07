@@ -95,6 +95,11 @@ class RankRspDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<RankRsp>
       _instance;
 } _RankRsp_default_instance_;
+class ClientReqDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<ClientReq>
+      _instance;
+} _ClientReq_default_instance_;
 class LoginRepDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<LoginRep>
@@ -423,6 +428,27 @@ void InitDefaultsRankRsp() {
   ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsRankRspImpl);
 }
 
+void InitDefaultsClientReqImpl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
+#else
+  ::google::protobuf::internal::InitProtobufDefaults();
+#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  {
+    void* ptr = &::GameSpec::_ClientReq_default_instance_;
+    new (ptr) ::GameSpec::ClientReq();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameSpec::ClientReq::InitAsDefaultInstance();
+}
+
+void InitDefaultsClientReq() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsClientReqImpl);
+}
+
 void InitDefaultsLoginRepImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -444,7 +470,7 @@ void InitDefaultsLoginRep() {
   ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsLoginRepImpl);
 }
 
-::google::protobuf::Metadata file_level_metadata[16];
+::google::protobuf::Metadata file_level_metadata[17];
 const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
@@ -568,6 +594,12 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GameSpec::RankRsp, name_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GameSpec::RankRsp, exp_),
   ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GameSpec::ClientReq, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GameSpec::ClientReq, session_code_),
+  ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GameSpec::LoginRep, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
@@ -593,7 +625,8 @@ static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROT
   { 98, -1, sizeof(::GameSpec::RemoveItemRsp)},
   { 104, -1, sizeof(::GameSpec::RankReq)},
   { 111, -1, sizeof(::GameSpec::RankRsp)},
-  { 119, -1, sizeof(::GameSpec::LoginRep)},
+  { 119, -1, sizeof(::GameSpec::ClientReq)},
+  { 125, -1, sizeof(::GameSpec::LoginRep)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -612,6 +645,7 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::GameSpec::_RemoveItemRsp_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::GameSpec::_RankReq_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::GameSpec::_RankRsp_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::GameSpec::_ClientReq_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::GameSpec::_LoginRep_default_instance_),
 };
 
@@ -631,7 +665,7 @@ void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 16);
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 17);
 }
 
 void AddDescriptorsImpl() {
@@ -665,17 +699,18 @@ void AddDescriptorsImpl() {
       "\n\007errCode\030\001 \001(\0162\023.GameSpec.ErrorCode\"%\n\007"
       "RankReq\022\r\n\005start\030\001 \001(\005\022\013\n\003end\030\002 \001(\005\"J\n\007R"
       "ankRsp\022$\n\007errCode\030\001 \001(\0162\023.GameSpec.Error"
-      "Code\022\014\n\004name\030\002 \003(\t\022\013\n\003exp\030\003 \003(\005\"j\n\010Login"
-      "Rep\022$\n\007errCode\030\001 \001(\0162\023.GameSpec.ErrorCod"
-      "e\022\017\n\007gate_ip\030\002 \001(\t\022\021\n\tgate_port\030\003 \001(\005\022\024\n"
-      "\014session_code\030\004 \001(\005*\225\001\n\tErrorCode\022\022\n\016ERR"
-      "OR_NO_ERROR\020\000\022\023\n\017ERROR_AUH_ERROR\020\001\022\025\n\021ER"
-      "ROR_SEARCH_FAIL\020\002\022\027\n\023ERROR_REV_ITEM_FAIL"
-      "\020\003\022\027\n\023ERROR_ADD_ITEM_FAIL\020\004\022\026\n\022ERROR_PAR"
-      "SE_FAILED\020\005b\006proto3"
+      "Code\022\014\n\004name\030\002 \003(\t\022\013\n\003exp\030\003 \003(\005\"!\n\tClien"
+      "tReq\022\024\n\014session_code\030\001 \001(\005\"j\n\010LoginRep\022$"
+      "\n\007errCode\030\001 \001(\0162\023.GameSpec.ErrorCode\022\017\n\007"
+      "gate_ip\030\002 \001(\t\022\021\n\tgate_port\030\003 \001(\005\022\024\n\014sess"
+      "ion_code\030\004 \001(\005*\225\001\n\tErrorCode\022\022\n\016ERROR_NO"
+      "_ERROR\020\000\022\023\n\017ERROR_AUH_ERROR\020\001\022\025\n\021ERROR_S"
+      "EARCH_FAIL\020\002\022\027\n\023ERROR_REV_ITEM_FAIL\020\003\022\027\n"
+      "\023ERROR_ADD_ITEM_FAIL\020\004\022\026\n\022ERROR_PARSE_FA"
+      "ILED\020\005b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1419);
+      descriptor, 1454);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "GameSpec.proto", &protobuf_RegisterTypes);
 }
@@ -5549,6 +5584,244 @@ void RankRsp::InternalSwap(RankRsp* other) {
 }
 
 ::google::protobuf::Metadata RankRsp::GetMetadata() const {
+  protobuf_GameSpec_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_GameSpec_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void ClientReq::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int ClientReq::kSessionCodeFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+ClientReq::ClientReq()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    ::protobuf_GameSpec_2eproto::InitDefaultsClientReq();
+  }
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:GameSpec.ClientReq)
+}
+ClientReq::ClientReq(const ClientReq& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  session_code_ = from.session_code_;
+  // @@protoc_insertion_point(copy_constructor:GameSpec.ClientReq)
+}
+
+void ClientReq::SharedCtor() {
+  session_code_ = 0;
+  _cached_size_ = 0;
+}
+
+ClientReq::~ClientReq() {
+  // @@protoc_insertion_point(destructor:GameSpec.ClientReq)
+  SharedDtor();
+}
+
+void ClientReq::SharedDtor() {
+}
+
+void ClientReq::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* ClientReq::descriptor() {
+  ::protobuf_GameSpec_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_GameSpec_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const ClientReq& ClientReq::default_instance() {
+  ::protobuf_GameSpec_2eproto::InitDefaultsClientReq();
+  return *internal_default_instance();
+}
+
+ClientReq* ClientReq::New(::google::protobuf::Arena* arena) const {
+  ClientReq* n = new ClientReq;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void ClientReq::Clear() {
+// @@protoc_insertion_point(message_clear_start:GameSpec.ClientReq)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  session_code_ = 0;
+  _internal_metadata_.Clear();
+}
+
+bool ClientReq::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:GameSpec.ClientReq)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int32 session_code = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &session_code_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:GameSpec.ClientReq)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:GameSpec.ClientReq)
+  return false;
+#undef DO_
+}
+
+void ClientReq::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:GameSpec.ClientReq)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 session_code = 1;
+  if (this->session_code() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->session_code(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:GameSpec.ClientReq)
+}
+
+::google::protobuf::uint8* ClientReq::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:GameSpec.ClientReq)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 session_code = 1;
+  if (this->session_code() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->session_code(), target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:GameSpec.ClientReq)
+  return target;
+}
+
+size_t ClientReq::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:GameSpec.ClientReq)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // int32 session_code = 1;
+  if (this->session_code() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->session_code());
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void ClientReq::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:GameSpec.ClientReq)
+  GOOGLE_DCHECK_NE(&from, this);
+  const ClientReq* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const ClientReq>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:GameSpec.ClientReq)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:GameSpec.ClientReq)
+    MergeFrom(*source);
+  }
+}
+
+void ClientReq::MergeFrom(const ClientReq& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:GameSpec.ClientReq)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.session_code() != 0) {
+    set_session_code(from.session_code());
+  }
+}
+
+void ClientReq::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:GameSpec.ClientReq)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void ClientReq::CopyFrom(const ClientReq& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:GameSpec.ClientReq)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ClientReq::IsInitialized() const {
+  return true;
+}
+
+void ClientReq::Swap(ClientReq* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void ClientReq::InternalSwap(ClientReq* other) {
+  using std::swap;
+  swap(session_code_, other->session_code_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_cached_size_, other->_cached_size_);
+}
+
+::google::protobuf::Metadata ClientReq::GetMetadata() const {
   protobuf_GameSpec_2eproto::protobuf_AssignDescriptorsOnce();
   return ::protobuf_GameSpec_2eproto::file_level_metadata[kIndexInFileMessages];
 }
