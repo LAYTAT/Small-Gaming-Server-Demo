@@ -10,6 +10,8 @@
 #include "GameSpec.pb.h"
 #include "MySqlManager.h"
 #include "CacheManager.h"
+#include "Msg_To_And_From_DB.pb.h"
+#include "MsgServerID.pb.h"
 
 using namespace google::protobuf;
 
@@ -195,6 +197,12 @@ INT32 EventSystem::PlayerLogin(const MesgInfo &stHead, const char *body,const IN
     rsp.set_errcode(GameSpec::ERROR_NO_ERROR);
 
     SocketServer::Instance()->BroadCast(stHead, rsp);
+    // 发送玩家信息到db server用于验证玩家身份
+    DbReq_User_Auth dbReqUserAuth;
+    dbReqUserAuth.set_hashedusrpwd(loginReq.password());
+    dbReqUserAuth.set_hashedusrid(loginReq.name());
+    SocketServer::Instance()->SendMsgToDB(stHead, dbReqUserAuth);
+
     return 0;
 }
 

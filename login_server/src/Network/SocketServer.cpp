@@ -45,10 +45,8 @@ bool SocketServer::Init()
         std::cout << "login server error: Epoll add ev failed!" << std::endl;
         return false;
     }
-    m_epoll.EpollAdd(m_basefd);
-//    // 添加listen db的socketfd 到epoll；
-    if (m_epoll.EpollAdd( m_ListenSock_DB->GetFD_DB())) {
-        std::cout << "Epoll add fd_to_db failed" << std::endl;
+    if (m_epoll.EpollAdd(m_basefd) < 0) {
+        std::cout << "\"Epoll add m_basefd failed" << std::endl;
     }
 
     m_msg_head->Init(1,1,1);
@@ -155,6 +153,13 @@ INT32 SocketServer::ConnectDBServer() {
     if (fd_2_db_temp < 0) {
         std::cout << "connect to db server failed" << std::endl;
         return 0;
+    }
+    //    // 添加listen db的socketfd 到epoll；
+    if (m_epoll.EpollAdd( m_ListenSock_DB->GetFD()) < 0) {
+        std::cout << "Epoll add fd_to_db failed \n" << std::endl;
+        return 0;
+    } else {
+        std::cout << "Epoll add fd_to_db success \n" << std::endl;
     }
     return fd_2_db_temp;
 }

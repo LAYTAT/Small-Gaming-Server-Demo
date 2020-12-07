@@ -16,8 +16,7 @@ public:
     void SetFD(INT32 sock){ m_socketfd = sock; }   //设置fd
 
     inline INT32 GetFD(){ return m_socketfd; }
-    inline INT32 GetFD_DB(){ return m_socketfd_to_db; }
-    INT32 OpenServer(INT32 port, char* IP = NULL);  
+    INT32 OpenServer(INT32 port, char* IP = NULL);
     INT32 OpenClient(INT32 port);
     INT32 ConnectServer();   //连接到服务器，一般给客户端使用
     INT32 ConnectDBServer(); //连接到DB服务器，给login server等使用
@@ -38,11 +37,6 @@ private:
     INT32 m_socketfd;
     buffer* m_buffer;
     MesgHead* m_msghead;
-
-    INT32 m_socketfd_to_db;
-    buffer* m_buffer_to_db;
-    MesgHead* m_msghead_to_db;
-
 };
 
 #endif
