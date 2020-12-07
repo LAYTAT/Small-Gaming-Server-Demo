@@ -142,24 +142,40 @@ class DbReq_User_Auth : public ::google::protobuf::Message /* @@protoc_insertion
 
   // accessors -------------------------------------------------------
 
-  // int32 hashedUsrId = 1;
+  // string hashedUsrId = 1;
   void clear_hashedusrid();
   static const int kHashedUsrIdFieldNumber = 1;
-  ::google::protobuf::int32 hashedusrid() const;
-  void set_hashedusrid(::google::protobuf::int32 value);
+  const ::std::string& hashedusrid() const;
+  void set_hashedusrid(const ::std::string& value);
+  #if LANG_CXX11
+  void set_hashedusrid(::std::string&& value);
+  #endif
+  void set_hashedusrid(const char* value);
+  void set_hashedusrid(const char* value, size_t size);
+  ::std::string* mutable_hashedusrid();
+  ::std::string* release_hashedusrid();
+  void set_allocated_hashedusrid(::std::string* hashedusrid);
 
-  // int32 hashedUsrPwd = 2;
+  // string hashedUsrPwd = 2;
   void clear_hashedusrpwd();
   static const int kHashedUsrPwdFieldNumber = 2;
-  ::google::protobuf::int32 hashedusrpwd() const;
-  void set_hashedusrpwd(::google::protobuf::int32 value);
+  const ::std::string& hashedusrpwd() const;
+  void set_hashedusrpwd(const ::std::string& value);
+  #if LANG_CXX11
+  void set_hashedusrpwd(::std::string&& value);
+  #endif
+  void set_hashedusrpwd(const char* value);
+  void set_hashedusrpwd(const char* value, size_t size);
+  ::std::string* mutable_hashedusrpwd();
+  ::std::string* release_hashedusrpwd();
+  void set_allocated_hashedusrpwd(::std::string* hashedusrpwd);
 
   // @@protoc_insertion_point(class_scope:DbReq_User_Auth)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::int32 hashedusrid_;
-  ::google::protobuf::int32 hashedusrpwd_;
+  ::google::protobuf::internal::ArenaStringPtr hashedusrid_;
+  ::google::protobuf::internal::ArenaStringPtr hashedusrpwd_;
   mutable int _cached_size_;
   friend struct ::protobuf_Msg_5fTo_5fAnd_5fFrom_5fDB_2eproto::TableStruct;
   friend void ::protobuf_Msg_5fTo_5fAnd_5fFrom_5fDB_2eproto::InitDefaultsDbReq_User_AuthImpl();
@@ -281,32 +297,110 @@ class DbRep_User_Auth : public ::google::protobuf::Message /* @@protoc_insertion
 #endif  // __GNUC__
 // DbReq_User_Auth
 
-// int32 hashedUsrId = 1;
+// string hashedUsrId = 1;
 inline void DbReq_User_Auth::clear_hashedusrid() {
-  hashedusrid_ = 0;
+  hashedusrid_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline ::google::protobuf::int32 DbReq_User_Auth::hashedusrid() const {
+inline const ::std::string& DbReq_User_Auth::hashedusrid() const {
   // @@protoc_insertion_point(field_get:DbReq_User_Auth.hashedUsrId)
-  return hashedusrid_;
+  return hashedusrid_.GetNoArena();
 }
-inline void DbReq_User_Auth::set_hashedusrid(::google::protobuf::int32 value) {
+inline void DbReq_User_Auth::set_hashedusrid(const ::std::string& value) {
   
-  hashedusrid_ = value;
+  hashedusrid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:DbReq_User_Auth.hashedUsrId)
 }
-
-// int32 hashedUsrPwd = 2;
-inline void DbReq_User_Auth::clear_hashedusrpwd() {
-  hashedusrpwd_ = 0;
-}
-inline ::google::protobuf::int32 DbReq_User_Auth::hashedusrpwd() const {
-  // @@protoc_insertion_point(field_get:DbReq_User_Auth.hashedUsrPwd)
-  return hashedusrpwd_;
-}
-inline void DbReq_User_Auth::set_hashedusrpwd(::google::protobuf::int32 value) {
+#if LANG_CXX11
+inline void DbReq_User_Auth::set_hashedusrid(::std::string&& value) {
   
-  hashedusrpwd_ = value;
+  hashedusrid_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:DbReq_User_Auth.hashedUsrId)
+}
+#endif
+inline void DbReq_User_Auth::set_hashedusrid(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  
+  hashedusrid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:DbReq_User_Auth.hashedUsrId)
+}
+inline void DbReq_User_Auth::set_hashedusrid(const char* value, size_t size) {
+  
+  hashedusrid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:DbReq_User_Auth.hashedUsrId)
+}
+inline ::std::string* DbReq_User_Auth::mutable_hashedusrid() {
+  
+  // @@protoc_insertion_point(field_mutable:DbReq_User_Auth.hashedUsrId)
+  return hashedusrid_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* DbReq_User_Auth::release_hashedusrid() {
+  // @@protoc_insertion_point(field_release:DbReq_User_Auth.hashedUsrId)
+  
+  return hashedusrid_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void DbReq_User_Auth::set_allocated_hashedusrid(::std::string* hashedusrid) {
+  if (hashedusrid != NULL) {
+    
+  } else {
+    
+  }
+  hashedusrid_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), hashedusrid);
+  // @@protoc_insertion_point(field_set_allocated:DbReq_User_Auth.hashedUsrId)
+}
+
+// string hashedUsrPwd = 2;
+inline void DbReq_User_Auth::clear_hashedusrpwd() {
+  hashedusrpwd_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& DbReq_User_Auth::hashedusrpwd() const {
+  // @@protoc_insertion_point(field_get:DbReq_User_Auth.hashedUsrPwd)
+  return hashedusrpwd_.GetNoArena();
+}
+inline void DbReq_User_Auth::set_hashedusrpwd(const ::std::string& value) {
+  
+  hashedusrpwd_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:DbReq_User_Auth.hashedUsrPwd)
+}
+#if LANG_CXX11
+inline void DbReq_User_Auth::set_hashedusrpwd(::std::string&& value) {
+  
+  hashedusrpwd_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:DbReq_User_Auth.hashedUsrPwd)
+}
+#endif
+inline void DbReq_User_Auth::set_hashedusrpwd(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  
+  hashedusrpwd_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:DbReq_User_Auth.hashedUsrPwd)
+}
+inline void DbReq_User_Auth::set_hashedusrpwd(const char* value, size_t size) {
+  
+  hashedusrpwd_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:DbReq_User_Auth.hashedUsrPwd)
+}
+inline ::std::string* DbReq_User_Auth::mutable_hashedusrpwd() {
+  
+  // @@protoc_insertion_point(field_mutable:DbReq_User_Auth.hashedUsrPwd)
+  return hashedusrpwd_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* DbReq_User_Auth::release_hashedusrpwd() {
+  // @@protoc_insertion_point(field_release:DbReq_User_Auth.hashedUsrPwd)
+  
+  return hashedusrpwd_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void DbReq_User_Auth::set_allocated_hashedusrpwd(::std::string* hashedusrpwd) {
+  if (hashedusrpwd != NULL) {
+    
+  } else {
+    
+  }
+  hashedusrpwd_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), hashedusrpwd);
+  // @@protoc_insertion_point(field_set_allocated:DbReq_User_Auth.hashedUsrPwd)
 }
 
 // -------------------------------------------------------------------

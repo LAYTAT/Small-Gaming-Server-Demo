@@ -123,8 +123,8 @@ void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n\030Msg_To_And_From_DB.proto\"<\n\017DbReq_User"
-      "_Auth\022\023\n\013hashedUsrId\030\001 \001(\005\022\024\n\014hashedUsrP"
-      "wd\030\002 \001(\005\":\n\017DbRep_User_Auth\022\026\n\016isUserVer"
+      "_Auth\022\023\n\013hashedUsrId\030\001 \001(\t\022\024\n\014hashedUsrP"
+      "wd\030\002 \001(\t\":\n\017DbRep_User_Auth\022\026\n\016isUserVer"
       "ified\030\001 \001(\010\022\017\n\007errCode\030\002 \001(\005b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
@@ -167,16 +167,20 @@ DbReq_User_Auth::DbReq_User_Auth(const DbReq_User_Auth& from)
       _internal_metadata_(NULL),
       _cached_size_(0) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::memcpy(&hashedusrid_, &from.hashedusrid_,
-    static_cast<size_t>(reinterpret_cast<char*>(&hashedusrpwd_) -
-    reinterpret_cast<char*>(&hashedusrid_)) + sizeof(hashedusrpwd_));
+  hashedusrid_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.hashedusrid().size() > 0) {
+    hashedusrid_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.hashedusrid_);
+  }
+  hashedusrpwd_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.hashedusrpwd().size() > 0) {
+    hashedusrpwd_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.hashedusrpwd_);
+  }
   // @@protoc_insertion_point(copy_constructor:DbReq_User_Auth)
 }
 
 void DbReq_User_Auth::SharedCtor() {
-  ::memset(&hashedusrid_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&hashedusrpwd_) -
-      reinterpret_cast<char*>(&hashedusrid_)) + sizeof(hashedusrpwd_));
+  hashedusrid_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  hashedusrpwd_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   _cached_size_ = 0;
 }
 
@@ -186,6 +190,8 @@ DbReq_User_Auth::~DbReq_User_Auth() {
 }
 
 void DbReq_User_Auth::SharedDtor() {
+  hashedusrid_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  hashedusrpwd_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
 void DbReq_User_Auth::SetCachedSize(int size) const {
@@ -217,9 +223,8 @@ void DbReq_User_Auth::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&hashedusrid_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&hashedusrpwd_) -
-      reinterpret_cast<char*>(&hashedusrid_)) + sizeof(hashedusrpwd_));
+  hashedusrid_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  hashedusrpwd_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   _internal_metadata_.Clear();
 }
 
@@ -233,28 +238,32 @@ bool DbReq_User_Auth::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int32 hashedUsrId = 1;
+      // string hashedUsrId = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
-                 input, &hashedusrid_)));
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_hashedusrid()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->hashedusrid().data(), static_cast<int>(this->hashedusrid().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "DbReq_User_Auth.hashedUsrId"));
         } else {
           goto handle_unusual;
         }
         break;
       }
 
-      // int32 hashedUsrPwd = 2;
+      // string hashedUsrPwd = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
-                 input, &hashedusrpwd_)));
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_hashedusrpwd()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->hashedusrpwd().data(), static_cast<int>(this->hashedusrpwd().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "DbReq_User_Auth.hashedUsrPwd"));
         } else {
           goto handle_unusual;
         }
@@ -287,14 +296,24 @@ void DbReq_User_Auth::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 hashedUsrId = 1;
-  if (this->hashedusrid() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->hashedusrid(), output);
+  // string hashedUsrId = 1;
+  if (this->hashedusrid().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->hashedusrid().data(), static_cast<int>(this->hashedusrid().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "DbReq_User_Auth.hashedUsrId");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->hashedusrid(), output);
   }
 
-  // int32 hashedUsrPwd = 2;
-  if (this->hashedusrpwd() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->hashedusrpwd(), output);
+  // string hashedUsrPwd = 2;
+  if (this->hashedusrpwd().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->hashedusrpwd().data(), static_cast<int>(this->hashedusrpwd().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "DbReq_User_Auth.hashedUsrPwd");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->hashedusrpwd(), output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -311,14 +330,26 @@ void DbReq_User_Auth::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 hashedUsrId = 1;
-  if (this->hashedusrid() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->hashedusrid(), target);
+  // string hashedUsrId = 1;
+  if (this->hashedusrid().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->hashedusrid().data(), static_cast<int>(this->hashedusrid().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "DbReq_User_Auth.hashedUsrId");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        1, this->hashedusrid(), target);
   }
 
-  // int32 hashedUsrPwd = 2;
-  if (this->hashedusrpwd() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(2, this->hashedusrpwd(), target);
+  // string hashedUsrPwd = 2;
+  if (this->hashedusrpwd().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->hashedusrpwd().data(), static_cast<int>(this->hashedusrpwd().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "DbReq_User_Auth.hashedUsrPwd");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        2, this->hashedusrpwd(), target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -338,17 +369,17 @@ size_t DbReq_User_Auth::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
-  // int32 hashedUsrId = 1;
-  if (this->hashedusrid() != 0) {
+  // string hashedUsrId = 1;
+  if (this->hashedusrid().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
+      ::google::protobuf::internal::WireFormatLite::StringSize(
         this->hashedusrid());
   }
 
-  // int32 hashedUsrPwd = 2;
-  if (this->hashedusrpwd() != 0) {
+  // string hashedUsrPwd = 2;
+  if (this->hashedusrpwd().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
+      ::google::protobuf::internal::WireFormatLite::StringSize(
         this->hashedusrpwd());
   }
 
@@ -381,11 +412,13 @@ void DbReq_User_Auth::MergeFrom(const DbReq_User_Auth& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.hashedusrid() != 0) {
-    set_hashedusrid(from.hashedusrid());
+  if (from.hashedusrid().size() > 0) {
+
+    hashedusrid_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.hashedusrid_);
   }
-  if (from.hashedusrpwd() != 0) {
-    set_hashedusrpwd(from.hashedusrpwd());
+  if (from.hashedusrpwd().size() > 0) {
+
+    hashedusrpwd_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.hashedusrpwd_);
   }
 }
 
@@ -413,8 +446,8 @@ void DbReq_User_Auth::Swap(DbReq_User_Auth* other) {
 }
 void DbReq_User_Auth::InternalSwap(DbReq_User_Auth* other) {
   using std::swap;
-  swap(hashedusrid_, other->hashedusrid_);
-  swap(hashedusrpwd_, other->hashedusrpwd_);
+  hashedusrid_.Swap(&other->hashedusrid_);
+  hashedusrpwd_.Swap(&other->hashedusrpwd_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_cached_size_, other->_cached_size_);
 }
