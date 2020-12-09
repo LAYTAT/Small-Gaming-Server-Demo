@@ -1,4 +1,4 @@
-/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/g++ -G "CodeBlocks - Unix Makefiles" /tmp/tmp.cAdQ96BiEw
+/home/jjlay/downloads/cmake-3.17.0/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/opt/rh/devtoolset-8/root/usr/bin/cc -DCMAKE_CXX_COMPILER=/opt/rh/devtoolset-8/root/usr/bin/g++ -G "CodeBlocks - Unix Makefiles" /tmp/tmp.cAdQ96BiEw
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote

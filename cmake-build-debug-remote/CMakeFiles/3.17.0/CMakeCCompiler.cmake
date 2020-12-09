@@ -1,7 +1,7 @@
-set(CMAKE_C_COMPILER "/usr/bin/cc")
+set(CMAKE_C_COMPILER "/opt/rh/devtoolset-8/root/usr/bin/cc")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "GNU")
-set(CMAKE_C_COMPILER_VERSION "5.2.0")
+set(CMAKE_C_COMPILER_VERSION "8.3.1")
 set(CMAKE_C_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_C_COMPILER_WRAPPER "")
 set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "11")
@@ -17,11 +17,11 @@ set(CMAKE_C_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "/usr/bin/ar")
-set(CMAKE_C_COMPILER_AR "/usr/bin/gcc-ar")
-set(CMAKE_RANLIB "/usr/bin/ranlib")
-set(CMAKE_C_COMPILER_RANLIB "/usr/bin/gcc-ranlib")
-set(CMAKE_LINKER "/usr/bin/ld")
+set(CMAKE_AR "/opt/rh/devtoolset-8/root/usr/bin/ar")
+set(CMAKE_C_COMPILER_AR "/opt/rh/devtoolset-8/root/usr/bin/gcc-ar")
+set(CMAKE_RANLIB "/opt/rh/devtoolset-8/root/usr/bin/ranlib")
+set(CMAKE_C_COMPILER_RANLIB "/opt/rh/devtoolset-8/root/usr/bin/gcc-ranlib")
+set(CMAKE_LINKER "/opt/rh/devtoolset-8/root/usr/bin/ld")
 set(CMAKE_MT "")
 set(CMAKE_COMPILER_IS_GNUCC 1)
 set(CMAKE_C_COMPILER_LOADED 1)
@@ -70,7 +70,7 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/usr/local/gcc/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include;/usr/local/include;/usr/local/gcc/include;/usr/local/gcc/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include-fixed;/usr/include")
+set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include;/usr/local/include;/opt/rh/devtoolset-8/root/usr/include;/usr/include")
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "gcc;gcc_s;c;gcc;gcc_s")
-set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/usr/local/gcc/lib/gcc/x86_64-unknown-linux-gnu/5.2.0;/usr/local/gcc/lib64;/lib64;/usr/lib64;/usr/local/gcc/lib")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8;/opt/rh/devtoolset-8/root/usr/lib64;/lib64;/usr/lib64;/opt/rh/devtoolset-8/root/usr/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

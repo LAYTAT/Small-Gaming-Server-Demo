@@ -9,6 +9,7 @@
 #include "Singleton.h"
 #include "MsgHandler.h"
 #include <functional>
+#include "BagSystem.h"
 
 
 class EventSystem
@@ -27,6 +28,8 @@ public:
 
 private:
     MsgHandler<EventSystem>* m_msgHandler;
+
+    BagSystem m_bagSystem;
 
 };
 

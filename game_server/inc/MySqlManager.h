@@ -21,7 +21,6 @@ private:
     bool UpdateOneCol(int id,const std::string& ColName,int num);
     bool UpdateOneCol(int id,const std::string& ColName,const std::string str);
 
-
 public:
     bool Init();
     void Uinit();

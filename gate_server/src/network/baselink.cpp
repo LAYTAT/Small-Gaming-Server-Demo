@@ -281,7 +281,7 @@ INT32 baselink::RecvData()
 
 INT32 baselink::SendData(char *data, INT32 len)
 {
-    send(m_socketfd, data, len, 0);
+    send(m_socketfd, data, len ,0);
     return 0;
 }
 
@@ -306,7 +306,7 @@ INT32 baselink::GetPackLens()  // -1代表没有完整的包，否则返回一�
         t_packlen = m_msghead->m_msginfo.packLen;  //这样可以屏蔽包头，让上层感受不到包头的存在
         if( t_packlen + m_msghead->GetMsgHeadSize() > m_buffer->GetReadableLens())
         {
-            std::cout << "Pack have not been reveived completed." << std::endl;
+//            std::cout << "Pack have not been reveived completed." << std::endl;
             return -1;
         }
     }
