@@ -1,0 +1,30 @@
+#ifndef _ITEMLIST_H_
+#define _ITEMLIST_H_
+
+enum ITEMTYPE_ENUM
+{
+    ITEMTYPE_BAG_ITEM = 1,
+    ITEMTYPE_EQUIP_ITEM = 2,
+    ITEMTYPE_CURRENCY_ITEM = 3,
+};
+
+enum ITEMID_ENUM
+{
+    ITEMID_REDPOTION = 100,
+
+    ITEMID_SWORD = 200,
+
+    ITEMID_COIN = 300,
+
+
+
+};
+
+
+
+
+
+
+
+
+#endif
