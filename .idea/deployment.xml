@@ -16,13 +16,23 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="Remote Host  Orignal (981c5636-ec42-41d7-af39-a36dbd384bca)">
+      <paths name="Remote Host  - GHS (981c5636-ec42-41d7-af39-a36dbd384bca)">
         <serverdata>
           <mappings>
             <mapping deploy="/tmp/tmp.cAdQ96BiEw" local="$PROJECT_DIR$" />
           </mappings>
           <excludedPaths>
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-remote" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-remote" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="Remote Host - VM - CentOS7 (f69c4ef9-24dc-4b23-938d-70dd16bcd5f7)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/tmp.NlYyk5b41G" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-remote" />
           </excludedPaths>
         </serverdata>

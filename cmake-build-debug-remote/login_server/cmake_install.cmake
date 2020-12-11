@@ -1,4 +1,4 @@
-# Install script for directory: /tmp/tmp.cAdQ96BiEw/login_server
+# Install script for directory: /tmp/tmp.NlYyk5b41G/login_server
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

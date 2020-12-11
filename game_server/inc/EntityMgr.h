@@ -10,6 +10,7 @@
 #include "Singleton.h"
 #include "MSG_PLAYER_REGISTER.pb.h"
 #include "GameSpec.pb.h"
+
 using namespace google::protobuf;
 
 class EntityMgr

@@ -1,4 +1,4 @@
-# Install script for directory: /tmp/tmp.cAdQ96BiEw
+# Install script for directory: /tmp/tmp.NlYyk5b41G
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,10 +39,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/login_server/cmake_install.cmake")
-  include("/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/db_server/cmake_install.cmake")
-  include("/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/gate_server/cmake_install.cmake")
-  include("/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server/cmake_install.cmake")
+  include("/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/login_server/cmake_install.cmake")
+  include("/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/db_server/cmake_install.cmake")
+  include("/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/gate_server/cmake_install.cmake")
+  include("/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server/cmake_install.cmake")
 
 endif()
 
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

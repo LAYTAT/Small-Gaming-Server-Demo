@@ -63,7 +63,10 @@ INT32 EventSystem::ReplyPlayerReqItems(const MesgInfo &stHead, const char *body,
     mesgInfo->packLen = rsp.ByteSizeLong();
     mesgInfo->uID = stHead.uID;
     mesgInfo->msgID = MSGID::MSG_REPLY_BAG_ITEMS_FROM_GAME;
-//    SocketServer::Instance()->BroadCast( *mesgInfo, rsp );
+    std::cout << "Socket BroadCast begun" << std::endl;
+    SocketServer::Instance()->BroadCast( *mesgInfo, rsp );
+    std::cout << "Socket BroadCast ended" << std::endl;
+    return 0;
 }
 
 

@@ -10,6 +10,8 @@
 #include "Msg_To_And_From_DB.pb.h"
 #include "MySqlManager.h"
 #include "EntityMgr.h"
+#include "MSG_PLAYER_MOVE.pb.h"
+
 
 using namespace google::protobuf;
 
@@ -30,6 +32,8 @@ bool EventSystem::Init()
 {
     // 绑定处理函数
     m_msgHandler->RegisterMsg(  MSGID::MSG_REQUEST_BAG_ITEMS_FROM_USER,  &EventSystem::PlayerReqItems);
+    // 处理玩家移动
+    m_msgHandler->RegisterMsg(MSGID::MSG_PLAYER_MOVE_ID, &EventSystem::PlayerMove);
 
     return true;
 }
@@ -87,5 +91,25 @@ INT32 EventSystem::PlayerReqItems(const MesgInfo &stHead, const char *body, cons
 
     msgInfo->packLen = rsp.ByteSizeLong();
     SocketServer::Instance()->BroadCast(*msgInfo, rsp);
+    return 0;
+}
+
+INT32 EventSystem::PlayerMove(const MesgInfo &stHead, const char *body, const INT32 len,const INT32 connfd)
+{
+    MSG_PLAYER_MOVE msg_move;
+    if(!msg_move.ParseFromArray(body, len))
+    {
+        std::cout << "ParseFromArray MOVE failed" <<std::endl;
+        return 1;
+    }
+
+    INT32 pid =stHead.uID;
+    int x =( int) msg_move.x();
+    int y =(int) msg_move.z();
+    int r =(int) msg_move.ry();
+    int s = 10;
+    EntityMgr::Instance()->SetTrans(pid,x,y,r,s);
+    SocketServer::Instance()->BroadCast(stHead, msg_move);
+
     return 0;
 }

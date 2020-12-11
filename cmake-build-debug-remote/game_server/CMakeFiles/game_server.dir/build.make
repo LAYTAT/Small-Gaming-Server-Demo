@@ -60,10 +60,10 @@ RM = /home/jjlay/downloads/cmake-3.17.0/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /tmp/tmp.cAdQ96BiEw
+CMAKE_SOURCE_DIR = /tmp/tmp.NlYyk5b41G
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote
+CMAKE_BINARY_DIR = /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote
 
 # Include any dependencies generated for this target.
 include game_server/CMakeFiles/game_server.dir/depend.make
@@ -76,302 +76,302 @@ include game_server/CMakeFiles/game_server.dir/flags.make
 
 game_server/CMakeFiles/game_server.dir/src/EventSystem.cpp.o: game_server/CMakeFiles/game_server.dir/flags.make
 game_server/CMakeFiles/game_server.dir/src/EventSystem.cpp.o: ../game_server/src/EventSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object game_server/CMakeFiles/game_server.dir/src/EventSystem.cpp.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/EventSystem.cpp.o -c /tmp/tmp.cAdQ96BiEw/game_server/src/EventSystem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object game_server/CMakeFiles/game_server.dir/src/EventSystem.cpp.o"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/EventSystem.cpp.o -c /tmp/tmp.NlYyk5b41G/game_server/src/EventSystem.cpp
 
 game_server/CMakeFiles/game_server.dir/src/EventSystem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_server.dir/src/EventSystem.cpp.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/game_server/src/EventSystem.cpp > CMakeFiles/game_server.dir/src/EventSystem.cpp.i
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.NlYyk5b41G/game_server/src/EventSystem.cpp > CMakeFiles/game_server.dir/src/EventSystem.cpp.i
 
 game_server/CMakeFiles/game_server.dir/src/EventSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_server.dir/src/EventSystem.cpp.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/game_server/src/EventSystem.cpp -o CMakeFiles/game_server.dir/src/EventSystem.cpp.s
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.NlYyk5b41G/game_server/src/EventSystem.cpp -o CMakeFiles/game_server.dir/src/EventSystem.cpp.s
 
 game_server/CMakeFiles/game_server.dir/src/main.cpp.o: game_server/CMakeFiles/game_server.dir/flags.make
 game_server/CMakeFiles/game_server.dir/src/main.cpp.o: ../game_server/src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object game_server/CMakeFiles/game_server.dir/src/main.cpp.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/main.cpp.o -c /tmp/tmp.cAdQ96BiEw/game_server/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object game_server/CMakeFiles/game_server.dir/src/main.cpp.o"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/main.cpp.o -c /tmp/tmp.NlYyk5b41G/game_server/src/main.cpp
 
 game_server/CMakeFiles/game_server.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_server.dir/src/main.cpp.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/game_server/src/main.cpp > CMakeFiles/game_server.dir/src/main.cpp.i
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.NlYyk5b41G/game_server/src/main.cpp > CMakeFiles/game_server.dir/src/main.cpp.i
 
 game_server/CMakeFiles/game_server.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_server.dir/src/main.cpp.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/game_server/src/main.cpp -o CMakeFiles/game_server.dir/src/main.cpp.s
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.NlYyk5b41G/game_server/src/main.cpp -o CMakeFiles/game_server.dir/src/main.cpp.s
 
 game_server/CMakeFiles/game_server.dir/src/network/Epoll.cpp.o: game_server/CMakeFiles/game_server.dir/flags.make
 game_server/CMakeFiles/game_server.dir/src/network/Epoll.cpp.o: ../game_server/src/network/Epoll.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object game_server/CMakeFiles/game_server.dir/src/network/Epoll.cpp.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/network/Epoll.cpp.o -c /tmp/tmp.cAdQ96BiEw/game_server/src/network/Epoll.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object game_server/CMakeFiles/game_server.dir/src/network/Epoll.cpp.o"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/network/Epoll.cpp.o -c /tmp/tmp.NlYyk5b41G/game_server/src/network/Epoll.cpp
 
 game_server/CMakeFiles/game_server.dir/src/network/Epoll.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_server.dir/src/network/Epoll.cpp.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/game_server/src/network/Epoll.cpp > CMakeFiles/game_server.dir/src/network/Epoll.cpp.i
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.NlYyk5b41G/game_server/src/network/Epoll.cpp > CMakeFiles/game_server.dir/src/network/Epoll.cpp.i
 
 game_server/CMakeFiles/game_server.dir/src/network/Epoll.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_server.dir/src/network/Epoll.cpp.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/game_server/src/network/Epoll.cpp -o CMakeFiles/game_server.dir/src/network/Epoll.cpp.s
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.NlYyk5b41G/game_server/src/network/Epoll.cpp -o CMakeFiles/game_server.dir/src/network/Epoll.cpp.s
 
 game_server/CMakeFiles/game_server.dir/src/network/MesgHead.cpp.o: game_server/CMakeFiles/game_server.dir/flags.make
 game_server/CMakeFiles/game_server.dir/src/network/MesgHead.cpp.o: ../game_server/src/network/MesgHead.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object game_server/CMakeFiles/game_server.dir/src/network/MesgHead.cpp.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/network/MesgHead.cpp.o -c /tmp/tmp.cAdQ96BiEw/game_server/src/network/MesgHead.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object game_server/CMakeFiles/game_server.dir/src/network/MesgHead.cpp.o"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/network/MesgHead.cpp.o -c /tmp/tmp.NlYyk5b41G/game_server/src/network/MesgHead.cpp
 
 game_server/CMakeFiles/game_server.dir/src/network/MesgHead.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_server.dir/src/network/MesgHead.cpp.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/game_server/src/network/MesgHead.cpp > CMakeFiles/game_server.dir/src/network/MesgHead.cpp.i
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.NlYyk5b41G/game_server/src/network/MesgHead.cpp > CMakeFiles/game_server.dir/src/network/MesgHead.cpp.i
 
 game_server/CMakeFiles/game_server.dir/src/network/MesgHead.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_server.dir/src/network/MesgHead.cpp.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/game_server/src/network/MesgHead.cpp -o CMakeFiles/game_server.dir/src/network/MesgHead.cpp.s
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.NlYyk5b41G/game_server/src/network/MesgHead.cpp -o CMakeFiles/game_server.dir/src/network/MesgHead.cpp.s
 
 game_server/CMakeFiles/game_server.dir/src/network/SocketServer.cpp.o: game_server/CMakeFiles/game_server.dir/flags.make
 game_server/CMakeFiles/game_server.dir/src/network/SocketServer.cpp.o: ../game_server/src/network/SocketServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object game_server/CMakeFiles/game_server.dir/src/network/SocketServer.cpp.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/network/SocketServer.cpp.o -c /tmp/tmp.cAdQ96BiEw/game_server/src/network/SocketServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object game_server/CMakeFiles/game_server.dir/src/network/SocketServer.cpp.o"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/network/SocketServer.cpp.o -c /tmp/tmp.NlYyk5b41G/game_server/src/network/SocketServer.cpp
 
 game_server/CMakeFiles/game_server.dir/src/network/SocketServer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_server.dir/src/network/SocketServer.cpp.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/game_server/src/network/SocketServer.cpp > CMakeFiles/game_server.dir/src/network/SocketServer.cpp.i
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.NlYyk5b41G/game_server/src/network/SocketServer.cpp > CMakeFiles/game_server.dir/src/network/SocketServer.cpp.i
 
 game_server/CMakeFiles/game_server.dir/src/network/SocketServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_server.dir/src/network/SocketServer.cpp.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/game_server/src/network/SocketServer.cpp -o CMakeFiles/game_server.dir/src/network/SocketServer.cpp.s
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.NlYyk5b41G/game_server/src/network/SocketServer.cpp -o CMakeFiles/game_server.dir/src/network/SocketServer.cpp.s
 
 game_server/CMakeFiles/game_server.dir/src/network/baselink.cpp.o: game_server/CMakeFiles/game_server.dir/flags.make
 game_server/CMakeFiles/game_server.dir/src/network/baselink.cpp.o: ../game_server/src/network/baselink.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object game_server/CMakeFiles/game_server.dir/src/network/baselink.cpp.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/network/baselink.cpp.o -c /tmp/tmp.cAdQ96BiEw/game_server/src/network/baselink.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object game_server/CMakeFiles/game_server.dir/src/network/baselink.cpp.o"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/network/baselink.cpp.o -c /tmp/tmp.NlYyk5b41G/game_server/src/network/baselink.cpp
 
 game_server/CMakeFiles/game_server.dir/src/network/baselink.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_server.dir/src/network/baselink.cpp.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/game_server/src/network/baselink.cpp > CMakeFiles/game_server.dir/src/network/baselink.cpp.i
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.NlYyk5b41G/game_server/src/network/baselink.cpp > CMakeFiles/game_server.dir/src/network/baselink.cpp.i
 
 game_server/CMakeFiles/game_server.dir/src/network/baselink.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_server.dir/src/network/baselink.cpp.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/game_server/src/network/baselink.cpp -o CMakeFiles/game_server.dir/src/network/baselink.cpp.s
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.NlYyk5b41G/game_server/src/network/baselink.cpp -o CMakeFiles/game_server.dir/src/network/baselink.cpp.s
 
 game_server/CMakeFiles/game_server.dir/src/network/buffer.cpp.o: game_server/CMakeFiles/game_server.dir/flags.make
 game_server/CMakeFiles/game_server.dir/src/network/buffer.cpp.o: ../game_server/src/network/buffer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object game_server/CMakeFiles/game_server.dir/src/network/buffer.cpp.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/network/buffer.cpp.o -c /tmp/tmp.cAdQ96BiEw/game_server/src/network/buffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object game_server/CMakeFiles/game_server.dir/src/network/buffer.cpp.o"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/network/buffer.cpp.o -c /tmp/tmp.NlYyk5b41G/game_server/src/network/buffer.cpp
 
 game_server/CMakeFiles/game_server.dir/src/network/buffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_server.dir/src/network/buffer.cpp.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/game_server/src/network/buffer.cpp > CMakeFiles/game_server.dir/src/network/buffer.cpp.i
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.NlYyk5b41G/game_server/src/network/buffer.cpp > CMakeFiles/game_server.dir/src/network/buffer.cpp.i
 
 game_server/CMakeFiles/game_server.dir/src/network/buffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_server.dir/src/network/buffer.cpp.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/game_server/src/network/buffer.cpp -o CMakeFiles/game_server.dir/src/network/buffer.cpp.s
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.NlYyk5b41G/game_server/src/network/buffer.cpp -o CMakeFiles/game_server.dir/src/network/buffer.cpp.s
 
 game_server/CMakeFiles/game_server.dir/src/Systems/BagSystem.cpp.o: game_server/CMakeFiles/game_server.dir/flags.make
 game_server/CMakeFiles/game_server.dir/src/Systems/BagSystem.cpp.o: ../game_server/src/Systems/BagSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object game_server/CMakeFiles/game_server.dir/src/Systems/BagSystem.cpp.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/Systems/BagSystem.cpp.o -c /tmp/tmp.cAdQ96BiEw/game_server/src/Systems/BagSystem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object game_server/CMakeFiles/game_server.dir/src/Systems/BagSystem.cpp.o"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/Systems/BagSystem.cpp.o -c /tmp/tmp.NlYyk5b41G/game_server/src/Systems/BagSystem.cpp
 
 game_server/CMakeFiles/game_server.dir/src/Systems/BagSystem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_server.dir/src/Systems/BagSystem.cpp.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/game_server/src/Systems/BagSystem.cpp > CMakeFiles/game_server.dir/src/Systems/BagSystem.cpp.i
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.NlYyk5b41G/game_server/src/Systems/BagSystem.cpp > CMakeFiles/game_server.dir/src/Systems/BagSystem.cpp.i
 
 game_server/CMakeFiles/game_server.dir/src/Systems/BagSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_server.dir/src/Systems/BagSystem.cpp.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/game_server/src/Systems/BagSystem.cpp -o CMakeFiles/game_server.dir/src/Systems/BagSystem.cpp.s
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.NlYyk5b41G/game_server/src/Systems/BagSystem.cpp -o CMakeFiles/game_server.dir/src/Systems/BagSystem.cpp.s
 
 game_server/CMakeFiles/game_server.dir/src/Systems/TransformSystem.cpp.o: game_server/CMakeFiles/game_server.dir/flags.make
 game_server/CMakeFiles/game_server.dir/src/Systems/TransformSystem.cpp.o: ../game_server/src/Systems/TransformSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object game_server/CMakeFiles/game_server.dir/src/Systems/TransformSystem.cpp.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/Systems/TransformSystem.cpp.o -c /tmp/tmp.cAdQ96BiEw/game_server/src/Systems/TransformSystem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object game_server/CMakeFiles/game_server.dir/src/Systems/TransformSystem.cpp.o"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/Systems/TransformSystem.cpp.o -c /tmp/tmp.NlYyk5b41G/game_server/src/Systems/TransformSystem.cpp
 
 game_server/CMakeFiles/game_server.dir/src/Systems/TransformSystem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_server.dir/src/Systems/TransformSystem.cpp.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/game_server/src/Systems/TransformSystem.cpp > CMakeFiles/game_server.dir/src/Systems/TransformSystem.cpp.i
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.NlYyk5b41G/game_server/src/Systems/TransformSystem.cpp > CMakeFiles/game_server.dir/src/Systems/TransformSystem.cpp.i
 
 game_server/CMakeFiles/game_server.dir/src/Systems/TransformSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_server.dir/src/Systems/TransformSystem.cpp.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/game_server/src/Systems/TransformSystem.cpp -o CMakeFiles/game_server.dir/src/Systems/TransformSystem.cpp.s
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.NlYyk5b41G/game_server/src/Systems/TransformSystem.cpp -o CMakeFiles/game_server.dir/src/Systems/TransformSystem.cpp.s
 
 game_server/CMakeFiles/game_server.dir/src/Managers/CacheManager.cpp.o: game_server/CMakeFiles/game_server.dir/flags.make
 game_server/CMakeFiles/game_server.dir/src/Managers/CacheManager.cpp.o: ../game_server/src/Managers/CacheManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object game_server/CMakeFiles/game_server.dir/src/Managers/CacheManager.cpp.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/Managers/CacheManager.cpp.o -c /tmp/tmp.cAdQ96BiEw/game_server/src/Managers/CacheManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object game_server/CMakeFiles/game_server.dir/src/Managers/CacheManager.cpp.o"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/Managers/CacheManager.cpp.o -c /tmp/tmp.NlYyk5b41G/game_server/src/Managers/CacheManager.cpp
 
 game_server/CMakeFiles/game_server.dir/src/Managers/CacheManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_server.dir/src/Managers/CacheManager.cpp.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/game_server/src/Managers/CacheManager.cpp > CMakeFiles/game_server.dir/src/Managers/CacheManager.cpp.i
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.NlYyk5b41G/game_server/src/Managers/CacheManager.cpp > CMakeFiles/game_server.dir/src/Managers/CacheManager.cpp.i
 
 game_server/CMakeFiles/game_server.dir/src/Managers/CacheManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_server.dir/src/Managers/CacheManager.cpp.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/game_server/src/Managers/CacheManager.cpp -o CMakeFiles/game_server.dir/src/Managers/CacheManager.cpp.s
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.NlYyk5b41G/game_server/src/Managers/CacheManager.cpp -o CMakeFiles/game_server.dir/src/Managers/CacheManager.cpp.s
 
 game_server/CMakeFiles/game_server.dir/src/Managers/ComponentsManager.cpp.o: game_server/CMakeFiles/game_server.dir/flags.make
 game_server/CMakeFiles/game_server.dir/src/Managers/ComponentsManager.cpp.o: ../game_server/src/Managers/ComponentsManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object game_server/CMakeFiles/game_server.dir/src/Managers/ComponentsManager.cpp.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/Managers/ComponentsManager.cpp.o -c /tmp/tmp.cAdQ96BiEw/game_server/src/Managers/ComponentsManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object game_server/CMakeFiles/game_server.dir/src/Managers/ComponentsManager.cpp.o"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/Managers/ComponentsManager.cpp.o -c /tmp/tmp.NlYyk5b41G/game_server/src/Managers/ComponentsManager.cpp
 
 game_server/CMakeFiles/game_server.dir/src/Managers/ComponentsManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_server.dir/src/Managers/ComponentsManager.cpp.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/game_server/src/Managers/ComponentsManager.cpp > CMakeFiles/game_server.dir/src/Managers/ComponentsManager.cpp.i
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.NlYyk5b41G/game_server/src/Managers/ComponentsManager.cpp > CMakeFiles/game_server.dir/src/Managers/ComponentsManager.cpp.i
 
 game_server/CMakeFiles/game_server.dir/src/Managers/ComponentsManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_server.dir/src/Managers/ComponentsManager.cpp.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/game_server/src/Managers/ComponentsManager.cpp -o CMakeFiles/game_server.dir/src/Managers/ComponentsManager.cpp.s
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.NlYyk5b41G/game_server/src/Managers/ComponentsManager.cpp -o CMakeFiles/game_server.dir/src/Managers/ComponentsManager.cpp.s
 
 game_server/CMakeFiles/game_server.dir/src/Managers/EntityManager.cpp.o: game_server/CMakeFiles/game_server.dir/flags.make
 game_server/CMakeFiles/game_server.dir/src/Managers/EntityManager.cpp.o: ../game_server/src/Managers/EntityManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object game_server/CMakeFiles/game_server.dir/src/Managers/EntityManager.cpp.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/Managers/EntityManager.cpp.o -c /tmp/tmp.cAdQ96BiEw/game_server/src/Managers/EntityManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object game_server/CMakeFiles/game_server.dir/src/Managers/EntityManager.cpp.o"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/Managers/EntityManager.cpp.o -c /tmp/tmp.NlYyk5b41G/game_server/src/Managers/EntityManager.cpp
 
 game_server/CMakeFiles/game_server.dir/src/Managers/EntityManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_server.dir/src/Managers/EntityManager.cpp.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/game_server/src/Managers/EntityManager.cpp > CMakeFiles/game_server.dir/src/Managers/EntityManager.cpp.i
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.NlYyk5b41G/game_server/src/Managers/EntityManager.cpp > CMakeFiles/game_server.dir/src/Managers/EntityManager.cpp.i
 
 game_server/CMakeFiles/game_server.dir/src/Managers/EntityManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_server.dir/src/Managers/EntityManager.cpp.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/game_server/src/Managers/EntityManager.cpp -o CMakeFiles/game_server.dir/src/Managers/EntityManager.cpp.s
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.NlYyk5b41G/game_server/src/Managers/EntityManager.cpp -o CMakeFiles/game_server.dir/src/Managers/EntityManager.cpp.s
 
 game_server/CMakeFiles/game_server.dir/src/Managers/ItemManager.cpp.o: game_server/CMakeFiles/game_server.dir/flags.make
 game_server/CMakeFiles/game_server.dir/src/Managers/ItemManager.cpp.o: ../game_server/src/Managers/ItemManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object game_server/CMakeFiles/game_server.dir/src/Managers/ItemManager.cpp.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/Managers/ItemManager.cpp.o -c /tmp/tmp.cAdQ96BiEw/game_server/src/Managers/ItemManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object game_server/CMakeFiles/game_server.dir/src/Managers/ItemManager.cpp.o"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/Managers/ItemManager.cpp.o -c /tmp/tmp.NlYyk5b41G/game_server/src/Managers/ItemManager.cpp
 
 game_server/CMakeFiles/game_server.dir/src/Managers/ItemManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_server.dir/src/Managers/ItemManager.cpp.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/game_server/src/Managers/ItemManager.cpp > CMakeFiles/game_server.dir/src/Managers/ItemManager.cpp.i
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.NlYyk5b41G/game_server/src/Managers/ItemManager.cpp > CMakeFiles/game_server.dir/src/Managers/ItemManager.cpp.i
 
 game_server/CMakeFiles/game_server.dir/src/Managers/ItemManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_server.dir/src/Managers/ItemManager.cpp.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/game_server/src/Managers/ItemManager.cpp -o CMakeFiles/game_server.dir/src/Managers/ItemManager.cpp.s
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.NlYyk5b41G/game_server/src/Managers/ItemManager.cpp -o CMakeFiles/game_server.dir/src/Managers/ItemManager.cpp.s
 
 game_server/CMakeFiles/game_server.dir/src/Managers/MysqlManager.cpp.o: game_server/CMakeFiles/game_server.dir/flags.make
 game_server/CMakeFiles/game_server.dir/src/Managers/MysqlManager.cpp.o: ../game_server/src/Managers/MysqlManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object game_server/CMakeFiles/game_server.dir/src/Managers/MysqlManager.cpp.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/Managers/MysqlManager.cpp.o -c /tmp/tmp.cAdQ96BiEw/game_server/src/Managers/MysqlManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object game_server/CMakeFiles/game_server.dir/src/Managers/MysqlManager.cpp.o"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/Managers/MysqlManager.cpp.o -c /tmp/tmp.NlYyk5b41G/game_server/src/Managers/MysqlManager.cpp
 
 game_server/CMakeFiles/game_server.dir/src/Managers/MysqlManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_server.dir/src/Managers/MysqlManager.cpp.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/game_server/src/Managers/MysqlManager.cpp > CMakeFiles/game_server.dir/src/Managers/MysqlManager.cpp.i
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.NlYyk5b41G/game_server/src/Managers/MysqlManager.cpp > CMakeFiles/game_server.dir/src/Managers/MysqlManager.cpp.i
 
 game_server/CMakeFiles/game_server.dir/src/Managers/MysqlManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_server.dir/src/Managers/MysqlManager.cpp.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/game_server/src/Managers/MysqlManager.cpp -o CMakeFiles/game_server.dir/src/Managers/MysqlManager.cpp.s
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.NlYyk5b41G/game_server/src/Managers/MysqlManager.cpp -o CMakeFiles/game_server.dir/src/Managers/MysqlManager.cpp.s
 
 game_server/CMakeFiles/game_server.dir/src/Managers/Player.cpp.o: game_server/CMakeFiles/game_server.dir/flags.make
 game_server/CMakeFiles/game_server.dir/src/Managers/Player.cpp.o: ../game_server/src/Managers/Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object game_server/CMakeFiles/game_server.dir/src/Managers/Player.cpp.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/Managers/Player.cpp.o -c /tmp/tmp.cAdQ96BiEw/game_server/src/Managers/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object game_server/CMakeFiles/game_server.dir/src/Managers/Player.cpp.o"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/Managers/Player.cpp.o -c /tmp/tmp.NlYyk5b41G/game_server/src/Managers/Player.cpp
 
 game_server/CMakeFiles/game_server.dir/src/Managers/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_server.dir/src/Managers/Player.cpp.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/game_server/src/Managers/Player.cpp > CMakeFiles/game_server.dir/src/Managers/Player.cpp.i
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.NlYyk5b41G/game_server/src/Managers/Player.cpp > CMakeFiles/game_server.dir/src/Managers/Player.cpp.i
 
 game_server/CMakeFiles/game_server.dir/src/Managers/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_server.dir/src/Managers/Player.cpp.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/game_server/src/Managers/Player.cpp -o CMakeFiles/game_server.dir/src/Managers/Player.cpp.s
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.NlYyk5b41G/game_server/src/Managers/Player.cpp -o CMakeFiles/game_server.dir/src/Managers/Player.cpp.s
 
 game_server/CMakeFiles/game_server.dir/src/Managers/PlayerManager.cpp.o: game_server/CMakeFiles/game_server.dir/flags.make
 game_server/CMakeFiles/game_server.dir/src/Managers/PlayerManager.cpp.o: ../game_server/src/Managers/PlayerManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object game_server/CMakeFiles/game_server.dir/src/Managers/PlayerManager.cpp.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/Managers/PlayerManager.cpp.o -c /tmp/tmp.cAdQ96BiEw/game_server/src/Managers/PlayerManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object game_server/CMakeFiles/game_server.dir/src/Managers/PlayerManager.cpp.o"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/src/Managers/PlayerManager.cpp.o -c /tmp/tmp.NlYyk5b41G/game_server/src/Managers/PlayerManager.cpp
 
 game_server/CMakeFiles/game_server.dir/src/Managers/PlayerManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_server.dir/src/Managers/PlayerManager.cpp.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/game_server/src/Managers/PlayerManager.cpp > CMakeFiles/game_server.dir/src/Managers/PlayerManager.cpp.i
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.NlYyk5b41G/game_server/src/Managers/PlayerManager.cpp > CMakeFiles/game_server.dir/src/Managers/PlayerManager.cpp.i
 
 game_server/CMakeFiles/game_server.dir/src/Managers/PlayerManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_server.dir/src/Managers/PlayerManager.cpp.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/game_server/src/Managers/PlayerManager.cpp -o CMakeFiles/game_server.dir/src/Managers/PlayerManager.cpp.s
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.NlYyk5b41G/game_server/src/Managers/PlayerManager.cpp -o CMakeFiles/game_server.dir/src/Managers/PlayerManager.cpp.s
 
 game_server/CMakeFiles/game_server.dir/__/inc/proto/GameSpec.pb.cc.o: game_server/CMakeFiles/game_server.dir/flags.make
 game_server/CMakeFiles/game_server.dir/__/inc/proto/GameSpec.pb.cc.o: ../inc/proto/GameSpec.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object game_server/CMakeFiles/game_server.dir/__/inc/proto/GameSpec.pb.cc.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/__/inc/proto/GameSpec.pb.cc.o -c /tmp/tmp.cAdQ96BiEw/inc/proto/GameSpec.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object game_server/CMakeFiles/game_server.dir/__/inc/proto/GameSpec.pb.cc.o"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/__/inc/proto/GameSpec.pb.cc.o -c /tmp/tmp.NlYyk5b41G/inc/proto/GameSpec.pb.cc
 
 game_server/CMakeFiles/game_server.dir/__/inc/proto/GameSpec.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_server.dir/__/inc/proto/GameSpec.pb.cc.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/inc/proto/GameSpec.pb.cc > CMakeFiles/game_server.dir/__/inc/proto/GameSpec.pb.cc.i
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.NlYyk5b41G/inc/proto/GameSpec.pb.cc > CMakeFiles/game_server.dir/__/inc/proto/GameSpec.pb.cc.i
 
 game_server/CMakeFiles/game_server.dir/__/inc/proto/GameSpec.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_server.dir/__/inc/proto/GameSpec.pb.cc.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/inc/proto/GameSpec.pb.cc -o CMakeFiles/game_server.dir/__/inc/proto/GameSpec.pb.cc.s
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.NlYyk5b41G/inc/proto/GameSpec.pb.cc -o CMakeFiles/game_server.dir/__/inc/proto/GameSpec.pb.cc.s
 
 game_server/CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o: game_server/CMakeFiles/game_server.dir/flags.make
 game_server/CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o: ../inc/proto/MSG_PLAYER_MOVE.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object game_server/CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o -c /tmp/tmp.cAdQ96BiEw/inc/proto/MSG_PLAYER_MOVE.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object game_server/CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.o -c /tmp/tmp.NlYyk5b41G/inc/proto/MSG_PLAYER_MOVE.pb.cc
 
 game_server/CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/inc/proto/MSG_PLAYER_MOVE.pb.cc > CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.i
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.NlYyk5b41G/inc/proto/MSG_PLAYER_MOVE.pb.cc > CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.i
 
 game_server/CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/inc/proto/MSG_PLAYER_MOVE.pb.cc -o CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.s
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.NlYyk5b41G/inc/proto/MSG_PLAYER_MOVE.pb.cc -o CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_MOVE.pb.cc.s
 
 game_server/CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o: game_server/CMakeFiles/game_server.dir/flags.make
 game_server/CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o: ../inc/proto/MSG_PLAYER_REGISTER.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object game_server/CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o -c /tmp/tmp.cAdQ96BiEw/inc/proto/MSG_PLAYER_REGISTER.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object game_server/CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.o -c /tmp/tmp.NlYyk5b41G/inc/proto/MSG_PLAYER_REGISTER.pb.cc
 
 game_server/CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/inc/proto/MSG_PLAYER_REGISTER.pb.cc > CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.i
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.NlYyk5b41G/inc/proto/MSG_PLAYER_REGISTER.pb.cc > CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.i
 
 game_server/CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/inc/proto/MSG_PLAYER_REGISTER.pb.cc -o CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.s
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.NlYyk5b41G/inc/proto/MSG_PLAYER_REGISTER.pb.cc -o CMakeFiles/game_server.dir/__/inc/proto/MSG_PLAYER_REGISTER.pb.cc.s
 
 game_server/CMakeFiles/game_server.dir/__/inc/proto/MsgID.pb.cc.o: game_server/CMakeFiles/game_server.dir/flags.make
 game_server/CMakeFiles/game_server.dir/__/inc/proto/MsgID.pb.cc.o: ../inc/proto/MsgID.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object game_server/CMakeFiles/game_server.dir/__/inc/proto/MsgID.pb.cc.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/__/inc/proto/MsgID.pb.cc.o -c /tmp/tmp.cAdQ96BiEw/inc/proto/MsgID.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object game_server/CMakeFiles/game_server.dir/__/inc/proto/MsgID.pb.cc.o"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/__/inc/proto/MsgID.pb.cc.o -c /tmp/tmp.NlYyk5b41G/inc/proto/MsgID.pb.cc
 
 game_server/CMakeFiles/game_server.dir/__/inc/proto/MsgID.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_server.dir/__/inc/proto/MsgID.pb.cc.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/inc/proto/MsgID.pb.cc > CMakeFiles/game_server.dir/__/inc/proto/MsgID.pb.cc.i
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.NlYyk5b41G/inc/proto/MsgID.pb.cc > CMakeFiles/game_server.dir/__/inc/proto/MsgID.pb.cc.i
 
 game_server/CMakeFiles/game_server.dir/__/inc/proto/MsgID.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_server.dir/__/inc/proto/MsgID.pb.cc.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/inc/proto/MsgID.pb.cc -o CMakeFiles/game_server.dir/__/inc/proto/MsgID.pb.cc.s
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.NlYyk5b41G/inc/proto/MsgID.pb.cc -o CMakeFiles/game_server.dir/__/inc/proto/MsgID.pb.cc.s
 
 game_server/CMakeFiles/game_server.dir/__/inc/proto/MsgServerID.pb.cc.o: game_server/CMakeFiles/game_server.dir/flags.make
 game_server/CMakeFiles/game_server.dir/__/inc/proto/MsgServerID.pb.cc.o: ../inc/proto/MsgServerID.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object game_server/CMakeFiles/game_server.dir/__/inc/proto/MsgServerID.pb.cc.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/__/inc/proto/MsgServerID.pb.cc.o -c /tmp/tmp.cAdQ96BiEw/inc/proto/MsgServerID.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object game_server/CMakeFiles/game_server.dir/__/inc/proto/MsgServerID.pb.cc.o"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/__/inc/proto/MsgServerID.pb.cc.o -c /tmp/tmp.NlYyk5b41G/inc/proto/MsgServerID.pb.cc
 
 game_server/CMakeFiles/game_server.dir/__/inc/proto/MsgServerID.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_server.dir/__/inc/proto/MsgServerID.pb.cc.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/inc/proto/MsgServerID.pb.cc > CMakeFiles/game_server.dir/__/inc/proto/MsgServerID.pb.cc.i
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.NlYyk5b41G/inc/proto/MsgServerID.pb.cc > CMakeFiles/game_server.dir/__/inc/proto/MsgServerID.pb.cc.i
 
 game_server/CMakeFiles/game_server.dir/__/inc/proto/MsgServerID.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_server.dir/__/inc/proto/MsgServerID.pb.cc.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/inc/proto/MsgServerID.pb.cc -o CMakeFiles/game_server.dir/__/inc/proto/MsgServerID.pb.cc.s
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.NlYyk5b41G/inc/proto/MsgServerID.pb.cc -o CMakeFiles/game_server.dir/__/inc/proto/MsgServerID.pb.cc.s
 
 game_server/CMakeFiles/game_server.dir/__/inc/proto/MsgTest.pb.cc.o: game_server/CMakeFiles/game_server.dir/flags.make
 game_server/CMakeFiles/game_server.dir/__/inc/proto/MsgTest.pb.cc.o: ../inc/proto/MsgTest.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object game_server/CMakeFiles/game_server.dir/__/inc/proto/MsgTest.pb.cc.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/__/inc/proto/MsgTest.pb.cc.o -c /tmp/tmp.cAdQ96BiEw/inc/proto/MsgTest.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object game_server/CMakeFiles/game_server.dir/__/inc/proto/MsgTest.pb.cc.o"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/__/inc/proto/MsgTest.pb.cc.o -c /tmp/tmp.NlYyk5b41G/inc/proto/MsgTest.pb.cc
 
 game_server/CMakeFiles/game_server.dir/__/inc/proto/MsgTest.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_server.dir/__/inc/proto/MsgTest.pb.cc.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/inc/proto/MsgTest.pb.cc > CMakeFiles/game_server.dir/__/inc/proto/MsgTest.pb.cc.i
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.NlYyk5b41G/inc/proto/MsgTest.pb.cc > CMakeFiles/game_server.dir/__/inc/proto/MsgTest.pb.cc.i
 
 game_server/CMakeFiles/game_server.dir/__/inc/proto/MsgTest.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_server.dir/__/inc/proto/MsgTest.pb.cc.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/inc/proto/MsgTest.pb.cc -o CMakeFiles/game_server.dir/__/inc/proto/MsgTest.pb.cc.s
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.NlYyk5b41G/inc/proto/MsgTest.pb.cc -o CMakeFiles/game_server.dir/__/inc/proto/MsgTest.pb.cc.s
 
 game_server/CMakeFiles/game_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o: game_server/CMakeFiles/game_server.dir/flags.make
 game_server/CMakeFiles/game_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o: ../inc/proto/Msg_To_And_From_DB.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object game_server/CMakeFiles/game_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o -c /tmp/tmp.cAdQ96BiEw/inc/proto/Msg_To_And_From_DB.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object game_server/CMakeFiles/game_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o -c /tmp/tmp.NlYyk5b41G/inc/proto/Msg_To_And_From_DB.pb.cc
 
 game_server/CMakeFiles/game_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.i"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.cAdQ96BiEw/inc/proto/Msg_To_And_From_DB.pb.cc > CMakeFiles/game_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.i
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.NlYyk5b41G/inc/proto/Msg_To_And_From_DB.pb.cc > CMakeFiles/game_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.i
 
 game_server/CMakeFiles/game_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.s"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.cAdQ96BiEw/inc/proto/Msg_To_And_From_DB.pb.cc -o CMakeFiles/game_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.s
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.NlYyk5b41G/inc/proto/Msg_To_And_From_DB.pb.cc -o CMakeFiles/game_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.s
 
 # Object files for target game_server
 game_server_OBJECTS = \
@@ -427,8 +427,8 @@ game_server/bin/game_server: game_server/CMakeFiles/game_server.dir/__/inc/proto
 game_server/bin/game_server: game_server/CMakeFiles/game_server.dir/__/inc/proto/Msg_To_And_From_DB.pb.cc.o
 game_server/bin/game_server: game_server/CMakeFiles/game_server.dir/build.make
 game_server/bin/game_server: game_server/CMakeFiles/game_server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable bin/game_server"
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game_server.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable bin/game_server"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game_server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 game_server/CMakeFiles/game_server.dir/build: game_server/bin/game_server
@@ -436,10 +436,10 @@ game_server/CMakeFiles/game_server.dir/build: game_server/bin/game_server
 .PHONY : game_server/CMakeFiles/game_server.dir/build
 
 game_server/CMakeFiles/game_server.dir/clean:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server && $(CMAKE_COMMAND) -P CMakeFiles/game_server.dir/cmake_clean.cmake
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server && $(CMAKE_COMMAND) -P CMakeFiles/game_server.dir/cmake_clean.cmake
 .PHONY : game_server/CMakeFiles/game_server.dir/clean
 
 game_server/CMakeFiles/game_server.dir/depend:
-	cd /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /tmp/tmp.cAdQ96BiEw /tmp/tmp.cAdQ96BiEw/game_server /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server /tmp/tmp.cAdQ96BiEw/cmake-build-debug-remote/game_server/CMakeFiles/game_server.dir/DependInfo.cmake --color=$(COLOR)
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /tmp/tmp.NlYyk5b41G /tmp/tmp.NlYyk5b41G/game_server /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/game_server/CMakeFiles/game_server.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : game_server/CMakeFiles/game_server.dir/depend
 

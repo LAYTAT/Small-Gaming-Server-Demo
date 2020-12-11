@@ -91,7 +91,7 @@ INT32 EventSystem::PlayerAuth(const MesgInfo &stHead, const char *body, const IN
     SocketServer::Instance()->BroadCast(*reply_to_login, *rsp);
     delete reply_to_login;
 
-    std::cout << "login_server login req passed !" << stHead.uID << std::endl;
+    std::cout << "login_server login req passed! UID:" << stHead.uID << std::endl;
 
     return 0;
 }

@@ -26,6 +26,10 @@ public:
 
     INT32 PlayerReqItems(const MesgInfo &stHead, const char *body, const INT32 len,const INT32 connfd);
 
+    // Íæ¼ÒÒÆ¶¯
+    INT32 PlayerMove(const MesgInfo &stHead, const char *body, const INT32 len,const INT32 connfd);
+
+
 private:
     MsgHandler<EventSystem>* m_msgHandler;
 

@@ -279,9 +279,11 @@ INT32 baselink::RecvData()
     return ret;
 }
 
-INT32 baselink::SendData(char *data, INT32 len)
-{
-    send(m_socketfd, data, len ,0);
+INT32 baselink::SendData(char *data, INT32 len){
+    std::cout << "======================== Sending data ==========================" << std::endl;
+    std::cout << "sending data : " << data << ", data len = " << len << " to socketfd: " << m_socketfd;
+    int send_ret = send(m_socketfd, data, len ,0);
+    std::cout << ", send_ret = " << send_ret << ", errno = " << errno << std::endl;
     return 0;
 }
 
@@ -317,7 +319,7 @@ char * baselink::GetPack(INT32 len)  //给的是包身，自己加包长
 {
     INT32 t_msglen = m_msghead->GetMsgHeadSize();
     char *t_str =  m_buffer->GetPack(len + t_msglen); // buffer不能区分包头和包身，要这个函数中做处理
-    m_buffer->MoveHead(len + t_msglen);  //buffer指针的移动统一放到 socket 部分
+    m_buffer->MoveHead(len + t_msglen);             // buffer指针的移动统一放到 socket 部分
     return &t_str[t_msglen];
 }
 
