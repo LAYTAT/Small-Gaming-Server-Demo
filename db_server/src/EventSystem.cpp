@@ -61,14 +61,16 @@ INT32 EventSystem::PlayerAuth(const MesgInfo &stHead, const char *body, const IN
     std::cout << "name = " << dbReqUserAuth.hashedusrid() << std::endl;
     std::cout << "password = " << dbReqUserAuth.hashedusrpwd() << std::endl;
 
-    if(MySqlMgr::Instance()->GetPlayerId(dbReqUserAuth.hashedusrid()) < 0) {
+
+    INT32 player_id = MySqlMgr::Instance()->GetPlayerId(dbReqUserAuth.hashedusrid());
+    if( player_id < 0) {
         // 数据库验证 没有通过
         rsp->set_errcode(GameSpec::ERROR_SEARCH_FAIL);
         rsp->set_isuserverified(false);
 
         MesgInfo* reply_to_login = new MesgInfo();
         reply_to_login->msgID = MSGID::MSG_LOGIN_AUTH_PASSED;
-        reply_to_login->uID = stHead.uID;
+        reply_to_login->uID = player_id;
         reply_to_login->packLen = rsp->ByteSizeLong();
         SocketServer::Instance()->BroadCast(*reply_to_login, *rsp);
         delete reply_to_login;
@@ -86,7 +88,7 @@ INT32 EventSystem::PlayerAuth(const MesgInfo &stHead, const char *body, const IN
 
     MesgInfo* reply_to_login = new MesgInfo();
     reply_to_login->msgID = MSGID::MSG_LOGIN_AUTH_PASSED;
-    reply_to_login->uID = stHead.uID;
+    reply_to_login->uID = player_id;
     reply_to_login->packLen = rsp->ByteSizeLong();
     SocketServer::Instance()->BroadCast(*reply_to_login, *rsp);
     delete reply_to_login;

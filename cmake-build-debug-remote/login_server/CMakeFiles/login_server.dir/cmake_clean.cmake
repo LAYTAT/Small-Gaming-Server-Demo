@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/login_server.dir/src/Managers/ItemManager.cpp.o"
   "CMakeFiles/login_server.dir/src/Managers/Player.cpp.o"
   "CMakeFiles/login_server.dir/src/Managers/PlayerManager.cpp.o"
+  "CMakeFiles/login_server.dir/src/Managers/ServerConnectionManager.cpp.o"
   "CMakeFiles/login_server.dir/src/Network/Epoll.cpp.o"
   "CMakeFiles/login_server.dir/src/Network/MesgHead.cpp.o"
   "CMakeFiles/login_server.dir/src/Network/SocketServer.cpp.o"

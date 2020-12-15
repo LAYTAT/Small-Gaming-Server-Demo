@@ -35,6 +35,7 @@ private:
 
     BagSystem m_bagSystem;
 
+    INT32 PlayerRegister(const MesgInfo &stHead, const char *body, const INT32 len, const INT32 connfd);
 };
 
 

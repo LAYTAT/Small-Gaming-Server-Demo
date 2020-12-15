@@ -34,6 +34,7 @@ bool EventSystem::Init()
     m_msgHandler->RegisterMsg(  MSGID::MSG_REQUEST_BAG_ITEMS_FROM_USER,  &EventSystem::PlayerReqItems);
     // 处理玩家移动
     m_msgHandler->RegisterMsg(MSGID::MSG_PLAYER_MOVE_ID, &EventSystem::PlayerMove);
+    m_msgHandler->RegisterMsg(MSGID::MSG_PLAYER_REGISTE_ID, &EventSystem::PlayerRegister);
 
     return true;
 }
@@ -43,6 +44,15 @@ void EventSystem::Uinit()
     m_msgHandler->Uinit();
     delete m_msgHandler;
     m_msgHandler = nullptr;
+}
+
+INT32 EventSystem::PlayerRegister(const MesgInfo &stHead, const char *body, const INT32 len,const INT32 connfd){
+    MSG_PLAYER_REGISTER msgPlayerRegister;
+    if(!msgPlayerRegister.ParseFromArray(body,len)) {
+        std::cout << "game_server parsing register req failed" <<std::endl;
+        return -1;
+    }
+    std::cout << "Unity Client Register Success. playerID: " << msgPlayerRegister.playerid() << " x = " << msgPlayerRegister.x() << std::endl;
 }
 
 // 验证用户的账号数据数据，数据由login server 发送过来
@@ -106,9 +116,10 @@ INT32 EventSystem::PlayerMove(const MesgInfo &stHead, const char *body, const IN
     INT32 pid =stHead.uID;
     int x =( int) msg_move.x();
     int y =(int) msg_move.z();
-    int r =(int) msg_move.ry();
-    int s = 10;
-    EntityMgr::Instance()->SetTrans(pid,x,y,r,s);
+    int ry =(int) msg_move.ry();
+    int state = msg_move.state();
+    std::cout << "User ID:"<< pid <<"state update : x=" << x << " z=" << y << " ry=" << ry << " state binary=" << state << std::endl;
+    EntityMgr::Instance()->SetTrans(pid,x,y,ry,state);
     SocketServer::Instance()->BroadCast(stHead, msg_move);
 
     return 0;

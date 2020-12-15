@@ -29,6 +29,7 @@ public:
 private:
     MsgHandler<EventSystem>* m_msgHandler;
 
+    INT32 PlayerMove(const MesgInfo &stHead, const char *body, const INT32 len, const INT32 connfd);
 };
 
 

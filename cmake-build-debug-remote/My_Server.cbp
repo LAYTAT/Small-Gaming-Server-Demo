@@ -419,6 +419,9 @@
 		<Unit filename="/tmp/tmp.NlYyk5b41G/login_server/src/Managers/PlayerManager.cpp">
 			<Option target="login_server"/>
 		</Unit>
+		<Unit filename="/tmp/tmp.NlYyk5b41G/login_server/src/Managers/ServerConnectionManager.cpp">
+			<Option target="login_server"/>
+		</Unit>
 		<Unit filename="/tmp/tmp.NlYyk5b41G/login_server/src/Network/Epoll.cpp">
 			<Option target="login_server"/>
 		</Unit>

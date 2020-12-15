@@ -59,7 +59,6 @@ void EventSystem::Uinit()
 
 INT32 EventSystem::PlayerLoginPassed(const MesgInfo &stHead, const char *body,const INT32 len,const INT32 connfd)
 {
-
     DbRep_User_Auth rsp;
 
 
@@ -72,8 +71,8 @@ INT32 EventSystem::PlayerLoginPassed(const MesgInfo &stHead, const char *body,co
     }
 
     bool isuserverified = rsp.isuserverified();
-    std::cout << "Is user verified : " << isuserverified << " Err code : "<<  rsp.errcode() << std::endl;
-    std::cout << "Player successfully logged in." << std::endl;
+//    std::cout << "Is user verified : " << isuserverified << " Err code : "<<  rsp.errcode() << std::endl;
+//    std::cout << "Player successfully logged in." << std::endl;
 
     // 返回给客户端的数据
     GameSpec::LoginRep* loginRep = new GameSpec::LoginRep();
@@ -90,7 +89,7 @@ INT32 EventSystem::PlayerLoginPassed(const MesgInfo &stHead, const char *body,co
     loginRepMsgInfo->msgID = MSGID::MSG_LOGIN_REPLIY_CLIENT;
     loginRepMsgInfo->uID = stHead.uID;
     loginRepMsgInfo->packLen = loginRep->ByteSizeLong();
-    std::cout << "loginRepMsgInfo->packLen " << loginRepMsgInfo->packLen <<std::endl;
+    std::cout << "Return playerID:" << stHead.uID << std::endl;
     SocketServer::Instance()->BroadCast(*loginRepMsgInfo, *loginRep);
 
     delete loginRepMsgInfo;
@@ -226,11 +225,10 @@ INT32 EventSystem::PlayerLogin(const MesgInfo &stHead, const char *body,const IN
         SocketServer::Instance()->BroadCast(stHead,rsp);
         return 1;
     }
-   // std::cout << "Redis login request name is : " << MySqlMgr::Instance()->GetPlayerId(loginReq.name()) << std::endl;
+   // std::cout << "Redis login request name is : " << MySqlMgr::Instance()->GetPlayerIdf(loginReq.name()) << std::endl;
     std::cout << "login_server  uid = " << stHead.uID << std::endl;
     std::cout << "name = " << loginReq.name() << std::endl;
     std::cout << "password = " << loginReq.password() << std::endl;
-
 
     // 获取玩家背包
 //    if(EntityMgr::Instance()->HasPlayer(stHead.uID) == false)
@@ -266,7 +264,7 @@ INT32 EventSystem::PlayerLogin(const MesgInfo &stHead, const char *body,const IN
     msgInfoToDB->packLen = dbReqUserAuth.ByteSizeLong();
     msgInfoToDB->uID = stHead.uID;
     SocketServer::Instance()->SendMsgToDB(*msgInfoToDB, dbReqUserAuth);
-
+    delete msgInfoToDB;
     return 0;
 }
 

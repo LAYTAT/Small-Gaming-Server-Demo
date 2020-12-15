@@ -28,6 +28,7 @@ private:
     INT32  m_basefd;
     Epoll m_epoll;
     MesgHead* m_msg_head;
+    INT32 gate_fd = 7;
 };
 
 

@@ -177,6 +177,59 @@ inline bool ErrorCode_Parse(
   return ::google::protobuf::internal::ParseNamedEnum<ErrorCode>(
     ErrorCode_descriptor(), name, value);
 }
+enum EndPointState {
+  ENDPOINT_STANDBY = 0,
+  ENDPOINT_AUTH_OK = 1,
+  ENDPOINT_ACTIVE = 2,
+  ENDPOINT_CLOSED = 3,
+  EndPointState_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
+  EndPointState_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
+};
+bool EndPointState_IsValid(int value);
+const EndPointState EndPointState_MIN = ENDPOINT_STANDBY;
+const EndPointState EndPointState_MAX = ENDPOINT_CLOSED;
+const int EndPointState_ARRAYSIZE = EndPointState_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* EndPointState_descriptor();
+inline const ::std::string& EndPointState_Name(EndPointState value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    EndPointState_descriptor(), value);
+}
+inline bool EndPointState_Parse(
+    const ::std::string& name, EndPointState* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<EndPointState>(
+    EndPointState_descriptor(), name, value);
+}
+enum KeyboardState {
+  NOAction = 0,
+  Ctrl = 1,
+  Shift = 2,
+  Jump = 4,
+  Up = 8,
+  Down = 16,
+  Left = 32,
+  Right = 64,
+  Q = 128,
+  E = 256,
+  R = 512,
+  KeyboardState_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
+  KeyboardState_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
+};
+bool KeyboardState_IsValid(int value);
+const KeyboardState KeyboardState_MIN = NOAction;
+const KeyboardState KeyboardState_MAX = R;
+const int KeyboardState_ARRAYSIZE = KeyboardState_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* KeyboardState_descriptor();
+inline const ::std::string& KeyboardState_Name(KeyboardState value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    KeyboardState_descriptor(), value);
+}
+inline bool KeyboardState_Parse(
+    const ::std::string& name, KeyboardState* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<KeyboardState>(
+    KeyboardState_descriptor(), name, value);
+}
 // ===================================================================
 
 class BagItem : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:GameSpec.BagItem) */ {
@@ -3472,6 +3525,16 @@ template <> struct is_proto_enum< ::GameSpec::ErrorCode> : ::google::protobuf::i
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::GameSpec::ErrorCode>() {
   return ::GameSpec::ErrorCode_descriptor();
+}
+template <> struct is_proto_enum< ::GameSpec::EndPointState> : ::google::protobuf::internal::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::GameSpec::EndPointState>() {
+  return ::GameSpec::EndPointState_descriptor();
+}
+template <> struct is_proto_enum< ::GameSpec::KeyboardState> : ::google::protobuf::internal::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::GameSpec::KeyboardState>() {
+  return ::GameSpec::KeyboardState_descriptor();
 }
 
 }  // namespace protobuf

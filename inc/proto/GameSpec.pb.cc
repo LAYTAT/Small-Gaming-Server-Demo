@@ -471,7 +471,7 @@ void InitDefaultsLoginRep() {
 }
 
 ::google::protobuf::Metadata file_level_metadata[17];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
+const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[3];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
@@ -708,10 +708,16 @@ void AddDescriptorsImpl() {
       "orCode\022\022\n\016ERROR_NO_ERROR\020\000\022\023\n\017ERROR_AUH_"
       "ERROR\020\001\022\025\n\021ERROR_SEARCH_FAIL\020\002\022\027\n\023ERROR_"
       "REV_ITEM_FAIL\020\003\022\027\n\023ERROR_ADD_ITEM_FAIL\020\004"
-      "\022\026\n\022ERROR_PARSE_FAILED\020\005b\006proto3"
+      "\022\026\n\022ERROR_PARSE_FAILED\020\005*e\n\rEndPointStat"
+      "e\022\024\n\020ENDPOINT_STANDBY\020\000\022\024\n\020ENDPOINT_AUTH"
+      "_OK\020\001\022\023\n\017ENDPOINT_ACTIVE\020\002\022\023\n\017ENDPOINT_C"
+      "LOSED\020\003*{\n\rKeyboardState\022\014\n\010NOAction\020\000\022\010"
+      "\n\004Ctrl\020\001\022\t\n\005Shift\020\002\022\010\n\004Jump\020\004\022\006\n\002Up\020\010\022\010\n"
+      "\004Down\020\020\022\010\n\004Left\020 \022\t\n\005Right\020@\022\006\n\001Q\020\200\001\022\006\n\001"
+      "E\020\200\002\022\006\n\001R\020\200\004b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1472);
+      descriptor, 1700);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "GameSpec.proto", &protobuf_RegisterTypes);
 }
@@ -740,6 +746,45 @@ bool ErrorCode_IsValid(int value) {
     case 3:
     case 4:
     case 5:
+      return true;
+    default:
+      return false;
+  }
+}
+
+const ::google::protobuf::EnumDescriptor* EndPointState_descriptor() {
+  protobuf_GameSpec_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_GameSpec_2eproto::file_level_enum_descriptors[1];
+}
+bool EndPointState_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+      return true;
+    default:
+      return false;
+  }
+}
+
+const ::google::protobuf::EnumDescriptor* KeyboardState_descriptor() {
+  protobuf_GameSpec_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_GameSpec_2eproto::file_level_enum_descriptors[2];
+}
+bool KeyboardState_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 4:
+    case 8:
+    case 16:
+    case 32:
+    case 64:
+    case 128:
+    case 256:
+    case 512:
       return true;
     default:
       return false;

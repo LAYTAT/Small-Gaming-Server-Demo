@@ -282,9 +282,22 @@ login_server/CMakeFiles/login_server.dir/src/Managers/PlayerManager.cpp.s: cmake
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/login_server.dir/src/Managers/PlayerManager.cpp.s"
 	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/login_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.NlYyk5b41G/login_server/src/Managers/PlayerManager.cpp -o CMakeFiles/login_server.dir/src/Managers/PlayerManager.cpp.s
 
+login_server/CMakeFiles/login_server.dir/src/Managers/ServerConnectionManager.cpp.o: login_server/CMakeFiles/login_server.dir/flags.make
+login_server/CMakeFiles/login_server.dir/src/Managers/ServerConnectionManager.cpp.o: ../login_server/src/Managers/ServerConnectionManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object login_server/CMakeFiles/login_server.dir/src/Managers/ServerConnectionManager.cpp.o"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/login_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/src/Managers/ServerConnectionManager.cpp.o -c /tmp/tmp.NlYyk5b41G/login_server/src/Managers/ServerConnectionManager.cpp
+
+login_server/CMakeFiles/login_server.dir/src/Managers/ServerConnectionManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/login_server.dir/src/Managers/ServerConnectionManager.cpp.i"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/login_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.NlYyk5b41G/login_server/src/Managers/ServerConnectionManager.cpp > CMakeFiles/login_server.dir/src/Managers/ServerConnectionManager.cpp.i
+
+login_server/CMakeFiles/login_server.dir/src/Managers/ServerConnectionManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/login_server.dir/src/Managers/ServerConnectionManager.cpp.s"
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/login_server && /opt/rh/devtoolset-8/root/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.NlYyk5b41G/login_server/src/Managers/ServerConnectionManager.cpp -o CMakeFiles/login_server.dir/src/Managers/ServerConnectionManager.cpp.s
+
 login_server/CMakeFiles/login_server.dir/src/Systems/BagSystem.cpp.o: login_server/CMakeFiles/login_server.dir/flags.make
 login_server/CMakeFiles/login_server.dir/src/Systems/BagSystem.cpp.o: ../login_server/src/Systems/BagSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object login_server/CMakeFiles/login_server.dir/src/Systems/BagSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object login_server/CMakeFiles/login_server.dir/src/Systems/BagSystem.cpp.o"
 	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/login_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/src/Systems/BagSystem.cpp.o -c /tmp/tmp.NlYyk5b41G/login_server/src/Systems/BagSystem.cpp
 
 login_server/CMakeFiles/login_server.dir/src/Systems/BagSystem.cpp.i: cmake_force
@@ -297,7 +310,7 @@ login_server/CMakeFiles/login_server.dir/src/Systems/BagSystem.cpp.s: cmake_forc
 
 login_server/CMakeFiles/login_server.dir/src/Systems/TransformSystem.cpp.o: login_server/CMakeFiles/login_server.dir/flags.make
 login_server/CMakeFiles/login_server.dir/src/Systems/TransformSystem.cpp.o: ../login_server/src/Systems/TransformSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object login_server/CMakeFiles/login_server.dir/src/Systems/TransformSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object login_server/CMakeFiles/login_server.dir/src/Systems/TransformSystem.cpp.o"
 	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/login_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/src/Systems/TransformSystem.cpp.o -c /tmp/tmp.NlYyk5b41G/login_server/src/Systems/TransformSystem.cpp
 
 login_server/CMakeFiles/login_server.dir/src/Systems/TransformSystem.cpp.i: cmake_force
@@ -310,7 +323,7 @@ login_server/CMakeFiles/login_server.dir/src/Systems/TransformSystem.cpp.s: cmak
 
 login_server/CMakeFiles/login_server.dir/src/Network/Epoll.cpp.o: login_server/CMakeFiles/login_server.dir/flags.make
 login_server/CMakeFiles/login_server.dir/src/Network/Epoll.cpp.o: ../login_server/src/Network/Epoll.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object login_server/CMakeFiles/login_server.dir/src/Network/Epoll.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object login_server/CMakeFiles/login_server.dir/src/Network/Epoll.cpp.o"
 	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/login_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/src/Network/Epoll.cpp.o -c /tmp/tmp.NlYyk5b41G/login_server/src/Network/Epoll.cpp
 
 login_server/CMakeFiles/login_server.dir/src/Network/Epoll.cpp.i: cmake_force
@@ -323,7 +336,7 @@ login_server/CMakeFiles/login_server.dir/src/Network/Epoll.cpp.s: cmake_force
 
 login_server/CMakeFiles/login_server.dir/src/Network/MesgHead.cpp.o: login_server/CMakeFiles/login_server.dir/flags.make
 login_server/CMakeFiles/login_server.dir/src/Network/MesgHead.cpp.o: ../login_server/src/Network/MesgHead.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object login_server/CMakeFiles/login_server.dir/src/Network/MesgHead.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object login_server/CMakeFiles/login_server.dir/src/Network/MesgHead.cpp.o"
 	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/login_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/src/Network/MesgHead.cpp.o -c /tmp/tmp.NlYyk5b41G/login_server/src/Network/MesgHead.cpp
 
 login_server/CMakeFiles/login_server.dir/src/Network/MesgHead.cpp.i: cmake_force
@@ -336,7 +349,7 @@ login_server/CMakeFiles/login_server.dir/src/Network/MesgHead.cpp.s: cmake_force
 
 login_server/CMakeFiles/login_server.dir/src/Network/SocketServer.cpp.o: login_server/CMakeFiles/login_server.dir/flags.make
 login_server/CMakeFiles/login_server.dir/src/Network/SocketServer.cpp.o: ../login_server/src/Network/SocketServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object login_server/CMakeFiles/login_server.dir/src/Network/SocketServer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object login_server/CMakeFiles/login_server.dir/src/Network/SocketServer.cpp.o"
 	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/login_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/src/Network/SocketServer.cpp.o -c /tmp/tmp.NlYyk5b41G/login_server/src/Network/SocketServer.cpp
 
 login_server/CMakeFiles/login_server.dir/src/Network/SocketServer.cpp.i: cmake_force
@@ -349,7 +362,7 @@ login_server/CMakeFiles/login_server.dir/src/Network/SocketServer.cpp.s: cmake_f
 
 login_server/CMakeFiles/login_server.dir/src/Network/baselink.cpp.o: login_server/CMakeFiles/login_server.dir/flags.make
 login_server/CMakeFiles/login_server.dir/src/Network/baselink.cpp.o: ../login_server/src/Network/baselink.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object login_server/CMakeFiles/login_server.dir/src/Network/baselink.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object login_server/CMakeFiles/login_server.dir/src/Network/baselink.cpp.o"
 	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/login_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/src/Network/baselink.cpp.o -c /tmp/tmp.NlYyk5b41G/login_server/src/Network/baselink.cpp
 
 login_server/CMakeFiles/login_server.dir/src/Network/baselink.cpp.i: cmake_force
@@ -362,7 +375,7 @@ login_server/CMakeFiles/login_server.dir/src/Network/baselink.cpp.s: cmake_force
 
 login_server/CMakeFiles/login_server.dir/src/Network/buffer.cpp.o: login_server/CMakeFiles/login_server.dir/flags.make
 login_server/CMakeFiles/login_server.dir/src/Network/buffer.cpp.o: ../login_server/src/Network/buffer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object login_server/CMakeFiles/login_server.dir/src/Network/buffer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object login_server/CMakeFiles/login_server.dir/src/Network/buffer.cpp.o"
 	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/login_server && /opt/rh/devtoolset-8/root/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/login_server.dir/src/Network/buffer.cpp.o -c /tmp/tmp.NlYyk5b41G/login_server/src/Network/buffer.cpp
 
 login_server/CMakeFiles/login_server.dir/src/Network/buffer.cpp.i: cmake_force
@@ -391,6 +404,7 @@ login_server_OBJECTS = \
 "CMakeFiles/login_server.dir/src/Managers/ItemManager.cpp.o" \
 "CMakeFiles/login_server.dir/src/Managers/Player.cpp.o" \
 "CMakeFiles/login_server.dir/src/Managers/PlayerManager.cpp.o" \
+"CMakeFiles/login_server.dir/src/Managers/ServerConnectionManager.cpp.o" \
 "CMakeFiles/login_server.dir/src/Systems/BagSystem.cpp.o" \
 "CMakeFiles/login_server.dir/src/Systems/TransformSystem.cpp.o" \
 "CMakeFiles/login_server.dir/src/Network/Epoll.cpp.o" \
@@ -418,6 +432,7 @@ login_server/login_server: login_server/CMakeFiles/login_server.dir/src/Managers
 login_server/login_server: login_server/CMakeFiles/login_server.dir/src/Managers/ItemManager.cpp.o
 login_server/login_server: login_server/CMakeFiles/login_server.dir/src/Managers/Player.cpp.o
 login_server/login_server: login_server/CMakeFiles/login_server.dir/src/Managers/PlayerManager.cpp.o
+login_server/login_server: login_server/CMakeFiles/login_server.dir/src/Managers/ServerConnectionManager.cpp.o
 login_server/login_server: login_server/CMakeFiles/login_server.dir/src/Systems/BagSystem.cpp.o
 login_server/login_server: login_server/CMakeFiles/login_server.dir/src/Systems/TransformSystem.cpp.o
 login_server/login_server: login_server/CMakeFiles/login_server.dir/src/Network/Epoll.cpp.o
@@ -427,7 +442,7 @@ login_server/login_server: login_server/CMakeFiles/login_server.dir/src/Network/
 login_server/login_server: login_server/CMakeFiles/login_server.dir/src/Network/buffer.cpp.o
 login_server/login_server: login_server/CMakeFiles/login_server.dir/build.make
 login_server/login_server: login_server/CMakeFiles/login_server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable login_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable login_server"
 	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/login_server && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/login_server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

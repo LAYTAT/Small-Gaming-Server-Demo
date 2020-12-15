@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/tmp/tmp.NlYyk5b41G/login_server/src/Managers/ItemManager.cpp" "/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/login_server/CMakeFiles/login_server.dir/src/Managers/ItemManager.cpp.o"
   "/tmp/tmp.NlYyk5b41G/login_server/src/Managers/Player.cpp" "/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/login_server/CMakeFiles/login_server.dir/src/Managers/Player.cpp.o"
   "/tmp/tmp.NlYyk5b41G/login_server/src/Managers/PlayerManager.cpp" "/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/login_server/CMakeFiles/login_server.dir/src/Managers/PlayerManager.cpp.o"
+  "/tmp/tmp.NlYyk5b41G/login_server/src/Managers/ServerConnectionManager.cpp" "/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/login_server/CMakeFiles/login_server.dir/src/Managers/ServerConnectionManager.cpp.o"
   "/tmp/tmp.NlYyk5b41G/login_server/src/Network/Epoll.cpp" "/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/login_server/CMakeFiles/login_server.dir/src/Network/Epoll.cpp.o"
   "/tmp/tmp.NlYyk5b41G/login_server/src/Network/MesgHead.cpp" "/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/login_server/CMakeFiles/login_server.dir/src/Network/MesgHead.cpp.o"
   "/tmp/tmp.NlYyk5b41G/login_server/src/Network/SocketServer.cpp" "/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/login_server/CMakeFiles/login_server.dir/src/Network/SocketServer.cpp.o"

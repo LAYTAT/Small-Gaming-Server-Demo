@@ -11,6 +11,7 @@
 #include "EntityMgr.h"
 #include <functional>
 #include "BagSystem.h"
+#include "unordered_map"
 
 class EventSystem
 {
@@ -35,7 +36,7 @@ public:
     INT32 PlayerLoginFailed(const MesgInfo &stHead, const char *body,const INT32 len,const INT32 connfd);
 private:
     MsgHandler<EventSystem>* m_msgHandler;
-
+    std::unordered_map<INT32,INT32> player_id_to_fd_map;
     BagSystem m_bagSystem;
 };
 

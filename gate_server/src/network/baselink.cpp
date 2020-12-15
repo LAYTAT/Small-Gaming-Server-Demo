@@ -280,10 +280,10 @@ INT32 baselink::RecvData()
 }
 
 INT32 baselink::SendData(char *data, INT32 len){
-    std::cout << "======================== Sending data ==========================" << std::endl;
-    std::cout << "sending data : " << data << ", data len = " << len << " to socketfd: " << m_socketfd;
+//    std::cout << "======================== Sending data ==========================" << std::endl;
+//    std::cout << "sending data : " << data << ", data len = " << len << " to socketfd: " << m_socketfd;
     int send_ret = send(m_socketfd, data, len ,0);
-    std::cout << ", send_ret = " << send_ret << ", errno = " << errno << std::endl;
+//    std::cout << ", send_ret = " << send_ret << ", errno = " << errno << std::endl;
     return 0;
 }
 

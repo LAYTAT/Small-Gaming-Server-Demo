@@ -112,8 +112,11 @@ void Epoll::BroadCast(const MesgInfo& msghead,Message& msg)
 
     for(auto it = m_linkmap.begin();it!=m_linkmap.end();it++)
     {
-       it->second->SendData(s_head_buffer, t_hl);
-       it->second->SendData(s_buffer,msg.ByteSizeLong());
+        if(it->second->GetFD() != 7) {
+            std::cout << "Game Server Sending data to " << it->second->GetFD() << std::endl;
+            it->second->SendData(s_head_buffer, t_hl);
+            it->second->SendData(s_buffer,msg.ByteSizeLong());
+        }
     }
 
     return ;

@@ -1,4 +1,18 @@
 /home/jjlay/downloads/cmake-3.17.0/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/opt/rh/devtoolset-8/root/usr/bin/cc -DCMAKE_CXX_COMPILER=/opt/rh/devtoolset-8/root/usr/bin/g++ -G "CodeBlocks - Unix Makefiles" /tmp/tmp.NlYyk5b41G
+-- The C compiler identification is GNU 8.3.1
+-- The CXX compiler identification is GNU 8.3.1
+-- Check for working C compiler: /opt/rh/devtoolset-8/root/usr/bin/cc
+-- Check for working C compiler: /opt/rh/devtoolset-8/root/usr/bin/cc - works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /opt/rh/devtoolset-8/root/usr/bin/g++
+-- Check for working CXX compiler: /opt/rh/devtoolset-8/root/usr/bin/g++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote

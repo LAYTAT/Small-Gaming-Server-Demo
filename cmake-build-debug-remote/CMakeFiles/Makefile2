@@ -172,12 +172,12 @@ login_server/clean: login_server/CMakeFiles/login_server.dir/clean
 login_server/CMakeFiles/login_server.dir/all:
 	$(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/depend
 	$(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80 "Built target login_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles --progress-num=57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81 "Built target login_server"
 .PHONY : login_server/CMakeFiles/login_server.dir/all
 
 # Build rule for subdir invocation for target.
 login_server/CMakeFiles/login_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles 24
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles 25
 	$(MAKE) -f CMakeFiles/Makefile2 login_server/CMakeFiles/login_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote/CMakeFiles 0
 .PHONY : login_server/CMakeFiles/login_server.dir/rule

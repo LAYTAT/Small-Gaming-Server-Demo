@@ -520,6 +520,33 @@ src/Managers/PlayerManager.cpp.s:
 	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/Managers/PlayerManager.cpp.s
 .PHONY : src/Managers/PlayerManager.cpp.s
 
+src/Managers/ServerConnectionManager.o: src/Managers/ServerConnectionManager.cpp.o
+
+.PHONY : src/Managers/ServerConnectionManager.o
+
+# target to build an object file
+src/Managers/ServerConnectionManager.cpp.o:
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/Managers/ServerConnectionManager.cpp.o
+.PHONY : src/Managers/ServerConnectionManager.cpp.o
+
+src/Managers/ServerConnectionManager.i: src/Managers/ServerConnectionManager.cpp.i
+
+.PHONY : src/Managers/ServerConnectionManager.i
+
+# target to preprocess a source file
+src/Managers/ServerConnectionManager.cpp.i:
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/Managers/ServerConnectionManager.cpp.i
+.PHONY : src/Managers/ServerConnectionManager.cpp.i
+
+src/Managers/ServerConnectionManager.s: src/Managers/ServerConnectionManager.cpp.s
+
+.PHONY : src/Managers/ServerConnectionManager.s
+
+# target to generate assembly for a file
+src/Managers/ServerConnectionManager.cpp.s:
+	cd /tmp/tmp.NlYyk5b41G/cmake-build-debug-remote && $(MAKE) -f login_server/CMakeFiles/login_server.dir/build.make login_server/CMakeFiles/login_server.dir/src/Managers/ServerConnectionManager.cpp.s
+.PHONY : src/Managers/ServerConnectionManager.cpp.s
+
 src/Network/Epoll.o: src/Network/Epoll.cpp.o
 
 .PHONY : src/Network/Epoll.o
@@ -814,6 +841,9 @@ help:
 	@echo "... src/Managers/PlayerManager.o"
 	@echo "... src/Managers/PlayerManager.i"
 	@echo "... src/Managers/PlayerManager.s"
+	@echo "... src/Managers/ServerConnectionManager.o"
+	@echo "... src/Managers/ServerConnectionManager.i"
+	@echo "... src/Managers/ServerConnectionManager.s"
 	@echo "... src/Network/Epoll.o"
 	@echo "... src/Network/Epoll.i"
 	@echo "... src/Network/Epoll.s"

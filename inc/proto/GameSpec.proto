@@ -114,3 +114,26 @@ message LoginRep{
 	int32 gate_port = 3;
 	int32 session_code = 4;
 }
+
+enum EndPointState
+{
+	ENDPOINT_STANDBY = 0;
+	ENDPOINT_AUTH_OK = 1;
+	ENDPOINT_ACTIVE = 2;
+	ENDPOINT_CLOSED = 3;
+}
+
+enum KeyboardState
+{
+	NOAction = 0x0;
+	Ctrl = 0x1;
+	Shift = 0x2;
+	Jump = 0x4;
+	Up = 0x8;
+	Down = 0x10;
+	Left = 0x20;
+	Right = 0x40;
+	Q = 0x80;
+	E = 0x100;
+	R = 0x200;
+}
