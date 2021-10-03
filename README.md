@@ -11,4 +11,4 @@ This is a demo for server architecture learning, in which I try to demonstrate a
 5. DB server
 
 ## TODO
-1. Master server
+1. A Master server
